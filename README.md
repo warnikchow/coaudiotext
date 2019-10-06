@@ -1,4 +1,4 @@
-# Audio-Text Tutorial 
+# Co-Audio-Text
 A short tutorial for the co-utilization of audio and text data (multi-modal analysis)
 
 ## Contents
