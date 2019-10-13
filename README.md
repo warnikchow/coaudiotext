@@ -2,16 +2,24 @@
 A short tutorial for the co-utilization of audio and text data (multi-modal analysis)
 
 ## Contents
-To be updated.
+0. Problem definition & loading dataset
+1. Extracting acoustic features
+2. Speech-only analysis with Librosa and Keras
+3. Self-attentive BiLSTM
+4. Parallel utilization of audio and text data
+5. Multi-hop attention
+6. Cross-attention
 
-## 0. Acoustic features
+## 0. Problem definition & loading dataset
 
-## 1. Speech-only analysis with Librosa and Keras
+## 1. Extracting acoustic features
 
-## 2. Self-attentive BiLSTM
+## 2. Speech-only analysis with Librosa and Keras
 
-## 3. Co-utilization of audio and text data
+## 3. Self-attentive BiLSTM
 
-## 4. Multi-hop attention
+## 4. Parallel utilization of audio and text data
 
-## 5. Cross-attention
+## 5. Multi-hop attention
+
+## 6. Cross-attention
