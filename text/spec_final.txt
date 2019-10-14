@@ -1,0 +1,3552 @@
+가르쳐 주다	0	누가 가르쳐 줄래	wh	Who'll teach me?	n	
+teach	0	누가 가르쳐 줄래	r	Could somebody teach me?	n	
+	0	누가 가르쳐 줄래요	wh	Who'll teach me?	p	
+	0	누가 가르쳐 줄래요	r	Could somebody teach me?	p	
+	0	누가 가르쳐주나 봐	s	Sbd seems to be teaching you/them	n	
+	0	누가 가르쳐주나 봐	rc	See who teaches you	n	(= I won't teach you)
+	0	누군지 가르쳐줘	yn	Shall I let you know who they are?	n	
+	0	누군지 가르쳐줘	c	Tell me who they are	n	
+	0	누군지 가르쳐줘요	yn	Shall I let you know who they are?	p	
+	0	누군지 가르쳐줘요	c	Tell me who they are	p	
+	0	누군지 가르쳐 줄래	s	I will tell you who they are	n	
+	0	누군지 가르쳐 줄래	r	Can you tell me who they are?	n	
+	0	누군지 가르쳐 줄래요	s	I will tell you who they are	p	
+	0	누군지 가르쳐 줄래요	r	Can you tell me who they are?	p	
+가입하다	0	누가 가입했어	s	Sbd joined in	n	
+join in	0	누가 가입했어	yn	Has sbd joined in?	n	
+	0	누가 가입했어	wh	Who joined in?	n	
+	0	누가 가입했어요	s	Sbd joined in	p	
+	0	누가 가입했어요	yn	Has sbd joined in?	p	
+	0	누가 가입했어요	wh	Who joined in?	p	
+	0	누가 가입했대	s	I heard sbd joined in	n	
+	0	누가 가입했대	yn	Has sbd joined in?	n	rep
+	0	누가 가입했대	wh	Who joined in?	n	rep
+	0	누가 가입했대요	s	I heard sbd joined in	p	
+	0	누가 가입했대요	yn	Has sbd joined in?	p	rep
+	0	누가 가입했대요	wh	Who joined in?	p	rep
+	0	누가 가입한대	s	I heard sbd is joining in	n	
+	0	누가 가입한대	yn	Is sbd joining in?	n	rep
+	0	누가 가입한대	wh	Who's joining in?	n	rep
+	0	누가 가입한대	rq	Did I ever tell you I'll join in?	n	(= I won't join in)
+	0	누가 가입한대요	s	I heard sbd is joining in	p	
+	0	누가 가입한대요	yn	Is sbd joining in?	p	
+	0	누가 가입한대요	wh	Who's joining in?	p	
+	0	누가 가입한대요	rq	Did I ever tell you I'll join in?	p	(= I won't join in)
+	0	누가 가입하나 봐	s	Sbd seems to be joining in	n	
+	0	누가 가입하나 봐	rc	See who joins in	n	(= I won't join in)
+	0	누가 너 가입하래	rq	Who on earth told you to join in?	n	(= Don't join in)
+	0	누가 너 가입하래	c	Sbd told you to join in	n	
+	0	누가 너 가입해도 된대	s	Sbd told me that you can join in	n	
+	0	누가 너 가입해도 된대	rq	Did anyone say you can join in?	n	(= You can't join in)
+	0	누구 가입한 사람 있어	s	Sbd joined in	n	
+	0	누구 가입한 사람 있어	yn	Is there anybody who joined in?	n	
+	0	누구 가입한 사람 있어요	s	Sbd joined in	p	
+	0	누구 가입한 사람 있어요	yn	Is there anybody who joined in?	p	
+가져가다	0	누가 가져가	yn	Will sbd take it?	n	
+take	0	누가 가져가	wh	Who'll take it?	n	
+	0	누가 가져가	c	Sbd take it	n	
+	0	누가 가져가요	yn	Will sbd take it?	p	
+	0	누가 가져가요	wh	Who'll take it?	p	
+	0	누가 가져가요	c	Sbd take it	p	
+	0	누가 가져간대	s	I heard sbd will take it	n	
+	0	누가 가져간대	yn	Will sbd take it?	n	rep
+	0	누가 가져간대	wh	Who'll take it?	n	rep
+	0	누가 가져간대	rq	Who says I'll take it?	n	(= I won't take it)
+	0	누가 가져간대요	s	I heard sbd will take it	p	
+	0	누가 가져간대요	yn	Will sbd take it?	p	rep
+	0	누가 가져간대요	wh	Who'll take it?	p	rep
+	0	누가 가져간대요	rq	Who says I'll take it?	p	(= I won't take it)
+	0	누가 가져가래	wh	Who among us should take it?	n	rep
+	0	누가 가져가래	rq	Who on earth told you to take it?	n	(= You can't take it)
+	0	누가 가져가래	c	Sbd told you to take it	n	
+	0	누가 가져가래요	wh	Who among us should take it?	p	
+	0	누가 가져가래요	rq	Who on earth told you to take it?	p	(= You can't take it)
+	0	누가 가져가래요	c	Sbd told you to take it	p	
+	0	누가 가져가나 봐	s	Sbd seems to be taking it	n	
+	0	누가 가져가나 봐	rc	See who takes it	n	(= I won't take it)
+가져오다	0	누가 가져와	yn	Will sbd bring it?	n	
+bring	0	누가 가져와	wh	Who's gonna bring it?	n	
+	0	누가 가져와	c	Some of you bring it	n	
+	0	누가 가져와요	yn	Will sbd bring it?	p	
+	0	누가 가져와요	wh	Who's gonna bring it?	p	
+	0	누가 가져와요	c	Some of you bring it	p	
+	0	누가 가져온대	s	I heard sbd will bring it	n	
+	0	누가 가져온대	yn	Will sbd bring it?	n	rep
+	0	누가 가져온대	wh	Who's gonna bring it?	n	rep
+	0	누가 가져온대	rq	Who says I'll bring it?	n	(= I won't bring it)
+	0	누가 가져온대요	s	I heard sbd will bring it	p	
+	0	누가 가져온대요	yn	Will sbd bring it?	p	rep
+	0	누가 가져온대요	wh	Who's gonna bring it?	p	rep
+	0	누가 가져온대요	rq	Who says I'll bring it?	p	(= I won't bring it)
+	0	누가 가져오래	yn	Did sbd tell you to bring it?	n	
+	0	누가 가져오래	wh	Who told you to bring it?	n	
+	0	누가 가져오래	rq	Did sbd ever tell you to bring it?	n	
+	0	누가 가져오래	c	Sbd told you to bring it	n	
+	0	누가 가져오래요	yn	Did sbd tell you to bring it?	p	
+	0	누가 가져오래요	wh	Who told you to bring it?	p	
+	0	누가 가져오래요	rq	Did sbd ever tell you to bring it?	p	(= No one told you to bring it)
+	0	누가 가져오래요	c	Sbd told you to bring it	p	
+	0	누가 가져오나 봐	s	It seems like sbd will bring it	n	
+	0	누가 가져오나 봐	yn	Is sbd bringing it?	n	aff
+	0	누가 가져오나 봐	rc	See who brings it	n	(= I won't bring it)
+	0	누가 가져와 줄래	wh	Who's gonna bring it?	n	
+	0	누가 가져와 줄래	r	Can sbd bring it?	n	
+	0	누가 가져와 줄래요	wh	Who's gonna bring it?	p	
+	0	누가 가져와 줄래요	r	Could sbd bring it?	p	
+가다	0	누가 간대	s	I heard sbd will go	n	
+go	0	누가 간대	yn	Does sbd say they're going?	n	
+	0	누가 간대	wh	Who is going?	n	rep
+	0	누가 간대	rq	Who says I'm going?	n	(= I won't go)
+	0	누가 간대요	s	I heard sbd will go	p	
+	0	누가 간대요	yn	Does sbd say they're going?	p	
+	0	누가 간대요	wh	Who is going?	p	rep
+	0	누가 간대요	rq	Who says I'm going?	p	(= I won't go)
+	0	누가 간댔어	s	Sbd said they're going	n	
+	0	누가 간댔어	yn	Did sbd say they're going?	n	
+	0	누가 간댔어	wh	Who said they're going?	n	
+	0	누가 간댔어	rq	Who ever said I'm going?	n	(= I won't go)
+	0	누가 간댔어요	s	Sbd said they're going	p	
+	0	누가 간댔어요	yn	Did sbd say they're going?	p	
+	0	누가 간댔어요	wh	Who said they're going?	p	
+	0	누가 간댔어요	rq	Who ever said I'm going?	p	(= I won't go)
+	0	누가 간댔지	yn	Didn't sbd say they're going?	n	aff
+	0	누가 간댔지	wh	Who said they're going?	n	
+	0	누가 간댔죠	yn	Is it right sbd said they're going?	p	aff
+	0	누가 간댔죠	wh	Who said they're going?	p	
+	0	누가 걔 간대	s	Sbd says s/he will go	n	
+	0	누가 걔 간대	yn	Does sbd say s/he will go?	n	
+	0	누가 걔 간대요	s	Sbd says s/he will go	p	
+	0	누가 걔 간대요	yn	Does sbd say s/he will go?	p	
+	0	누가 걔 간댔어	s	Sbd says s/he will go	n	
+	0	누가 걔 간댔어	yn	Does sbd say s/he will go?	n	
+	0	누가 걔 간댔어요	s	Sbd says s/he will go	p	
+	0	누가 걔 간댔어요	yn	Does sbd say s/he will go?	p	
+	0	누가 거기 간대	s	Sbd is said go there	n	
+	0	누가 거기 간대	yn	Does sbd say they're going there?	n	
+	0	누가 거기 간대	wh	Who is going there?	n	
+	0	누가 거기 간대	rq	Who ever says I'm going there?	n	(=I won't go there)
+	0	누가 거기 간대요	s	Sbd is said go there	p	
+	0	누가 거기 간대요	yn	Does sbd say they're going there?	p	
+	0	누가 거기 간대요	wh	Who is going there?	p	
+	0	누가 거기 간대요	rq	Who ever says I'm going there?	p	(=I won't go there)
+	0	누가 거기 간댔어	s	Sbd said they're going there	n	
+	0	누가 거기 간댔어	yn	Did sbd say they're going there?	n	
+	0	누가 거기 간댔어	wh	Who said they're going there?	n	
+	0	누가 거기 간댔어	rq	Have I ever said I'm going there?	n	(=I won't go there)
+	0	누가 거기 간댔어요	s	Sbd said they're going there	p	
+	0	누가 거기 간댔어요	yn	Did sbd say they're going there?	p	
+	0	누가 거기 간댔어요	wh	Who said they're going there?	p	
+	0	누가 거기 간댔어요	rq	Have I ever said I'm going there?	p	
+	0	누가 그리로 가래	wh	Who told us/you to go there?	n	
+	0	누가 그리로 가래	rq	Has anybody ever told you to go there?	n	(= You asked for it)
+	0	누가 그리로 가래	c	Sbd told us/you to go there	n	
+	0	누가 그리 가래	wh	Who told us/you to go there?	n	
+	0	누가 그리 가래	rq	Has anybody ever told you to go there?	n	(= You asked for it)
+	0	누가 그리 가래	c	Sbd told us/you to go there	n	
+	0	누가 그리 가래요	wh	Who told us/you to go there?	p	
+	0	누가 그리 가래요	rq	Has anybody ever told you to go there?	p	(= You asked for it)
+	0	누가 그리 가래요	c	Sbd told us/you to go there	p	
+	0	누가 가나 봐	s	Sbd seems to be going	n	
+	0	누가 가나 봐	yn	Is sbd going?	n	aff
+	0	누가 가나 봐	rc	See who goes	n	(= I won't go)
+갈아입다	0	누가 갈아입고 있어	s	Sbd is changing clothes	n	
+change a cloth	0	누가 갈아입고 있어	yn	Is sbd changing clothes?	n	
+	0	누가 갈아입고 있어	wh	Who's changing clothes?	n	
+	0	누가 갈아입고 있어요	s	Sbd is changing clothes	p	
+	0	누가 갈아입고 있어요	yn	Is sbd changing clothes?	p	
+	0	누가 갈아입고 있어요	wh	Who's changing clothes?	p	
+	0	누구 갈아입고 있어	s	Sbd is changing clothes	n	
+	0	누구 갈아입고 있어	yn	Is sbd changing clothes?	n	
+	0	누구 갈아입고 있어	wh	Who's changing clothes?	n	
+	0	누구 갈아입고 있어요	s	Sbd is changing clothes	p	
+	0	누구 갈아입고 있어요	yn	Is sbd changing clothes?	p	
+	0	누구 갈아입고 있어요	wh	Who's changing clothes?	p	
+걷다	0	누가 걸어와	s	Sbd is walking toward here	n	
+walk	0	누가 걸어와	yn	Is sbd walking toward here?	n	
+	0	누가 걸어와	wh	Who is walking toward here?	n	
+	0	누가 걸어와	c	Sbd should walk over here	n	(instead of riding sth)
+	0	누가 걸어와요	s	Sbd is walking toward here	p	
+	0	누가 걸어와요	yn	Is sbd walking toward here?	p	
+	0	누가 걸어와요	wh	Who is walking toward here?	p	
+	0	누가 걸어와요	c	Sbd should walk over here	p	(instead of riding sth)
+	0	누가 걸어오고 있어	s	Sbd is walking toward here	n	
+	0	누가 걸어오고 있어	yn	Is sbd walking toward here?	n	
+	0	누가 걸어오고 있어	wh	Who's walking toward here?	n	
+	0	누가 걸어오고 있어요	s	Sbd is walking toward here	p	
+	0	누가 걸어오고 있어요	yn	Is sbd walking toward here?	p	
+	0	누가 걸어오고 있어요	wh	Who's walking toward here?	p	
+결혼하다	0	누구 결혼해	s	Sbd is getting married	n	
+marry	0	누구 결혼해	yn	Is sbd getting married?	n	
+	0	누구 결혼해	wh	Who's getting married?	n	
+	0	누구 결혼해요	s	Sbd is getting married	p	
+	0	누구 결혼해요	yn	Is sbd getting married?	p	
+	0	누구 결혼해요	wh	Who's getting married?	p	
+	0	누구 결혼한대	s	I heard sbd is getting married	n	
+	0	누구 결혼한대	yn	Is sbd getting married?	n	rep
+	0	누구 결혼한대	wh	Who's getting married?	n	rep
+	0	누구 결혼한대요	s	I heard sbd is getting married	p	
+	0	누구 결혼한대요	yn	Is sbd getting married?	p	rep
+	0	누구 결혼한대요	wh	Who's getting married?	p	rep
+	0	누가 결혼하래	s	Sbd told me to get married	n	
+	0	누가 결혼하래	rq	Did anyone tell you to get married?	n	(= You shouldn't have married)
+	0	누가 결혼하래요	s	Sbd told me to get married	p	
+	0	누가 결혼하래요	rq	Did anyone tell you to get married?	p	(= You shouldn't have married)
+계산하다	0	누가 계산해	wh	Who's paying?	n	
+pay the bill	0	누가 계산해	c	Sbd pay the bill	n	
+	0	누가 계산해요	wh	Who's paying?	p	
+	0	누가 계산해요	c	Sbd pay the bill	p	
+	0	누가 계산하지	wh	Who's paying?	n	
+	0	누가 계산하지	c	Sbd pay the bill	n	
+	0	누가 계산하고 있어	s	Sbd is paying	n	
+	0	누가 계산하고 있어	yn	Is sbd paying?	n	
+	0	누가 계산하고 있어	wh	Who's paying?	n	
+	0	누가 계산하고 있어	c	Sbd pay the bill	n	
+	0	누가 계산하고 있어요	s	Sbd is paying	p	
+	0	누가 계산하고 있어요	yn	Is sbd paying?	p	
+	0	누가 계산하고 있어요	wh	Who's paying?	p	
+	0	누가 계산하고 있어요	c	Sbd pay the bill	p	
+	0	누가 계산하래	yn	Did sbd tell you/us to pay?	n	
+	0	누가 계산하래	wh	Who should pay?	n	rep
+	0	누가 계산하래	rq	Has sbd ever told you to pay?	n	(= You didn't have to pay)
+	0	누가 계산하래	c	Sbd told us/you to pay	n	
+	0	누가 계산하래요	yn	Did sbd tell you/us to pay?	p	
+	0	누가 계산하래요	wh	Who should pay?	p	rep
+	0	누가 계산하래요	rq	Has sbd ever told you to pay?	p	(= You didn't have to pay)
+	0	누가 계산하래요	c	Sbd told us/you to pay	p	
+	0	누가 계산할래	yn	Does sbd want to pay?	n	
+	0	누가 계산할래	wh	Who wants to pay?	n	
+	0	누가 계산할래요	yn	Does sbd want to pay?	p	
+	0	누가 계산할래요	wh	Who wants to pay?	p	
+	0	누가 계산해 줄래	wh	Who wants to pay?	n	
+	0	누가 계산해 줄래	r	Could sbd please pay?	n	
+	0	누가 계산해 줄래요	wh	Who wants to pay?	p	
+	0	누가 계산해 줄래요	r	Could sbd please pay?	p	
+관련되다	0	누가 관련돼 있어	s	Sbd is engaged in sth	n	
+be engaged in	0	누가 관련돼 있어	yn	Is sbd engaged in sth?	n	
+	0	누가 관련돼 있어	wh	Who's engaged in sth?	n	
+	0	누가 관련돼 있어요	s	Sbd is engaged in sth	p	
+	0	누가 관련돼 있어요	yn	Is sbd engaged in sth?	p	
+	0	누가 관련돼 있어요	wh	Who's engaged in sth?	p	
+	0	누군가 관련돼 있어	s	Sbd is engaged in sth	n	
+	0	누군가 관련돼 있어	yn	Is anybody engaged in sth?	n	
+	0	누군가 관련돼 있어요	s	Sbd is engaged in sth	p	
+	0	누군가 관련돼 있어요	yn	Is anybody engaged in sth?	p	
+괜찮다	0	누가 되든 괜찮아	s	I don't care whoever is elected	n	
+be ok	0	누가 되든 괜찮아	yn	Are you ok whoever is elected?	n	
+	0	누가 되든 괜찮아요	s	I don't care whoever is elected	p	
+	0	누가 되든 괜찮아요	yn	Are you ok whoever is elected?	p	
+	0	누가 먹어도 괜찮아	s	I don't care whoever eats	n	
+	0	누가 먹어도 괜찮아	yn	Are you ok whoever eats it?	n	
+	0	누가 먹어도 괜찮아요	s	I don't care whoever eats	p	
+	0	누가 먹어도 괜찮아요	yn	Are you ok whoever eats it?	p	
+	0	누가 오든 괜찮아	s	I don't care whoever comes	n	
+	0	누가 오든 괜찮아	yn	Are you ok whoever comes?	n	
+	0	누가 오든 괜찮아요	s	I don't care whoever comes	p	
+	0	누가 오든 괜찮아요	yn	Are you ok whoever comes?	p	
+	0	누구든 괜찮아	s	I don't care whoever it is	n	
+	0	누구든 괜찮아	yn	Are you ok whoever it is?	n	
+	0	누구든 괜찮아요	s	I don't care whoever it is	p	
+	0	누구든 괜찮아요	yn	Are you ok whoever it is?	p	
+구속되다	0	누가 구속됐어	s	Sbd was arrested	n	
+be arrested	0	누가 구속됐어	yn	Was sbd arrested?	n	
+	0	누가 구속됐어	wh	Who was arrested?	n	
+	0	누가 구속됐어요	s	Sbd was arrested	p	
+	0	누가 구속됐어요	yn	Was sbd arrested?	p	
+	0	누가 구속됐어요	wh	Who was arrested?	p	
+	0	누가 구속됐대	s	I heard sbd was arrested	n	
+	0	누가 구속됐대	yn	Was sbd arrested?	n	rep
+	0	누가 구속됐대	wh	Who was arrested?	n	rep
+	0	누가 구속됐대요	s	I heard sbd was arrested	p	
+	0	누가 구속됐대요	yn	Was sbd arrested?	p	rep
+	0	누가 구속됐대요	wh	Who was arrested?	p	rep
+그러다	0	누가 그러래	s	Sbd told me to do so	n	
+do so	0	누가 그러래	rq	Has anyone told you to do so?	n	(You didn't have to do so)
+	0	누가 그러래요	s	Sbd told me to do so	p	
+	0	누가 그러래요	rq	Has anyone told you to do so?	p	(You didn't have to do so)
+그렇다	0	누가 그렇대	s	Sbd says so	n	
+say so	0	누가 그렇대	wh	Who said so?	n	rep
+	0	누가 그렇대	rq	Who on earth says so?	n	
+	0	누가 그렇대요	s	Sbd says so	p	
+	0	누가 그렇대요	yn	Did sbd say so?	p	rep
+	0	누가 그렇대요	wh	Who said so?	p	rep
+	0	누가 그렇대요	rq	Who on earth says so?	p	
+그만두다	0	누가 그만뒀어	s	Sbd quit	n	
+quit	0	누가 그만뒀어	yn	Did sbd quit?	n	
+	0	누가 그만뒀어	wh	Who quit?	n	
+	0	누가 그만뒀어요	s	Sbd quit	p	
+	0	누가 그만뒀어요	yn	Did sbd quit?	p	
+	0	누가 그만뒀어요	wh	Who quit?	p	
+	0	누가 그만둔대	s	I heard sbd will quit	n	
+	0	누가 그만둔대	yn	Will sbd quit?	n	rep
+	0	누가 그만둔대	wh	Who'll quit?	n	rep
+	0	누가 그만둔대	rq	Who says I'll quit?	n	
+	0	누가 그만둔대요	s	I heard sbd will quit	p	
+	0	누가 그만둔대요	yn	Will sbd quit?	p	rep
+	0	누가 그만둔대요	wh	Who'll quit?	p	rep
+	0	누가 그만둔대요	rq	Who says I'll quit?	p	
+	0	누가 그만두나 봐	s	It seems like sbd will quit	n	
+	0	누가 그만두나 봐	yn	Is sbd quitting?	n	aff
+	0	누가 그만두나 봐	rc	See who's quitting	n	(= I won't quit)
+	0	누가 너 그만두래	yn	Did sbd tell you to quit?	n	
+	0	누가 너 그만두래	rq	Did anyone tell you to quit?	n	
+	0	누가 너 그만두래	c	Sbd says you should quit	n	
+	0	누가 당신 그만두래	yn	Did sbd tell you to quit?	n	
+	0	누가 당신 그만두래	rq	Did anyone tell you to quit?	n	
+	0	누가 당신 그만두래	c	Sbd says you should quit	n	
+	0	누가 당신 그만두래요	yn	Did sbd tell you to quit?	p	
+	0	누가 당신 그만두래요	rq	Did anyone tell you to quit?	p	
+	0	누가 당신 그만두래요	c	Sbd says you should quit	p	
+	0	누구 그만둔 사람 있어	s	Sbd quit	n	
+	0	누구 그만둔 사람 있어	yn	Did anybody quit?	n	
+	0	누구 그만둔 사람 있어요	s	Sbd quit	p	
+	0	누구 그만둔 사람 있어요	yn	Did anybody quit?	p	
+깔다	0	누가 깔았어	s	Sbd installed this	n	
+install	0	누가 깔았어	yn	Did sbd install this?	n	
+	0	누가 깔았어	wh	Who installed this?	n	
+	0	누가 깔았어	rq	Who on earth installed this?	n	(= Sth shouldn't be installed)
+	0	누가 깔았어요	s	Sbd installed this	p	
+	0	누가 깔았어요	yn	Did sbd install this?	p	
+	0	누가 깔았어요	wh	Who installed this?	p	
+	0	누가 깔았대	s	I heard sbd installed this	n	
+	0	누가 깔았대	yn	Did sbd install this?	n	rep
+	0	누가 깔았대	wh	Who installed this?	n	rep
+	0	누가 깔았대	rq	Who on earth installed this?	n	(= Sth shouldn't be installed)
+	0	누가 깔았대요	s	I heard sbd installed this	p	
+	0	누가 깔았대요	yn	Did sbd install this?	p	
+	0	누가 깔았대요	wh	Who installed this?	p	
+깨다	0	누가 깼어	s	Sbd woke up	n	
+wake up	0	누가 깼어	yn	Did sbd wake up?	n	
+	0	누가 깼어	wh	Who woke up?	n	
+	0	누가 깼어요	s	Sbd woke up	p	
+	0	누가 깼어요	yn	Did sbd wake up?	p	
+	0	누가 깼어요	wh	Who woke up?	p	
+	0	누가 깨웠어	s	Sbd woke me/us up	n	
+	0	누가 깨웠어	wh	Who woke me/you/us up?	n	
+	0	누가 깨웠어	rq	Who the hell woke me/us up?	n	(= Sbd shouldn't have woke me up)
+	0	누가 깨우나 봐	s	Sbd seems to be waking people up	p	
+	0	누가 깨우나 봐	yn	Is sbd waking people up?	p	aff
+	0	누가 깨우나 봐	rc	See who wakes you up	p	(= I won't wake you up)
+	0	누가 너 깨웠어	s	Sbd woke you up	n	
+	0	누가 너 깨웠어	yn	Did sbd wake you up?	n	
+	0	누가 너 깨웠어	wh	Who woke you up?	n	
+	0	누가 당신 깨웠어	s	Sbd woke you up	n	
+	0	누가 당신 깨웠어	yn	Did sbd wake you up?	n	
+	0	누가 당신 깨웠어	wh	Who woke you up?	n	
+	0	누가 당신 깨웠어요	s	Sbd woke you up	p	
+	0	누가 당신 깨웠어요	yn	Did sbd wake you up?	p	
+	0	누가 당신 깨웠어요	wh	Who woke you up?	p	
+	0	누가 나 깨웠어	s	Sbd woke me up	n	
+	0	누가 나 깨웠어	yn	Did sbd wake me up?	n	
+	0	누가 나 깨웠어	wh	Who woke me up?	n	
+	0	누가 저 깨웠어요	s	Sbd woke me up	p	
+	0	누가 저 깨웠어요	yn	Did sbd wake me up?	p	
+	0	누가 저 깨웠어요	wh	Who woke me up?	p	
+	0	누구 깼어	s	Sbd woke up	n	
+	0	누구 깼어	yn	Did sbd wake up?	n	
+	0	누구 깼어	wh	Who woke up?	n	
+	0	누구 깼어요	s	Sbd woke up	p	
+	0	누구 깼어요	yn	Did sbd wake up?	p	
+	0	누구 깼어요	wh	Who woke up?	p	
+나오다	0	누가 나왔어	s	Sbd came out	n	
+come out	0	누가 나왔어	yn	Did sbd come out?	n	
+	0	누가 나왔어	wh	Who came out?	n	
+	0	누가 나왔어요	s	Sbd came out	p	
+	0	누가 나왔어요	yn	Did sbd come out?	p	
+	0	누가 나왔어요	wh	Who came out?	p	
+	0	누가 나온대	s	I heard sbd is coming out	n	
+	0	누가 나온대	yn	Is sbd coming out?	n	rep
+	0	누가 나온대	wh	Who's coming out?	n	rep
+	0	누가 나온대	rq	Did anyone say I'm coming out ?	n	(= I won't come out)
+	0	누가 나온대요	s	I heard sbd is coming out	p	
+	0	누가 나온대요	yn	Is sbd coming out?	p	rep
+	0	누가 나온대요	wh	Who's coming out?	p	rep
+	0	누가 나온대요	rq	Did anyone say I'm coming out?	p	(= I won't come out)
+	0	누가 나오래	rq	Did anyone tell you to come out?	n	(= You shouldn't have)
+	0	누가 나오래	c	Sbd told you to come out	n	
+	0	누가 나오래요	rq	Did anyone tell you to come out?	p	(= You shouldn't have)
+	0	누가 나오래요	c	Sbd told you to come out	p	
+	0	누가 나오나 봐	s	Sbd seems to be coming out	n	
+	0	누가 나오나 봐	yn	Is sbd coming out?	n	
+	0	누가 나오나 봐	c	See who comes out	n	
+	0	누가 나오나 봐	rc	Look and see who comes out	n	(= I won't go out)
+	0	누가 너 나오래	yn	Did sbd tell you to come out?	n	
+	0	누가 너 나오래	rq	Who the hell told you to come out?	n	(= You shouldn't come out)
+	0	누가 너 나오래	c	Sbd told you to come out	n	
+	0	누가 당신 나오래	yn	Did sbd tell you to come out?	n	
+	0	누가 당신 나오래	rq	Who the hell told you to come out?	n	(= You shouldn't come out)
+	0	누가 당신 나오래	c	Sbd told you to come out	n	
+	0	누가 당신 나오래요	yn	Did sbd tell you to come out?	p	
+	0	누가 당신 나오래요	rq	Who the hell told you to come out?	p	(= You shouldn't come out)
+	0	누가 당신 나오래요	c	Sbd told you to come out	p	
+	0	누구 유명한 사람 나온대	s	I heard sbd famous is coming out	n	
+	0	누구 유명한 사람 나온대	yn	Is someone famous coming out?	n	rep
+	0	누구 유명한 사람 나온대요	s	I heard sbd famous is coming out	p	
+	0	누구 유명한 사람 나온대요	yn	Is someone famous coming out?	p	rep
+	0	누구 아는 사람 나온대	s	I heard sbd I know is coming out	n	
+	0	누구 아는 사람 나온대	yn	Is someone I know coming out?	n	rep
+	0	누구 아는 사람 나온대요	s	I heard sbd I know is coming out	p	
+	0	누구 아는 사람 나온대요	yn	Is someone I know coming out?	p	rep
+나타나다	0	누가 나타났어	s	Sbd appeared	n	
+appear	0	누가 나타났어	yn	Did sbd appear?	n	
+	0	누가 나타났어	wh	Who appeared?	n	
+	0	누가 나타났어요	s	Sbd appeared	p	
+	0	누가 나타났어요	yn	Did sbd appear?	p	
+	0	누가 나타났어요	wh	Who appeared?	p	
+낚다	0	누가 낚았어	s	Sbd phished me	n	
+phish	0	누가 낚았어	wh	Who phished them?	n	
+	0	누가 낚였대	s	I heard sbd was phished	n	
+	0	누가 낚였대	yn	Was someone phished?	n	rep
+	0	누가 낚였대	wh	Who was phished?	n	rep
+	0	누가 낚였대	rq	Who ever says I was phished ?	n	(= I was not phished)
+	0	누가 낚였대요	s	I heard sbd was phished	p	
+	0	누가 낚였대요	yn	Was someone phished?	p	rep
+	0	누가 낚였대요	wh	Who was phished?	p	rep
+	0	누가 낚였대요	rq	Who ever says I was phished?	p	 (= I was not phished)
+	0	누구 낚였어	s	Sbd was phished	n	
+	0	누구 낚였어	yn	Was sbd phished?	n	
+	0	누구 낚였어	wh	Who was phished?	n	
+	0	누구 낚였어요	s	Sbd was phished	p	
+	0	누구 낚였어요	yn	Was sbd phished?	p	
+	0	누구 낚였어요	wh	Who was phished?	p	
+	0	누구 낚였대	s	I heard sbd was phished	n	
+	0	누구 낚였대	yn	Was sbd phished?	n	rep
+	0	누구 낚였대	wh	Who was phished?	n	rep
+	0	누구 낚였대요	s	I heard sbd was phished	p	
+	0	누구 낚였대요	yn	Was sbd phished?	p	rep
+	0	누구 낚였대요	wh	Who was phished?	p	rep
+달려들다	0	누가 달려들었어	s	Sbd pounced on me/us	n	
+pounce on	0	누가 달려들었어	yn	Did sbd pounce on you?	n	
+	0	누가 달려들었어요	s	Sbd pounced on me/us	p	
+	0	누가 달려들었어요	yn	Did sbd pounce on you?	p	
+	0	누가 달려들었대	s	I heard sbd pounced on them	n	
+	0	누가 달려들었대	yn	Did sbd pounce on them?	n	rep
+	0	누가 달려들었대요	s	I heard sbd pounced on them	p	
+	0	누가 달려들었대요	yn	Did sbd pounce on them?	p	rep
+당기다	0	누가 당겼어	s	Sbd pulled	n	
+pull	0	누가 당겼어	yn	Did sbd pull?	n	
+	0	누가 당겼어	wh	Who pulled?	n	
+	0	누가 당겼어요	s	Sbd pulled 	p	
+	0	누가 당겼어요	yn	Did sbd pull?	p	
+	0	누가 당겼어요	wh	Who pulled?	p	
+던지다	0	누가 던져	s	Sbd threw	n	
+throw	0	누가 던져	yn	Does sbd throw?	n	
+	0	누가 던져	wh	Who throws?	n	
+	0	누가 던져요	s	Sbd threw	p	
+	0	누가 던져요	yn	Does sbd throw?	p	
+	0	누가 던져요	wh	Who throws?	p	
+	0	누가 던지지	wh	Who will throw?	n	
+	0	누가 던지지	c	Sbd throw	n	
+	0	누가 던졌어	s	Sbd threw	n	
+	0	누가 던졌어	yn	Did sbd throw?	n	
+	0	누가 던졌어	wh	Who threw?	n	
+	0	누가 던졌어요	s	Sbd threw	p	
+	0	누가 던졌어요	yn	Did sbd throw?	p	
+	0	누가 던졌어요	wh	Who threw?	p	
+	0	누가 던진대	s	I heard sbd throws	n	
+	0	누가 던진대	yn	Does sbd throw?	n	rep
+	0	누가 던진대	wh	Who throws?	n	rep
+	0	누가 던진대	rq	Does anybody say I will throw?	n	(= I don't throw)
+	0	누가 던진대요	s	I heard sbd throws	p	
+	0	누가 던진대요	yn	Does sbd throw?	p	rep
+	0	누가 던진대요	wh	Who throws?	p	rep
+	0	누가 던진대요	rq	Does anybody say I throw?	p	(= I don't throw)
+	0	누가 던졌대	s	I heard sbd threw	n	
+	0	누가 던졌대	yn	Did sbd throw?	n	rep
+	0	누가 던졌대	wh	Who threw?	n	rep
+	0	누가 던졌대	rq	Does anybody say I threw?	n	(= I don't throw)
+	0	누가 던졌대요	s	I heard sbd threw	p	
+	0	누가 던졌대요	yn	Did sbd throw?	p	rep
+	0	누가 던졌대요	wh	Who threw?	p	rep
+	0	누가 던졌대요	rq	Does anybody say I threw?	p	(= I did not throw)
+도망치다	0	누가 도망쳤어	s	Sbd ran away	n	
+run away	0	누가 도망쳤어	yn	Did sbd run away?	n	
+	0	누가 도망쳤어	wh	Who ran away?	n	
+	0	누가 도망쳤어요	s	Sbd ran away	p	
+	0	누가 도망쳤어요	yn	Did sbd run away?	p	
+	0	누가 도망쳤어요	wh	Who ran away?	p	
+	0	누가 도망쳤대	s	I heard sbd ran away	n	
+	0	누가 도망쳤대	yn	Did sbd run away?	n	rep
+	0	누가 도망쳤대	wh	Who ran away?	n	rep
+	0	누가 도망쳤대	rq	Who says I ran away?	n	(= I didn't run away)
+	0	누가 도망쳤대요	s	I heard sbd ran away	p	
+	0	누가 도망쳤대요	yn	Did sbd run away?	p	rep
+	0	누가 도망쳤대요	wh	Who ran away?	p	rep
+	0	누가 도망쳤대요	rq	Who says I ran away?	p	(= I didn't run away)
+	0	누가 도망치래	rq	Who on earth told you to run away?	n	(= Don't run away)
+	0	누가 도망치래	c	Sbd told you/us to run away	n	
+	0	누가 도망치랬어	rq	Who on earth has told you to run away?	n	
+	0	누가 도망치랬어	c	Sbd has told you/us to run away	n	
+돕다	0	누가 돕지	wh	Who will help you/them?	n	
+help	0	누가 돕지	c	Sbd help them	n	
+	0	누가 돕죠	wh	Who will help you/them?	p	
+	0	누가 돕죠	c	Sbd help them	p	
+	0	누가 돕는대	s	I heard sbd will help	n	
+	0	누가 돕는대	wh	Who will help me/us/you?	n	rep
+	0	누가 돕는대	rq	Who on earth says I will help you?	n	(= I won't help you)
+	0	누가 돕는대요	s	I heard sbd will help	p	
+	0	누가 돕는대요	wh	Who will help me/us/you?	p	rep
+	0	누가 돕는대요	rq	Who on earth says I will help you?	p	(= I won't help you)
+	0	누가 가서 돕지	yn	Does someone go and help?	n	aff
+	0	누가 가서 돕지	wh	Who will go and help?	n	
+	0	누가 가서 돕지	c	Sbd go and help	n	
+	0	누가 가서 돕죠	yn	Does someone go and help?	p	aff
+	0	누가 가서 돕죠	wh	Who will go and help?	p	
+	0	누가 가서 돕죠	c	Sbd go and help	p	
+도와주다	0	누가 도와준대	s	I heard sbd will help me	n	
+help	0	누가 도와준대	yn	Will someone help you/us?	n	rep
+	0	누가 도와준대	wh	Who will help you/us?	n	rep
+	0	누가 도와준대	rq	Who on earth says I will help you?	n	(= I won't help you)
+	0	누가 도와준대요	s	I heard sbd will help me/you/us	p	
+	0	누가 도와준대요	yn	Will someone help me/you/us?	p	rep
+	0	누가 도와준대요	wh	Who will help me/you/us?	p	rep
+	0	누가 도와준대요	rq	Who on earth says I will help you?	p	(= I won't help you)
+	0	누가 도와준댔어	s	I heard sbd will help me/you/us	n	
+	0	누가 도와준댔어	yn	Is sbd gonna help me/you/us?	n	rep
+	0	누가 도와준댔어	wh	Who is gonna help me/you/us?	n	
+	0	누가 도와준댔어	rq	Did anyone say I will help you?	n	(= I won't help you)
+	0	누가 도와준댔어요	s	I heard sbd will help me/you/us	p	
+	0	누가 도와준댔어요	yn	Is sbd gonna help me/you/us?	p	
+	0	누가 도와준댔어요	wh	Who is gonna help me/you/us?	p	rep
+	0	누가 도와준댔어요	rq	Did anyone say I will help you?	p	(= I won't help you)
+	0	누가 도와줄래	wh	Who'll help?	n	
+	0	누가 도와줄래	r	Could sbd help me/us?	n	
+	0	누가 도와줄래요	wh	Who'll help?	p	
+	0	누가 도와줄래요	r	Could sbd help me/us?	p	
+	0	누가 도와주나 봐	s	Sbd seems to help us/them	n	
+	0	누가 도와주나 봐	yn	Does sbd help you?	n	aff
+	0	누가 도와주나 봐	rc	See who's helping you	n	(= I won't help you)
+	0	누가 너 도와준대	s	I heard sbd will help you	n	
+	0	누가 너 도와준대	yn	Is sbd gonna help you?	n	rep
+	0	누가 너 도와준대	rq	Who on earth says I will help you?	n	(= I won't help you)
+	0	누가 당신 도와준대	s	I heard sbd will help you	n	
+	0	누가 당신 도와준대	rq	Who on earth says I will help you?	n	(= I won't help you)
+	0	누가 당신 도와준대요	s	I heard sbd will help you	p	
+	0	누가 당신 도와준대요	rq	Who on earth says I will help you?	p	(= I won't help you)
+	0	누가 나 도와준대	s	I heard sbd will help me	n	
+	0	누가 나 도와준대	yn	Is sbd gonna help me?	n	rep
+	0	누가 저 도와준대요	s	I heard sbd will help me	p	
+	0	누가 저 도와준대요	yn	Is sbd gonna help me?	p	rep
+돌아오다	0	누가 돌아왔어	s	Sbd came back	n	
+come back	0	누가 돌아왔어	yn	Did sbd come back?	n	
+	0	누가 돌아왔어	wh	Who came back?	n	
+	0	누가 돌아왔어요	s	Sbd came back	p	
+	0	누가 돌아왔어요	yn	Did sbd come back?	p	
+	0	누가 돌아왔어요	wh	Who came back?	p	
+	0	누가 돌아오래	yn	Did sbd tell you to come back?	n	
+	0	누가 돌아오래	rq	Who on earth told you to come back?	n	(= You shouldn't have come back)
+	0	누가 돌아오래	c	Sbd told you to come back	n	
+	0	누가 돌아오래요	yn	Did sbd tell you to come back?	p	
+	0	누가 돌아오래요	rq	Who on earth told you to come back?	p	
+	0	누가 돌아오래요	c	Sbd told you to come back	p	
+	0	누가 돌아온대	s	I heard sbd will come back	n	
+	0	누가 돌아온대	yn	Will sbd come back?	n	rep
+	0	누가 돌아온대	rq	Who the hell says I'll come back ?	n	(= I won't come back)
+	0	누가 돌아온대요	s	I heard sbd will come back	p	
+	0	누가 돌아온대요	yn	Will sbd come back?	p	rep
+	0	누가 돌아온대요	rq	Who the hell says I'll come back ?	p	(= I won't come back)
+	0	누가 돌아오나 봐	s	Sbd seems to be coming back	n	
+	0	누가 돌아오나 봐	yn	Is sbd coming back?	n	aff
+	0	누가 돌아오나 봐	rc	See who comes back	n	(= I won't come back)
+되돌아오다	0	누가 되돌아왔어	s	Sbd came back	n	
+come back	0	누가 되돌아왔어	wh	Who came back?	n	
+	0	누가 되돌아왔어요	s	Sbd came back	p	
+	0	누가 되돌아왔어요	wh	Who came back?	p	
+들어가다	0	누구 들어갔어	s	Sbd went in	n	
+go into	0	누구 들어갔어	yn	Did sbd go in?	n	
+	0	누구 들어갔어	wh	Who went in?	n	
+	0	누구 들어갔어요	s	Sbd went in	p	
+	0	누구 들어갔어요	yn	Did sbd go in?	p	
+	0	누구 들어갔어요	wh	Who went in?	p	
+	0	누가 들어갔어	s	Sbd went in	n	
+	0	누가 들어갔어	yn	Did sbd go in?	n	
+	0	누가 들어갔어	wh	Who went in?	n	
+	0	누가 들어갔어요	s	Sbd went in	p	
+	0	누가 들어갔어요	yn	Did sbd go in?	p	
+	0	누가 들어갔어요	wh	Who went in?	p	
+따라가다	0	누가 따라와	s	Sbd is following me/us	n	
+follow	0	누가 따라와	yn	Is sbd following me/us?	n	
+	0	누가 따라와	wh	Who is following us?	n	
+	0	누가 따라와	c	Sbd follow us	n	
+	0	누가 따라와요	s	Sbd is following me/us	p	
+	0	누가 따라와요	yn	Is sbd following me/us?	p	
+	0	누가 따라와요	wh	Who is following us?	p	
+	0	누가 따라와요	c	Sbd follow us	p	
+	0	누가 따라가나 봐	s	Sbd seems to be following them	n	
+	0	누가 따라가나 봐	yn	Is someone following you/them?	n	aff
+	0	누가 따라가나 봐	c	Look who follows them	n	
+	0	누가 따라가나 봐	rc	See who follows	n	(= I won't follow )
+	0	누가 따라와 줄래	wh	Who'll follow me/us?	n	
+	0	누가 따라와 줄래	r	Could sbd please follow me/us?	n	
+	0	누가 따라와 줄래요	wh	Who'll follow me/us?	p	
+	0	누가 따라와 줄래요	r	Could sbd please follow me/us?	p	
+	0	누가 나 따라와	s	Sbd is following me	n	
+	0	누가 나 따라와	yn	Is sbd following me?	n	
+	0	누가 나 따라와	c	Sbd is following me	n	
+	0	누가 나 따라와요	s	Sbd is following me	p	
+	0	누가 나 따라와요	yn	Is sbd follow me?	p	
+	0	누가 나 따라와요	c	Sbd follow me	p	
+	0	누가 나 따라오고 있어	s	Sbd is following me	n	
+	0	누가 나 따라오고 있어	yn	Is sbd following me?	n	
+	0	누가 나 따라오고 있어요	s	Sbd is following me	p	
+	0	누가 나 따라오고 있어요	yn	Is sbd following me?	p	
+뛰어들다	0	누가 뛰어들었어	s	Sbd jumped in	n	
+jump in	0	누가 뛰어들었어	yn	Did sbd jump in?	n	
+	0	누가 뛰어들었어	wh	Who jumped in?	n	
+	0	누가 뛰어들었어요	s	Sbd jumped in	p	
+	0	누가 뛰어들었어요	yn	Did sbd jump in?	p	
+	0	누가 뛰어들었어요	wh	Who jumped in?	p	
+	0	누구 뛰어든 사람 있어	s	Sbd jumped in	n	
+	0	누구 뛰어든 사람 있어	yn	Is there sbd who jumped in?	n	
+	0	누구 뛰어든 사람 있어요	s	Sbd happened to jump in	p	
+	0	누구 뛰어든 사람 있어요	yn	Is there sbd who jumped in?	p	
+떨어지다	0	누구 떨어진 사람 있어	s	There is sbd who failed	n	
+fail	0	누구 떨어진 사람 있어	yn	Is there sbd who failed?	n	
+	0	누구 떨어진 사람 있어요	s	There is sbd who failed	p	
+	0	누구 떨어진 사람 있어요	yn	Is there sbd who failed?	p	
+	0	누가 떨어졌어	s	Sbd failed	n	
+	0	누가 떨어졌어	yn	Did sbd fail?	n	
+	0	누가 떨어졌어	wh	Who failed?	n	
+	0	누가 떨어졌어요	s	Sbd failed	p	
+	0	누가 떨어졌어요	yn	Did sbd fail?	p	
+	0	누가 떨어졌어요	wh	Who failed?	p	
+	0	누가 떨어졌대	s	I heard sbd failed	n	
+	0	누가 떨어졌대	yn	Did sbd fail?	n	rep
+	0	누가 떨어졌대	wh	Who failed?	n	rep
+	0	누가 떨어졌대	rq	Did someone ever say I failed?	n	(= I didn't fail)
+	0	누가 떨어졌대요	s	I heard sbd failed	p	
+	0	누가 떨어졌대요	yn	Did sbd fail?	p	rep
+	0	누가 떨어졌대요	wh	Who failed?	p	rep
+	0	누가 떨어졌대요	rq	Did someone ever say I failed?	p	(= I didn't fail)
+	0	누가 떨어졌나 봐	s	Sbd seems to have failed	n	
+	0	누가 떨어졌나 봐	c	See who failed	n	
+만나다	0	누가 만났대요	s	I heard sbd met them	p	
+meet	0	누가 만났대요	yn	Did sbd meet them?	p	
+	0	누가 만났대요	wh	Who met them?	p	
+	0	누가 만났대요	rq	Does anyone say I met them?	p	(= I didn't meet them)
+	0	누가 만나쟤	s	Sbd wants to meet me/us	n	
+	0	누가 만나쟤	yn	Does someone want to meet me/you/us?	n	rep
+	0	누가 만나쟤	wh	Who wants to meet me/us?	n	
+	0	누가 만나쟤	rq	Who says I want to meet you?	n	(= I don't want to meet you)
+	0	누가 만나쟤요	s	Sbd wants to meet me/us	p	
+	0	누가 만나쟤요	yn	Does someone want to meet me/you/us?	p	rep
+	0	누가 만나쟤요	wh	Who wants to meet me/us?	p	
+	0	누가 만나쟤요	rq	Who says I want to meet you?	p	(= I don't want to meet you)
+	0	누가 만나자고 했어	s	Sbd said s/he want to meet me/us	n	
+	0	누가 만나자고 했어	yn	Did someone tell you/us to meet?	n	
+	0	누가 만나자고 했어	wh	Who told you/us to meet?	n	
+	0	누가 만나자고 했어	rq	Who on earth said to meet them?	n	(= We shouldn't have met them)
+	0	누가 만나자고 했어요	s	Sbd said s/he want to meet me/us	p	
+	0	누가 만나자고 했어요	yn	Did someone tell you/us to meet?	p	
+	0	누가 만나자고 했어요	wh	Who told you/us to meet?	p	
+	0	누가 만나자고 했어요	rq	Who on earth said to meet them?	p	(= We shouldn't have met them)
+	0	누가 만나고 싶대	s	I heard sbd wants to meet me/you/us	n	
+	0	누가 만나고 싶대	wh	Who wants to meet me/you/us?	n	rep
+	0	누가 만나고 싶대	rq	Who says I want to meet you?	n	(= I don't want to meet you)
+	0	누가 만나고 싶대요	s	I heard sbd wants to meet me/you/us	p	
+	0	누가 만나고 싶대요	wh	Who wants to meet me/you/us?	p	rep
+	0	누가 만나고 싶대요	rq	Who says I want to meet you?	p	(= I don't want to meet you)
+	0	누가 걔 만났대	s	I heard sbd met him/her	n	
+	0	누가 걔 만났대	yn	Did sbd meet him/her?	n	rep
+	0	누가 걔 만났대	wh	Who met him/her?	n	rep
+	0	누가 걔 만났대	rq	Does anyone ever say I met him/her?	n	(= I didn't him/her)
+	0	누가 걔 만났대요	s	I heard sbd met him/her	p	
+	0	누가 걔 만났대요	yn	Did sbd meet him/her?	p	rep
+	0	누가 걔 만났대요	wh	Who met him/her?	p	rep
+	0	누가 걔 만났대요	rq	Does anyone ever say I met him/her?	p	(= I didn't him/her)
+	0	누가 너 만나고 싶대	s	Sbd wants to meet you	n	
+	0	누가 너 만나고 싶대	yn	Does somebody want to meet you?	n	rep
+	0	누가 너 만나고 싶대	rq	Who says I want to meet you?	n	(= I don't want to meet you)
+	0	누가 당신 만나고 싶대요	s	Sbd wants to meet you	p	
+	0	누가 당신 만나고 싶대요	yn	Does somebody want to meet you?	p	rep
+	0	누가 당신 만나고 싶대요	rq	Who says I want to meet you?	p	(= I don't want to meet you)
+	0	누가 나 만나고 싶대	s	I heard sbd wants to meet me	n	
+	0	누가 나 만나고 싶대	yn	Does somebody want to meet me?	n	rep
+	0	누가 나 만나고 싶대	wh	Who wants to meet me?	n	rep
+	0	누가 저 만나고 싶대요	s	Sbd wants to meet me	p	
+	0	누가 저 만나고 싶대요	yn	Does somebody want to meet me?	p	rep
+	0	누가 저 만나고 싶대요	wh	Who wants to meet me?	p	rep
+	0	누구 만나려고	s	I'm meeting sbd	n	
+	0	누구 만나려고	yn	Are you meeting sbd?	n	
+	0	누구 만나려고	wh	Who are you meeting?	n	
+	0	누구 만나려고요	s	I'm meeting sbd	p	
+	0	누구 만나려고요	yn	Are you meeting sbd?	p	
+	0	누구 만나려고요	wh	Who are you meeting?	p	
+	0	누구 만날 사람 있어	s	There's sbd I'm going to meet	n	
+	0	누구 만날 사람 있어	yn	Are you going to meet sbd?	n	
+	0	누구 만날 사람 있어요	s	There's sbd I'm going to meet	p	
+	0	누구 만날 사람 있어요	yn	Are you going to meet sbd?	p	
+	0	누구 만났대	s	I heard they met sbd	n	
+	0	누구 만났대	yn	Did they meet sbd?	n	rep
+	0	누구 만났대	wh	Who did they meet?	n	rep
+	0	누구 만났대요	s	I heard they met sbd	p	
+	0	누구 만났대요	yn	Did they meet sbd?	p	rep
+	0	누구 만났대요	wh	Who did they meet?	p	rep
+	0	누구 만났지	s	I met sbd	n	
+	0	누구 만났지	wh	Who did I/you/we meet?	n	
+	0	누구 만났지	rq	Didn't you meet sbd?	n	(= I bet you met sbd)
+	0	누구 만났죠	s	I met sbd	p	
+	0	누구 만났죠	wh	Who did I/you/we meet?	p	
+	0	누구 만났죠	rq	Didn't you meet sbd?	p	(= I bet you met sbd)
+말하다	0	누가 말했어	s	Sbd said sth	n	
+say, tell	0	누가 말했어	yn	Did sbd say sth?	n	
+	0	누가 말했어	wh	Who said sth?	n	
+	0	누가 말했어요	s	Sbd said sth	p	
+	0	누가 말했어요	yn	Did sbd say sth?	p	
+	0	누가 말했어요	wh	Who said sth?	p	
+	0	누가 말했대	s	I heard that sbd said sth	n	
+	0	누가 말했대	yn	Did sbd say sth?	n	rep
+	0	누가 말했대	wh	Who said sth?	n	rep
+	0	누가 말했대	rq	Has anyone ever told you I said sth?	n	(= I didn't say)
+	0	누가 말해주나 봐	s	Sbd seems to tell us	p	
+	0	누가 말해주나 봐	yn	Does sbd tell you?	p	aff
+	0	누가 말해주나 봐	rc	See who's telling you	p	(= I won't tell you)
+	0	누군지 말해	yn	Shall I tell you who they are?	n	
+	0	누군지 말해	c	Tell me who they are	n	
+	0	누군지 말해요	yn	Shall I tell you who they are?	p	
+	0	누군지 말해요	c	Tell me who they are	p	
+	0	누군지 말해줘	yn	Shall I tell you who they are?	n	
+	0	누군지 말해줘	c	Tell me who they are	n	
+	0	누군지 말해줘요	yn	Shall I tell you who they are?	p	
+	0	누군지 말해줘요	c	Tell me who they are	p	
+	0	누군지 말해줄래	s	I will tell you who they are	n	
+	0	누군지 말해줄래	r	Could you please tell me who they are?	n	
+	0	누군지 말해줄래요	s	I will tell you who they are	p	
+	0	누군지 말해줄래요	r	Could you please tell me who they are?	p	
+	0	누군지 말해주려고	s	I'm going to tell you who they are	n	
+	0	누군지 말해주려고	yn	Are you going to tell me who they are?	n	aff
+	0	누군지 말해주려고요	s	I'm going to tell you who they are	p	
+	0	누군지 말해주려고요	yn	Are you going to tell me who they are?	p	
+먹다	0	누가 먹어	yn	Is sbd eating sth?	n	
+eat	0	누가 먹어	wh	Who is eating sth?	n	
+	0	누가 먹어	rq	Who on earth eats this?	n	(= I won't eat this)
+	0	누가 먹어	c	Sbd eat this	n	
+	0	누가 먹어요	yn	Is sbd eating sth?	p	
+	0	누가 먹어요	wh	Who is eating sth?	p	
+	0	누가 먹어요	rq	Who the hell eats this?	p	(= I won't eat this)
+	0	누가 먹어요	c	Sbd eat this	p	
+	0	누가 먹고 있어	s	Sbd is eating	n	
+	0	누가 먹고 있어	yn	Is sbd eating?	n	
+	0	누가 먹고 있어	wh	Who's eating?	n	
+	0	누가 먹고 있어	c	Sbd keep eating	n	
+	0	누가 먹고 있어요	s	Sbd is eating	p	
+	0	누가 먹고 있어요	yn	Is sbd eating?	p	
+	0	누가 먹고 있어요	wh	Who's eating?	p	
+	0	누가 먹고 있어요	c	Sbd keep eating	p	
+	0	누가 먹는대	s	I heard that sbd eats it	n	
+	0	누가 먹는대	yn	Does sbd eat it?	n	rep
+	0	누가 먹는대	wh	Who eats it?	n	rep
+	0	누가 먹는대	rq	Who on earth says I eat it?	n	(= I won't eat)
+	0	누가 먹는대요	s	I heard that sbd eats it	p	
+	0	누가 먹는대요	yn	Does sbd eat it?	p	
+	0	누가 먹는대요	wh	Who eats it?	p	
+	0	누가 먹는대요	rq	Who on earth says I eat it?	p	(= I won't eat)
+	0	누가 먹을거야	s	Sbd is gonna eat this	n	
+	0	누가 먹을거야	yn	Is anybody eating this?	n	
+	0	누가 먹을거야	wh	Who's gonna eat this?	n	
+	0	누가 먹을 거예요	s	Sbd is gonna eat this	p	
+	0	누가 먹을 거예요	yn	Is anybody eating this?	p	
+	0	누가 먹을 거예요	wh	Who's gonna eat this?	p	
+	0	누가 먹지	yn	Is anybody eating this?	n	aff
+	0	누가 먹지	wh	Who's gonna eat this?	n	
+	0	누가 먹지	c	Sbd eat this	n	
+	0	누가 먹죠	yn	Is anybody eating this?	p	aff
+	0	누가 먹죠	wh	Who's gonna eat this?	p	
+	0	누가 먹죠	c	Sbd eat this	p	
+	0	누가 먹쟤	s	Sbd suggested eating sth	n	
+	0	누가 먹쟤	yn	Did sbd suggest eating sth?	n	
+	0	누가 먹쟤	wh	Who suggested eating sth?	n	
+	0	누가 먹쟤	rq	Have I ever suggested eating together?	n	(= Let's not eat together)
+	0	누가 먹쟤요	s	Sbd suggested eating sth	p	
+	0	누가 먹쟤요	yn	Did sbd suggest eating sth?	p	
+	0	누가 먹쟤요	wh	Who suggested eating sth?	p	
+	0	누가 먹쟤요	rq	Have I ever suggested eating together?	p	(= Let's not eat together)
+	0	누가 먹쟸어	s	Sbd suggested eating sth	n	
+	0	누가 먹쟸어	yn	Did sbd suggest eating sth?	n	
+	0	누가 먹쟸어	wh	Who suggested eating sth?	n	
+	0	누가 먹쟸어	rq	Have I ever suggested eating together?	n	(= Let's not eat together)
+	0	누가 먹쟸어요	s	Sbd suggested eating sth	p	
+	0	누가 먹쟸어요	yn	Did sbd suggest eating sth?	p	
+	0	누가 먹쟸어요	wh	Who suggested eating sth?	p	
+	0	누가 먹쟸어요	rq	Have I ever suggested eating together?	p	(= Let's not eat together)
+	0	누가 와서 먹어	wh	Who comes and eats?	n	
+	0	누가 와서 먹어	rq	Who on earth will come and eat?	n	(= Nobody will come and eat this)
+	0	누가 와서 먹어	c	Sbd come and eat	n	
+	0	누가 와서 먹어요	wh	Who comes and eats?	p	
+	0	누가 와서 먹어요	rq	Who on earth will come and eat?	p	(= Nobody will come and eat this)
+	0	누가 와서 먹어요	c	Sbd come and eat	p	
+	0	누가 와서 먹지	s	Sbd will come and eat	n	
+	0	누가 와서 먹지	yn	Sbd comes and eats, right?	n	aff
+	0	누가 와서 먹지	c	Sbd come and eat	n	
+	0	누가 와서 먹죠	s	Sbd will come and eat	p	
+	0	누가 와서 먹죠	yn	Sbd comes and eats, right?	p	aff
+	0	누가 와서 먹죠	c	Sbd come and eat	p	
+멈추다	0	누가 멈췄어	s	Sbd paused	n	
+pause	0	누가 멈췄어	yn	Did sbd pause?	n	
+	0	누가 멈췄어	wh	Who paused?	n	
+	0	누가 멈췄어요	s	Sbd paused	p	
+	0	누가 멈췄어요	yn	Did sbd pause?	p	
+	0	누가 멈췄어요	wh	Who paused?	p	
+	0	누가 멈췄대	s	I heard sbd paused	n	
+	0	누가 멈췄대	yn	Did sbd pause?	n	rep
+	0	누가 멈췄대	wh	Who paused?	n	rep
+	0	누가 멈췄대요	s	I heard sbd paused	p	
+	0	누가 멈췄대요	yn	Did sbd pause?	p	rep
+	0	누가 멈췄대요	wh	Who paused?	p	rep
+모르다	0	누군지 모르겠어	s	I don't know who they are	n	
+don't know	0	누군지 모르겠어	rq	Don't you know who they are?	n	(= I bet you know who they are)
+	0	누군지 모르겠어요	s	I don't know who they are	p	
+	0	누군지 모르겠어요	rq	Don't you know who they are?	p	(= I bet you know who they are)
+못하다	0	누가 못한대	s	I heard sbd can't do sth	n	
+can't, be bad at	0	누가 못한대	yn	Is there anybody who can't join?	n	rep
+	0	누가 못한대	wh	Who can't join?	n	rep
+	0	누가 못한대	rq	Who on earth says I can't do that?	n	(= I'm/you're not bad at it)
+	0	누가 못한대요	s	I heard sbd can't do sth	p	
+	0	누가 못한대요	yn	Is there anybody who can't join?	p	rep
+	0	누가 못한대요	wh	Who can't join?	p	rep
+	0	누가 못한대요	rq	Who on earth says I can't do that?	p	(= I'm/you're not bad at it)
+	0	누가 못하겠대	s	I heard sbd say s/he can't join	n	
+	0	누가 못하겠대	yn	Is there anybody who say s/he can't join?	n	rep
+	0	누가 못하겠대	wh	Who says s/he can't join?	n	rep
+	0	누가 못하겠대	rq	Have I ever said I can't do it?	n	(= I can do it)
+	0	누가 못하겠대요	s	I heard sbd say s/he can't join	p	
+	0	누가 못하겠대요	yn	Is there anybody who say s/he can't join?	p	rep
+	0	누가 못하겠대요	wh	Who says s/he can't join?	p	rep
+	0	누가 못하겠대요	rq	Have I ever said I can't do it?	p	(= I can do it)
+	0	누가 너 못한대	s	Sbd told me you are bad at it	n	
+	0	누가 너 못한대	yn	Did sbd say you are bad at it?	n	rep
+	0	누가 너 못한대	wh	Who says you are bad at it?	n	rep
+	0	누가 너 못한대	rq	Did anyone ever say you are bad at it?	n	(= You are not bad at it)
+	0	누가 당신 못한대요	s	Sbd told me you are bad at it	p	
+	0	누가 당신 못한대요	yn	Did sbd say you are bad at it?	p	rep
+	0	누가 당신 못한대요	wh	Who says you are bad at it?	p	rep
+	0	누가 당신 못한대요	rq	Did anyone ever say you are bad at it?	p	(= You are not bad at it)
+	0	누가 나 못한대	s	Sbd told me I am bad at it	n	
+	0	누가 나 못한대	yn	Did sbd say I am bad at it?	n	rep
+	0	누가 나 못한대	wh	Who says I am bad at it?	n	rep
+	0	누가 저 못한대요	s	Sbd told me I am bad at it	p	
+	0	누가 저 못한대요	yn	Did sbd say I am bad at it?	p	rep
+	0	누가 저 못한대요	wh	Who says I am bad at it?	p	rep
+무시하다	0	누가 무시해	s	Sbd ignores me/us	n	
+ignore	0	누가 무시해	yn	Does anybody ignore us?	n	
+	0	누가 무시해	wh	Who ignores us?	n	
+	0	누가 무시해요	s	Sbd ignores me/us	p	
+	0	누가 무시해요	yn	Does anybody ignore us?	p	
+	0	누가 무시해요	wh	Who ignores us?	p	
+	0	누가 무시한대	s	I heard sbd ignores us	n	
+	0	누가 무시한대	yn	Does anybody ignore us?	n	rep
+	0	누가 무시한대	wh	Who ignores us?	n	rep
+	0	누가 무시한대	rq	Who on earth says I ignore you?	n	(= I don't ignore you)
+	0	누가 무시한대요	s	I heard sbd ignores us	p	
+	0	누가 무시한대요	yn	Does anybody ignore us?	p	rep
+	0	누가 무시한대요	wh	Who ignores us?	p	rep
+	0	누가 무시한대요	rq	Who the hell says I ignore you?	p	(= I don't ignore you)
+	0	누가 너 무시해	s	Sbd ignores you	n	
+	0	누가 너 무시해	yn	Does anybody ignore you?	n	
+	0	누가 너 무시해	wh	Who ignores you?	n	
+	0	누가 당신 무시해	s	Sbd ignores you	n	
+	0	누가 당신 무시해	yn	Does anybody ignore you?	n	
+	0	누가 당신 무시해	wh	Who ignores you?	n	
+	0	누가 당신 무시해요	s	Sbd ignores you	p	
+	0	누가 당신 무시해요	yn	Does anybody ignore you?	p	
+	0	누가 당신 무시해요	wh	Who ignores you?	p	
+	0	누가 나 무시해	s	Sbd ignores me	n	
+	0	누가 나 무시해	yn	Does anybody ignore me?	n	
+	0	누가 나 무시해	wh	Who ignores me?	n	
+	0	누가 저 무시해요	s	Sbd ignores me	p	
+	0	누가 저 무시해요	yn	Does anybody ignore me?	p	
+	0	누가 저 무시해요	wh	Who ignores me?	p	
+반대하다	0	누가 반대해	s	Sbd disagrees with me/us	n	
+be against of	0	누가 반대해	yn	Does anybody disagree with you/us?	n	
+disagree가 더 나을수도 (be against는 뭔가 적대시하다는 느낌이 더 강해요)	0	누가 반대해	wh	Who disgarees with you/us?	n	
+	0	누가 반대해요	s	Sbd disagrees with me/us	p	
+	0	누가 반대해요	yn	Does anybody disagree with you/us?	p	
+	0	누가 반대해요	wh	Who disgarees with you/us?	p	
+	0	누가 반대한대	s	I heard sbd disagrees with me/us	n	
+	0	누가 반대한대	wh	Who disagrees with you/us?	n	rep
+	0	누가 반대한대	rq	Has anybody ever said I disagree with you?	n	(= I am not against you)
+	0	누가 반대한대요	s	I heard sbd disagrees with me/us	p	
+	0	누가 반대한대요	wh	Who disagrees with you/us?	p	rep
+	0	누가 반대한대요	rq	Has anybody ever said I disagree with you?	p	(= I am not against you)
+받다	0	누가 받아	yn	Will sbd receive sth	n	
+receive	0	누가 받아	wh	Who will receive it?	n	
+	0	누가 받아	c	Sbd please receive it	n	
+	0	누가 받아요	yn	Will sbd receive sth	p	
+	0	누가 받아요	wh	Who will receive it?	p	
+	0	누가 받아요	c	Sbd please receive it	p	
+	0	누가 받지	yn	Sbd will receive it, right?	n	aff
+	0	누가 받지	wh	Who will receive it?	n	
+	0	누가 받지	c	Sbd has got to receive it	n	
+	0	누가 받죠	yn	Sbd will receive it, right?	p	
+	0	누가 받죠	wh	Who'll receive it?	p	
+	0	누가 받죠	c	Sbd has got to receive it	p	
+	0	누가 받아와	wh	Who'll pick it up?	n	
+	0	누가 받아와	c	Sbd pick it up	n	
+	0	누가 받아와요	wh	Who'll pick it up?	p	
+	0	누가 받아와요	c	Sbd pick it up	p	
+	0	누가 받아오래	wh	Who was mentioned to pick it up?	n	rep
+	0	누가 받아오래	rq	Has anyone ever told you to pick it up?	n	(= You don't have to receive it)
+	0	누가 받아오래	c	I was told that sbd should pick it up	n	
+	0	누가 받아오래요	wh	Who was mentioned to pick it up?	p	rep
+	0	누가 받아오래요	rq	Has anyone ever told you to pick it up?	p	(= You don't have to receive it)
+	0	누가 받아오래요	c	I was told that sbd should pick it up	p	
+	0	누가 받아올래	wh	Who'll pick it up?	n	
+	0	누가 받아올래	r	Could sbd pick it up	n	
+	0	누가 받아올래요	wh	Who'll pick it up?	p	
+	0	누가 받아올래요	r	Could sbd pick it up	p	
+	0	누가 가서 받아	wh	Who'll go get it?	n	
+	0	누가 가서 받아	c	Sbd go get it	n	
+	0	누가 가서 받아요	wh	Who'll go get it?	p	
+	0	누가 가서 받아요	c	Sbd go get it	p	
+	0	누가 가서 받아올래	wh	Who'll go get it?	n	
+	0	누가 가서 받아올래	r	Could sbd go get it	n	
+	0	누가 가서 받아올래요	wh	Who'll go get it?	p	
+	0	누가 가서 받아올래요	r	Could sbd go get it	p	
+	0	누가 가서 받지	wh	Who's gonna go get it?	n	
+	0	누가 가서 받지	c	Sbd go get it	n	
+	0	누가 가서 받죠	wh	Who's gonna go get it?	p	
+	0	누가 가서 받죠	c	Sbd go get it	p	
+	0	누가 가서 받는대	s	I heard sbd will go get it	n	
+	0	누가 가서 받는대	yn	Will anybody go get it?	n	rep
+	0	누가 가서 받는대	wh	Who's gonna go get it?	n	rep
+	0	누가 가서 받는대	rq	Has anyone said I'll go and get it?	n	(= I won't go receive it)
+	0	누가 가서 받는대요	s	I heard sbd will go get it	p	
+	0	누가 가서 받는대요	yn	Will anybody go get it?	p	rep
+	0	누가 가서 받는대요	wh	Who's gonna go get it?	p	rep
+	0	누가 가서 받는대요	rq	Has anyone said I'll go and get it?	p	(= I won't go receive it)
+	0	누구한테 받았어	s	I've received it from sbd	n	
+	0	누구한테 받았어	yn	Did you receive it from sbd?	n	
+	0	누구한테 받았어	wh	From whom did you receive it?	n	
+	0	누구한테 받았어요	s	I've received it from sbd	p	
+	0	누구한테 받았어요	yn	Did you receive it from sbd?	p	
+	0	누구한테 받았어요	wh	From who did you receive it?	p	
+발표하다	0	누가 발표해	s	Sbd gives a presentation	n	
+give a presentation	0	누가 발표해	yn	Does sbd give a presentation?	n	
+	0	누가 발표해	wh	Who gives a presentation?	n	
+	0	누가 발표해	c	Sbd give a presentation	n	
+	0	누가 발표해요	s	Sbd gives a presentation	p	
+	0	누가 발표해요	yn	Does sbd give a presentation?	p	
+	0	누가 발표해요	wh	Who gives a presentation?	p	
+	0	누가 발표해요	c	Sbd give a presentation	p	
+	0	누구 발표해	s	Sbd is giving a presentation	n	
+	0	누구 발표해	yn	Is anybody giving a presentation?	n	
+	0	누구 발표해	wh	Who's gonna give a presentation?	n	
+	0	누구 발표해	c	Sbd should give a presentation	n	
+	0	누구 발표해요	s	Sbd is giving a presentation	p	
+	0	누구 발표해요	yn	Is anybody giving a presentation?	p	
+	0	누구 발표해요	wh	Who's gonna give a presentation?	p	
+	0	누구 발표해요	c	Sbd should give a presentation	p	
+	0	누구 발표하는 사람 있어	s	There's sbd who's gonna give a presentation	n	
+	0	누구 발표하는 사람 있어	yn	Is there anybody giving a presentation?	n	
+	0	누구 발표하는 사람 있어요	s	There's sbd who's gonna give a presentation	p	
+	0	누구 발표하는 사람 있어요	yn	Is there anybody giving a presentation?	p	
+방해하다	0	누가 방해해	s	Sbd is interrupting	n	
+interrupt	0	누가 방해해	yn	Is anybody interrupting?	n	
+	0	누가 방해해	wh	Who's interrupting?	n	
+	0	누가 방해해요	s	Sbd is interrupting	p	
+	0	누가 방해해요	yn	Is anybody interrupting?	p	
+	0	누가 방해해요	wh	Who's interrupting?	p	
+	0	누가 방해했어	s	Sbd interrupted	n	
+	0	누가 방해했어	yn	Did anybody interrupt?	n	
+	0	누가 방해했어	wh	Who interrupted?	n	
+	0	누가 방해했어요	s	Sbd interrupted	p	
+	0	누가 방해했어요	yn	Did anybody interrupt?	p	
+	0	누가 방해했어요	wh	Who interrupted?	p	
+버리다	0	누가 버려	wh	Who's gonna throw it away?	n	
+throw away	0	누가 버려	c	Sbd throw it away	n	
+	0	누가 버려요	wh	Who's gonna throw it away?	p	
+	0	누가 버려요	c	Sbd throw it away	p	
+	0	누가 버리래	yn	Did sbd tell you to throw it away?	n	rep
+	0	누가 버리래	rq	Has anybody ever told you to throw it away?	n	(= You don't have to throw it away)
+	0	누가 버리래	c	Sbd told you to throw it away	n	
+	0	누가 버리래요	yn	Did sbd tell you to throw it away?	p	rep
+	0	누가 버리래요	rq	Has anybody ever told you to throw it away?	p	(= You don't have to throw it away)
+	0	누가 버리래요	c	Sbd told you to throw it away	p	
+	0	누가 버리쟤	yn	Did anybody tell us to throw it away?	n	rep
+	0	누가 버리쟤	rq	Has anybody ever told you to throw it away?	n	(= You don't have to throw it away)
+	0	누가 버리쟤	c	Sbd told us to throw it away	n	
+별로이다	0	누가 너 별로래	s	I heard from sbd they don't like you	n	
+don't like much	0	누가 너 별로래	yn	Did anybody tell you they don't like you?	n	rep
+	0	누가 너 별로래	wh	Who told you they don't like you?	n	rep
+	0	누가 당신 별로래요	s	I heard from sbd they don't like you	p	
+	0	누가 당신 별로래요	yn	Did anybody tell you they don't like you?	p	rep
+	0	누가 당신 별로래요	wh	Who told you they don't like you?	p	rep
+	0	누가 나 별로래	s	Sbd told me they don't like me	n	
+	0	누가 나 별로래	yn	Did sbd tell you they don't like me?	n	rep
+	0	누가 나 별로래	wh	Who says she/he doesn't like me?	n	rep
+	0	누가 저 별로래요	s	Sbd told me they don't like me	p	
+	0	누가 저 별로래요	yn	Did sbd tell you they don't like me?	p	rep
+	0	누가 저 별로래요	wh	Who says she/he doesn't like me?	p	rep
+보내다	0	누구 보냈어	s	I sent sbd	n	
+send	0	누구 보냈어	yn	Did you send sbd?	n	
+	0	누구 보냈어	wh	Who did you send?	n	
+	0	누구 보냈어요	s	I sent sbd	p	
+	0	누구 보냈어요	yn	Did you send sbd?	p	
+	0	누구 보냈어요	wh	Who did you send?	p	
+	0	누가 보냈어	s	Sbd sent it/me	n	
+	0	누가 보냈어	yn	Did sbd send it/you?	n	
+	0	누가 보냈어	wh	Who sent it/you?	n	
+	0	누가 보냈어요	s	Sbd sent it/me	p	
+	0	누가 보냈어요	yn	Did sbd send it/you?	p	
+	0	누가 보냈어요	wh	Who sent it/you?	p	
+	0	누구한테 보냈어	s	I sent it to sbd	n	
+	0	누구한테 보냈어	yn	Did you send it to sbd?	n	
+	0	누구한테 보냈어	wh	To whom did you send it?	n	
+	0	누구한테 보냈어요	s	I sent it to sbd	p	
+	0	누구한테 보냈어요	yn	Did you send it to sbd?	p	
+	0	누구한테 보냈어요	wh	To whom did you send it?	p	
+	0	누구한테 보냈대	s	I heard they sent it to sbd	n	
+	0	누구한테 보냈대	yn	Did they send it to sbd?	n	rep
+	0	누구한테 보냈대	wh	To whom did they send it?	n	rep
+	0	누구한테 보냈대요	s	I heard they sent it to sbd	p	
+	0	누구한테 보냈대요	yn	Did they send it to sbd?	p	rep
+	0	누구한테 보냈대요	wh	To whom did they send it?	p	rep
+보다	0	누구 얼굴 보여	s	I can see someone's face	n	
+see, watch	0	누구 얼굴 보여	yn	Can you see anyone's face?	n	
+	0	누구 얼굴 보여	wh	Whose face can you see?	n	
+	0	누구 얼굴 보여요	s	I can see someone's face	p	
+	0	누구 얼굴 보여요	yn	Can you see anyone's face?	p	
+	0	누구 얼굴 보여요	wh	Whose face can you see?	p	
+	0	누가 얼굴 보쟤	s	Sbd wants to see me/you/us	n	
+	0	누가 얼굴 보쟤	yn	Does sbd want to see you/us?	n	
+	0	누구 머리가 보여	s	I can see sbd's head	n	
+	0	누구 머리가 보여	yn	Can you see anyone's head?	n	
+	0	누구 머리가 보여	wh	Whose head can you see?	n	
+	0	누구 머리가 보여요	s	I can see sbd's head	p	
+	0	누구 머리가 보여요	yn	Can you see anyone's head?	p	
+	0	누구 머리가 보여요	wh	Whose head can you see?	p	
+	0	누구 다리가 보여	s	I can see sbd's leg	n	
+	0	누구 다리가 보여	yn	Can you see anyone's leg?	n	
+	0	누구 다리가 보여	wh	Whose leg can you see?	n	
+	0	누구 다리가 보여요	s	I can see sbd's leg	p	
+	0	누구 다리가 보여요	yn	Can you see anyone's leg?	p	
+	0	누구 다리가 보여요	wh	Whose leg can you see?	p	
+	0	누구 보러 왔대	s	I heard they came here to see sbd	n	
+	0	누구 보러 왔대	yn	Did they come here to see sbd?	n	rep
+	0	누구 보러 왔대	wh	Who did they come to see?	n	rep
+	0	누구 보러 왔대요	s	I heard they came here to see sbd	p	
+	0	누구 보러 왔대요	yn	Did they come here to see sbd?	p	rep
+	0	누구 보러 왔대요	wh	Who did they come to see?	p	rep
+	0	누구 보러 간대 	s	I heard they will go and see sbd	n	
+	0	누구 보러 간대 	yn	Will they go and see sbd?	n	rep
+	0	누구 보러 간대 	wh	Who will they go and see?	n	rep
+	0	누구 보러 간대요	s	I heard they will go and see sbd	p	
+	0	누구 보러 간대요	yn	Will they go and see sbd?	p	rep
+	0	누구 보러 간대요	wh	Who will they go and see?	p	rep
+	0	누구 볼 사람 있어	s	I have sbd to meet	n	
+	0	누구 볼 사람 있어	yn	Do you have anyone to meet?	n	
+	0	누구 볼 사람 있어요	s	I have sbd to meet	p	
+	0	누구 볼 사람 있어요	yn	Do you have anyone to meet?	p	
+	0	누가 보러 왔어	s	Sbd came to see you/us	n	
+	0	누가 보러 왔어	yn	Did sbd come to see me/you/us?	n	
+	0	누가 보러 왔어	wh	Who came to see me/us?	n	
+	0	누가 보러 왔어요	s	Sbd came to see you/us	p	
+	0	누가 보러 왔어요	yn	Did sbd come to see me/you/us?	p	
+	0	누가 보러 왔어요	wh	Who came to see me/us?	p	
+	0	누가 보러 간대	s	I heard sbd will go and see it	n	
+	0	누가 보러 간대	yn	Is sbd gonna go see it?	n	rep
+	0	누가 보러 간대	wh	Who's gonna go see it?	n	rep
+	0	누가 보러 간대	rq	Does anyone say I'm gonna go see it?	n	(= I won't go see it)
+	0	누가 보러 간대요	s	I heard sbd will go and see it	p	
+	0	누가 보러 간대요	yn	Is sbd gonna go see it?	p	rep
+	0	누가 보러 간대요	wh	Who's gonna go see it?	p	rep
+	0	누가 보러 간대요	rq	Does anyone say I'm gonna go see it?	p	(= I won't go see it)
+	0	누가 보고 싶대	s	I heard sbd wants to see you/us	n	
+	0	누가 보고 싶대	yn	Does sbd want to see me/you/us?	n	rep
+	0	누가 보고 싶대	wh	Who do they want to see?	n	rep
+	0	누가 보고 싶대	rq	Who on earth says I want to see you?	n	(= I don't want to see you)
+	0	누가 보고 싶대요	s	I heard sbd wants to see you/us	p	
+	0	누가 보고 싶대요	yn	Does sbd want to see me/you/us?	p	rep
+	0	누가 보고 싶대요	wh	Who do they want to see?	p	rep
+	0	누가 보고 싶대요	rq	Who on earth says I want to see you?	p	(= I don't want to see you)
+	0	누가 보여	s	I can see sbd	n	
+	0	누가 보여	yn	Can you see anybody?	n	
+	0	누가 보여	wh	Who can you see?	n	
+	0	누가 보여요	s	I can see sbd	p	
+	0	누가 보여요	yn	Can you see anybody?	p	
+	0	누가 보여요	wh	Who can you see?	p	
+	0	누가 너 보고 싶대	s	I heard sbd wants to see you	n	
+	0	누가 너 보고 싶대	yn	Does sbd want to see you?	n	rep
+	0	누가 너 보고 싶대	rq	Has anybody said I want to see you?	n	
+	0	누가 당신 보고 싶대	s	I heard sbd wants to see you	n	
+	0	누가 당신 보고 싶대	yn	Does sbd want to see you?	n	rep
+	0	누가 당신 보고 싶대	rq	Has anybody said I want to see you?	n	
+	0	누가 당신 보고 싶대요	s	I heard sbd wants to see you	p	
+	0	누가 당신 보고 싶대요	yn	Does sbd want to see you?	p	rep
+	0	누가 당신 보고 싶대요	rq	Has anybody said I want to see you?	p	
+	0	누가 나 보고 싶대	s	I heard sbd wants to see me	n	
+	0	누가 나 보고 싶대	yn	Does anybody want to see me?	n	rep
+	0	누가 저 보고 싶대요	s	I heard sbd wants to see me	p	
+	0	누가 저 보고 싶대요	yn	Does anybody want to see me?	p	rep
+	0	누가 본대	s	I heard sbd is gonna watch it/this	n	
+	0	누가 본대	yn	Will anybody watch it?	n	rep
+	0	누가 본대	wh	Who'll watch it?	n	rep
+	0	누가 본대	rq	Who says I'm gonna watch?	n	(= I'm not gonna watch)
+	0	누가 본대요	s	I heard sbd is gonna watch it/this	p	
+	0	누가 본대요	yn	Will anybody watch it?	p	rep
+	0	누가 본대요	wh	Who'll watch it?	p	rep
+	0	누가 본대요	rq	Who says I'm gonna watch?	p	 (= I'm not gonna watch)
+	0	누가 너 보인대	s	Sbd says they can see you	n	
+	0	누가 너 보인대	yn	Does anybody say they can see you?	n	
+	0	누가 당신 보인대요	s	Sbd says they can see you	p	
+	0	누가 당신 보인대요	yn	Does anybody say they can see you?	p	
+	0	누가 나 보인대	s	I heard that sbd can see me	n	
+	0	누가 나 보인대	yn	Does anybody say they can see me?	n	
+	0	누가 저 보인대요	s	I heard that sbd can see me	p	
+	0	누가 저 보인대요	yn	Does anybody say they can see me?	p	
+	0	누군가 보여	s	I can see sbd	n	
+	0	누군가 보여	yn	Can you see anybody?	n	
+	0	누군가 보여	wh	Who do you see?	n	
+	0	누군가 보여요	s	I can see sbd	p	
+	0	누군가 보여요	yn	Can you see anybody?	p	
+	0	누군가 보여요	wh	Can you see who it is?	p	
+	0	누가 보고 싶길래	s	I just wanted to see sbd	n	
+	0	누가 보고 싶길래	wh	Who do you want to see?	n	
+	0	누가 보러 가나 봐	s	It seems that sbd will go and see it	n	
+	0	누가 보러 가나 봐	yn	Sbd will go and see it, right?	n	aff
+	0	누가 보러 가나 봐	rc	Look who goes see it	n	(= I won't go see it)
+부르다	0	누가 불러	s	Sbd is calling you	n	
+call	0	누가 불러	yn	Is anybody calling me/you/us?	n	
+	0	누가 불러	wh	Who is calling me/you/us?	n	
+	0	누가 불러요	s	Sbd is calling you	p	
+	0	누가 불러요	yn	Is anybody calling me/you/us?	p	
+	0	누가 불러요	wh	Who is calling me/you/us?	p	
+	0	누가 부른대	s	I heard sbd is calling me/us	n	
+	0	누가 부른대	yn	Is anybody calling me/us?	n	rep
+	0	누가 부른대	wh	Who is calling me/us?	n	rep
+	0	누가 부른대	rq	Who says we'll call you?	n	(= We won't call you)
+	0	누가 부른대요	s	I heard sbd is calling me/us	p	
+	0	누가 부른대요	yn	Is anybody calling me/us?	p	rep
+	0	누가 부른대요	wh	Who is calling me/us?	p	rep
+	0	누가 부른대요	rq	Who says we'll call you?	p	(= We won't call you)
+	0	누가 불렀대	s	I heard sbd called them	n	
+	0	누가 불렀대	yn	Did anybody call them?	n	rep
+	0	누가 불렀대	wh	Who called them?	n	rep
+	0	누가 불렀대	rq	Has anybody said we called you?	n	(= We didn't call you)
+	0	누가 불렀대요	s	I heard sbd called them	p	
+	0	누가 불렀대요	yn	Did anybody call them?	p	rep
+	0	누가 불렀대요	wh	Who called them?	p	rep
+	0	누가 불렀대요	rq	Has anybody said we called you?	p	(= We didn't call you)
+	0	누가 부르나 봐	s	It seems that sbd is calling you/us	n	
+	0	누가 부르나 봐	yn	Sbd is calling you, right?	n	aff
+	0	누가 부르나 봐	rc	See who calls for you.	n	(= I won't call for you)
+불다	0	누가 불었어	s	Sbd confessed	n	
+confess	0	누가 불었어	yn	Did anybody confess?	n	
+	0	누가 불었어	wh	Who confessed?	n	
+	0	누가 불었어요	s	Sbd confessed	p	
+	0	누가 불었어요	yn	Did anybody confess?	p	
+	0	누가 불었어요	wh	Who confessed?	p	
+	0	누가 불었대	s	I heard sbd confessed	n	
+	0	누가 불었대	yn	Did anybody confess?	n	rep
+	0	누가 불었대	wh	Who confessed?	n	rep
+	0	누가 불었대요	s	I heard sbd confessed	p	
+	0	누가 불었대요	yn	Did anybody confess?	p	rep
+	0	누가 불었대요	wh	Who confessed?	p	rep
+사귀다	0	누구 사귀어	s	I'm dating sbd	n	
+go out with	0	누구 사귀어	yn	Are you dating sbd?	n	
+	0	누구 사귀어	wh	Who are you dating?	n	
+	0	누구 사귀어요	s	I'm dating sbd	p	
+	0	누구 사귀어요	yn	Are you dating sbd?	p	
+	0	누구 사귀어요	wh	Who are you dating?	p	
+	0	누구 사귀고 있어	s	I'm currently dating sbd	n	
+	0	누구 사귀고 있어	yn	Are you dating anybody?	n	
+	0	누구 사귀고 있어	wh	Who are you dating these days?	n	
+	0	누구 사귀고 있어요	s	I'm currently dating sbd	p	
+	0	누구 사귀고 있어요	yn	Are you dating anybody?	p	
+	0	누구 사귀고 있어요	wh	Who are you dating these days?	p	
+	0	누구 사귀는 사람 있어	s	I'm currently dating sbd	n	
+	0	누구 사귀는 사람 있어	yn	Are you currently dating sbd?	n	
+	0	누구 사귀는 사람 있어요	s	I'm currently dating sbd	p	
+	0	누구 사귀는 사람 있어요	yn	Are you currently dating sbd?	p	
+	0	누구 사귀는 사람 있대	s	I heard that s/he is currently dating sbd	n	
+	0	누구 사귀는 사람 있대	yn	Is s/he currently dating sbd?	n	rep
+	0	누구 사귀는 사람 있대요	s	I heard that s/he is currently dating sbd	p	
+	0	누구 사귀는 사람 있대요	yn	Is s/he currently dating sbd?	p	rep
+	0	누구 사귄대	s	I heard that s/he is dating sbd	n	
+	0	누구 사귄대	yn	Is s/he dating sbd?	n	rep
+	0	누구 사귄대	wh	Who is s/he dating?	n	rep
+	0	누구 사귄대요	s	I heard that s/he is dating sbd	p	
+	0	누구 사귄대요	yn	Is s/he dating sbd?	p	rep
+	0	누구 사귄대요	wh	Who is s/he dating?	p	rep
+	0	누구랑 사귄대	s	I heard that s/he is dating sbd	n	
+	0	누구랑 사귄대	yn	Is s/he dating sbd?	n	rep
+	0	누구랑 사귄대	wh	Who is s/he dating?	n	rep
+	0	누구랑 사귄대요	s	I heard that s/he is dating sbd	p	
+	0	누구랑 사귄대요	yn	Is s/he dating sbd?	p	rep
+	0	누구랑 사귄대요	wh	Who is s/he dating?	p	rep
+상관 없다	0	누구든 상관 없어	s	I don't care whoever it is	n	
+don't care	0	누구든 상관 없어	yn	Do you not care whoever it is?	n	
+	0	누구든 상관 없어요	s	I don't care whoever it is	p	
+	0	누구든 상관 없어요	yn	Do you not care whoever it is?	p	
+	0	누가 되든 상관 없어	s	I don't care whoever is elected	n	
+	0	누가 되든 상관 없어	yn	Do you not care whoever is elected?	n	
+	0	누가 되든 상관 없어요	s	I don't care whoever is elected	p	
+	0	누가 되든 상관 없어요	yn	Do you not care whoever is elected?	p	
+	0	누가 먹어도 상관 없어	s	I don't care whoever eats	n	
+	0	누가 먹어도 상관 없어	yn	Do you not care whoever eats?	n	
+	0	누가 먹어도 상관 없어요	s	I don't care whoever eats	p	
+	0	누가 먹어도 상관 없어요	yn	Do you not care whoever eats?	p	
+	0	누가 오든 상관 없어	s	I don't care whoever comes	n	
+	0	누가 오든 상관 없어	yn	Do you not care whoever comes?	n	
+	0	누가 오든 상관 없어요	s	I don't care whoever comes	p	
+	0	누가 오든 상관 없어요	yn	Do you not care whoever comes?	p	
+생각하다	0	누구 생각나는 사람 있어	s	I have sbd in mind	n	
+have in mind	0	누구 생각나는 사람 있어	yn	Do you have anybody in mind?	n	
+	0	누구 생각나는 사람 있어요	s	I have sbd in mind	p	
+	0	누구 생각나는 사람 있어요	yn	Do you have anybody in mind?	p	
+소리지르다	0	누가 소리질러	s	Sbd is shouting	n	
+shout	0	누가 소리질러	yn	Is anybody shouting?	n	
+	0	누가 소리질러	wh	Who's shouting?	n	
+	0	누가 소리질러요	s	Sbd is shouting	p	
+	0	누가 소리질러요	yn	Is anybody shouting?	p	
+	0	누가 소리질러요	wh	Who's shouting?	p	
+	0	누구 소리지르는 사람 있어	s	There's sbd shouting	n	
+	0	누구 소리지르는 사람 있어	yn	Is there anybody shouting?	n	
+	0	누구 소리지르는 사람 있어요	s	There's sbd shouting	p	
+	0	누구 소리지르는 사람 있어요	yn	Is there anybody shouting?	p	
+신고하다	0	누가 신고했어	s	Sbd reported me/you/us for sth	n	
+	0	누가 신고했어	yn	Did sbd report me/you/us for sth?	n	
+	0	누가 신고했어	wh	Who reported me/you/us for anything?	n	
+	0	누가 신고했어요	s	Sbd reported me/you/us for sth	p	
+	0	누가 신고했어요	yn	Did sbd report me/you/us for sth?	p	
+	0	누가 신고했어요	wh	Who reported me/you/us for anything?	p	
+	0	누가 너 신고했어	s	Sbd reported you for sth	n	
+	0	누가 너 신고했어	yn	Did somebody report you for sth?	n	
+	0	누가 당신 신고했어	s	Sbd reported you for sth	n	
+	0	누가 당신 신고했어	yn	Did somebody report you for sth?	n	
+	0	누가 당신 신고했어요	s	Sbd reported you for sth	p	
+	0	누가 당신 신고했어요	yn	Did somebody report you for sth?	p	
+	0	누가 신고했대	s	I heard sbd reported it	n	
+	0	누가 신고했대	yn	Did sbd report it?	n	rep
+	0	누가 신고했대	wh	Who reported it?	n	rep
+	0	누가 신고했대요	s	I heard sbd reported it	p	
+	0	누가 신고했대요	yn	Did sbd report it?	p	rep
+	0	누가 신고했대요	wh	Who reported it?	p	rep
+	0	누가 너 신고했대	s	I heard sbd reported you	n	
+	0	누가 너 신고했대	yn	Did sbd report you?	n	rep
+	0	누가 너 신고한대	s	I heard sbd is gonna report you	n	
+	0	누가 너 신고한대	yn	Is sbd reporting you?	n	rep
+	0	누가 너 신고한대	rq	Who says I'm gonna report you?	n	
+	0	누가 당신 신고했대	s	I heard sbd reported you	n	
+	0	누가 당신 신고했대	yn	Did sbd report you?	n	rep
+	0	누가 당신 신고했대요	s	I heard sbd reported you	p	
+	0	누가 당신 신고했대요	yn	Did sbd report you?	p	rep
+	0	누가 당신 신고한대	s	I heard sbd is gonna report you	n	
+	0	누가 당신 신고한대	yn	Is sbd reporting you?	n	rep
+	0	누가 당신 신고한대	rq	Who says I'm gonna report you?	n	(= I'm not gonna report you)
+	0	누가 당신 신고한대요	s	I heard sbd is gonna report you	p	
+	0	누가 당신 신고한대요	yn	Is sbd reporting you?	p	rep
+	0	누가 당신 신고한대요	rq	Who says I'm gonna report you?	p	(= I'm not gonna report you)
+싫어하다	0	누가 싫어한대	s	I heard sbd hates me/you/us/it	n	
+hate	0	누가 싫어한대	yn	Do they say sbd hates me/you/us/it?	n	rep
+	0	누가 싫어한대	wh	Who do they say hates me/you/us/it?	n	rep
+	0	누가 싫어한대	rq	Who says I hate you/them/it?	n	(= I don't hate you)
+	0	누가 싫어한대요	s	I heard sbd hates me/you/us/it	p	
+	0	누가 싫어한대요	yn	Do they say sbd hates me/you/us/it?	p	rep
+	0	누가 싫어한대요	wh	Who do they say hates me/you/us/it?	p	rep
+	0	누가 싫어한대요	rq	Who says I hate you/them/it?	p	(= I don't hate you)
+	0	누가 나 싫어해	s	Sbd hates me	n	
+	0	누가 나 싫어해	yn	Does sbd hate me?	n	
+	0	누가 날 싫어해	s	Sbd hates me	n	
+	0	누가 날 싫어해	yn	Does sbd hate me?	n	
+	0	누가 날 싫어해	rq	Who'll ever hate me?	n	(= Nobody will hate me)
+	0	누가 저 싫어해요	s	Sbd hates me	p	
+	0	누가 저 싫어해요	yn	Does sbd hate me?	p	
+	0	누가 저 싫어해요	wh	Who hates me?	p	
+	0	누가 너 싫어해	s	Sbd hates you	n	
+	0	누가 너 싫어해	yn	Does anybody hate you?	n	
+	0	누가 너 싫어한대	s	I heard sbd hates you	n	
+	0	누가 너 싫어한대	yn	Do they say sbd hates you?	n	rep
+	0	누가 너 싫어한대	rq	Does anyone say I hate you?	n	(= Nobody hates you)
+	0	누가 당신 싫어해	s	I heard sbd hates you	n	
+	0	누가 당신 싫어해	yn	Does anybody hate you?	n	
+	0	누가 당신 싫어해	wh	Who hates you?	n	
+	0	누가 당신 싫어해요	s	Sbd hates you	p	
+	0	누가 당신 싫어해요	yn	Does anybody hate you?	p	
+	0	누가 당신 싫어한대	s	I heard sbd hate you	n	
+	0	누가 당신 싫어한대	yn	Does anybody hate you?	n	rep
+	0	누가 당신 싫어한대	rq	Does anyone say I hate you?	n	(= I don't hate you)
+	0	누가 당신 싫어한대요	s	I heard sbd hates you	p	
+	0	누가 당신 싫어한대요	yn	Does anybody hate you?	p	rep
+	0	누가 당신 싫어한대요	rq	Does anyone say I hate you?	p	(= I don't hate you)
+쓰러지다	0	누가 쓰러졌어	s	Sbd fell down	n	
+fall down	0	누가 쓰러졌어	yn	Did sbd fall down?	n	
+	0	누가 쓰러졌어	wh	Who fell down?	n	
+	0	누가 쓰러졌어요	s	Sbd fell down	p	
+	0	누가 쓰러졌어요	yn	Did sbd fall down?	p	
+	0	누가 쓰러졌어요	wh	Who fell down?	p	
+	0	누가 쓰러졌대	s	I heard sbd fell down	n	
+	0	누가 쓰러졌대	yn	Did sbd fall down?	n	rep
+	0	누가 쓰러졌대	wh	Who fell down?	n	rep
+	0	누가 쓰러졌대요	s	I heard sbd fell down	p	
+	0	누가 쓰러졌대요	yn	Did sbd fall down?	p	rep
+	0	누가 쓰러졌대요	wh	Who fell down?	p	rep
+아프다	0	누가 아파	s	Sbd is sick	n	
+be sick	0	누가 아파	yn	Is sbd sick?	n	
+	0	누가 아파	wh	Who's sick?	n	
+	0	누가 아파요	s	Sbd is sick	p	
+	0	누가 아파요	yn	Is sbd sick?	p	
+	0	누가 아파요	wh	Who's sick?	p	
+	0	누가 아프대	s	I heard sbd is sick	n	
+	0	누가 아프대	yn	Is sbd sick?	n	rep
+	0	누가 아프대	wh	Who's sick?	n	rep
+	0	누가 아프대	rq	Who says I'm sick?	n	(= I'm not sick)
+	0	누가 아프대요	s	I heard sbd is sick	p	
+	0	누가 아프대요	yn	Is sbd sick?	p	rep
+	0	누가 아프대요	wh	Who's sick?	p	rep
+	0	누가 아프대요	rq	Who says I'm sick?	p	(= I'm not sick)
+	0	누가 아프댔어	s	They said that sbd is sick	n	
+	0	누가 아프댔어	yn	Did they say sbd is sick?	n	
+	0	누가 아프댔어	wh	Who is sick?	n	rep
+	0	누가 아프댔어	rq	Who the hell said I'm sick?	n	(= I'm not sick)
+	0	누가 아프댔어요	s	They said that sbd is sick	p	
+	0	누가 아프댔어요	yn	Did they say sbd is sick?	p	
+	0	누가 아프댔어요	wh	Who is sick?	p	rep
+안내하다	0	누가 안내해	yn	Will anyone guide me/us?	n	
+guide	0	누가 안내해	wh	Who'll guide me/us?	n	
+	0	누가 안내해	c	Sbd please guide us	n	
+	0	누가 안내해요	yn	Will anyone guide me/us?	p	
+	0	누가 안내해요	wh	Who'll guide me/us?	p	
+	0	누가 안내해요	c	Sbd please guide us	p	
+	0	누가 안내한대	s	I heard sbd will guide us	n	
+	0	누가 안내한대	yn	Is sbd guiding us?	n	rep
+	0	누가 안내한대	wh	Who's guiding us?	n	rep
+	0	누가 안내한대요	s	I heard sbd will guide us	p	
+	0	누가 안내한대요	yn	Is sbd guiding us?	p	rep
+	0	누가 안내한대요	wh	Who's guiding us?	p	rep
+알다	0	누가 알고 있어	s	Sbd is aware of it	n	
+be aware of, know	0	누가 알고 있어	yn	Is sbd aware of it?	n	
+	0	누가 알고 있어	wh	Who's aware of it?	n	
+	0	누가 알고 있어요	s	Sbd is aware of it	p	
+	0	누가 알고 있어요	yn	Is sbd aware of it?	p	
+	0	누가 알고 있어요	wh	Who's aware of it?	p	
+	0	누가 알겠어	s	I'm afraid sbd will be aware of it	n	
+	0	누가 알겠어	rq	Who would know?	n	(= Nobody knows)
+	0	누가 알겠어요	s	I'm afraid sbd will be aware of it	p	
+	0	누가 알겠어요	rq	Who would know?	p	(= Nobody knows)
+	0	누가 너 알고 있어	s	Sbd knows you	n	
+	0	누가 너 알고 있어	yn	Does anybody know you?	n	
+	0	누가 당신 알고 있어	s	Sbd knows you	n	
+	0	누가 당신 알고 있어	yn	Does anybody know you?	n	
+	0	누가 당신 알고 있어요	s	Sbd knows you	p	
+	0	누가 당신 알고 있어요	yn	Does anybody know you?	p	
+	0	누가 나 알고 있어	s	Sbd knows me	n	
+	0	누가 나 알고 있어	yn	Does anybody know me?	n	
+	0	누가 저 알고 있어요	s	Sbd knows me	p	
+	0	누가 저 알고 있어요	yn	Does anybody know me?	p	
+	0	누구 알고 있어	s	I know sbd	n	
+	0	누구 알고 있어	yn	Do you know anybody?	n	
+	0	누구 알고 있어	wh	Who do you know?	n	
+	0	누구 알고 있어요	s	I know sbd	p	
+	0	누구 알고 있어요	yn	Do you know anybody?	p	
+	0	누구 알고 있어요	wh	Who do you know?	p	
+	0	누구 아는 사람 있어	s	There's sbd I know	n	
+	0	누구 아는 사람 있어	yn	Is there anybody you know?	n	
+	0	누구 아는 사람 있어요	s	There's sbd I know	p	
+	0	누구 아는 사람 있어요	yn	Is there anybody you know?	p	
+	0	누구 알만한 사람이 있어	s	There's sbd I might be familiar with	n	
+	0	누구 알만한 사람이 있어	yn	Is there anybody you're familiar with?	n	
+	0	누구 알만한 사람이 있어요	s	There's sbd I might be familiar with	p	
+	0	누구 알만한 사람이 있어요	yn	Is there anybody you're familiar with?	p	
+	0	누군지 알아	s	I know who they are	n	
+	0	누군지 알아	yn	Do you know who they are?	n	
+	0	누군지 알아요	s	I know who they are	p	
+	0	누군지 알아요	yn	Do you know who they are?	p	
+	0	누군지 알겠어	s	I've gotta know who they are	n	
+	0	누군지 알겠어	yn	Do you know who they are?	n	
+	0	누군지 알겠어요	s	I've gotta know who they are	p	
+	0	누군지 알겠어요	yn	Do you know who they are?	p	
+	0	누군진 알고 있어	s	I at least know who they are	n	
+	0	누군진 알고 있어	yn	Do you know who they are?	n	
+	0	누군진 알고 있어	c	At least be aware of who they are	n	
+	0	누군진 알고 있어요	s	I at least know who they are	p	
+	0	누군진 알고 있어요	yn	Do you know who they are?	p	
+	0	누군진 알고 있어요	c	At least be aware of who they are	p	
+	0	누군지 알고 싶어	s	I want to know who they are	n	
+	0	누군지 알고 싶어	yn	Do you want to know who they are?	n	
+	0	누군지 알고 싶어요	s	I want to know who they are	p	
+	0	누군지 알고 싶어요	yn	Do you want to know who they are?	p	
+	0	누군지 알려줘	yn	Shall I let you know who they are?	n	
+	0	누군지 알려줘	c	Tell me who they are	n	
+	0	누군지 알려줘요	yn	Shall I let you know who they are?	p	
+	0	누군지 알려줘요	c	Tell me who they are	p	
+	0	누군지 알려줄래	s	I want to let you know who they are	n	
+	0	누군지 알려줄래	r	Could you tell me who they are?	n	
+	0	누군지 알려줄래요	s	I want to let you know who they are	p	
+	0	누군지 알려줄래요	r	Could you tell me who they are?	p	
+	0	누군지 너만 알고 있어	s	It is only you that knows who they are	n	
+	0	누군지 너만 알고 있어	yn	Is is only you that knows who they are?	n	
+	0	누군지 너만 알고 있어	c	Keep it to yourself	n	
+	0	누군지 당신만 알고 있어	s	It is only you that know who they are	n	
+	0	누군지 당신만 알고 있어	yn	Is is only you that know who they are?	n	
+	0	누군지 당신만 알고 있어	c	Keep it to yourself	n	
+	0	누군지 당신만 알고 있어요	s	It is only you that know who they are	p	
+	0	누군지 당신만 알고 있어요	yn	Is is only you that know who they are?	p	
+	0	누군지 당신만 알고 있어요	c	Keep it to yourself	p	
+	0	누군지 우리만 알고 있어	s	It is only us that know who they are	n	
+	0	누군지 우리만 알고 있어	yn	Is it only us that know who they are?	n	
+앞장서다	0	누가 앞장서	wh	Who's gonna take the lead?	n	
+take the lead	0	누가 앞장서	c	Sbd take the lead	n	
+	0	누가 앞장서요	wh	Who's gonna take the lead?	p	
+	0	누가 앞장서요	c	Sbd take the lead	p	
+오다	0	누가 온대	s	I heard sbd will come	n	
+come	0	누가 온대	yn	Will anybody come?	n	rep
+	0	누가 온대	wh	Who will come?	n	rep
+	0	누가 온대	rq	Who on earth says I'm coming?	n	(= I won't come)
+	0	누가 온대요	s	I heard sbd will come	p	
+	0	누가 온대요	yn	Will anybody come?	p	rep
+	0	누가 온대요	wh	Who will come?	p	rep
+	0	누가 온대요	rq	Who on earth says I'm coming?	p	(= I won't come)
+	0	누가 온댔어	s	I heard sbd will come	n	
+	0	누가 온댔어	yn	Will anybody come?	n	rep
+	0	누가 온댔어	wh	Who will come?	n	rep
+	0	누가 온댔어요	s	I heard sbd will come	p	
+	0	누가 온댔어요	yn	Will anybody come?	p	rep
+	0	누가 온댔어요	wh	Who will come?	p	rep
+	0	누가 온댔지	s	I said sbd will come	n	
+	0	누가 온댔지	yn	You said sbd will come, right?	n	aff
+	0	누가 온댔지	wh	Who did you say will come?	n	
+	0	누가 온댔죠	s	I said sbd will come	p	
+	0	누가 온댔죠	yn	You said sbd will come, right?	p	aff
+	0	누가 온댔죠	wh	Who did you say will come?	p	
+	0	누가 여기 온댔지	s	I said sbd is coming here	n	
+	0	누가 여기 온댔지	wh	Who did you say is coming here?	n	
+	0	누가 여기 온댔지	rq	Who on earth said I'm coming here?	n	(= I'm not coming here)
+	0	누가 여기 온댔죠	s	I said sbd is coming here	p	
+	0	누가 여기 온댔죠	wh	Who did you say is coming here?	p	
+	0	누가 여기 온댔죠	rq	Who on earth said I'm coming here?	p	(= I'm not coming here)
+	0	누가 여기 오쟸지	s	I think I've heard sbd suggested coming here	n	
+	0	누가 여기 오쟸지	yn	Is it right that sbd suggested coming here?	n	
+	0	누가 여기 오쟸지	wh	Who suggested coming here?	n	
+	0	누가 여기 오쟸지	rq	Who on earth suggested coming here?	n	 (= We shouldn't have come here)
+	0	누가 여기 오쟸죠	s	I think I've heard sbd suggested coming here	p	
+	0	누가 여기 오쟸죠	yn	Is it right that sbd suggested coming here?	p	
+	0	누가 여기 오쟸죠	wh	Who suggested coming here?	p	
+	0	누가 여기 오쟸죠	rq	Who on earth suggested coming here?	p	(= We shouldn't have come here)
+	0	누가 오고 있어	s	Sbd is coming here	n	
+	0	누가 오고 있어	yn	Is anybody coming here?	n	
+	0	누가 오고 있어	wh	Who's coming here?	n	
+	0	누가 오고 있어요	s	Sbd is coming here	p	
+	0	누가 오고 있어요	yn	Is anybody coming here?	p	
+	0	누가 오고 있어요	wh	Who's coming here?	p	
+	0	누가 와	s	Sbd is coming	n	
+	0	누가 와	yn	Is anybody coming?	n	
+	0	누가 와	wh	Who is coming?	n	
+	0	누가 와	rq	Who will come?	n	(= Nobody will come here)
+	0	누가 와요	s	Sbd is coming	p	
+	0	누가 와요	yn	Is anybody coming?	p	
+	0	누가 와요	wh	Who is coming?	p	
+	0	누가 이리 오래	s	Sbd told me to come here	n	
+	0	누가 이리 오래	rq	Has anybody ever told you to come here?	n	(=You shouldn't have come here)
+	0	누가 이리 오래	c	Sbd told you/us to come here	n	
+	0	누가 이리 오래요	s	Sbd told me to come here	p	
+	0	누가 이리 오래요	rq	Has anybody ever told you to come here?	p	(=You shouldn't have come here)
+	0	누가 이리 오래요	c	Sbd told you/us to come here	p	
+	0	누가 이리로 오래	s	Sbd told me to come here	n	
+	0	누가 이리로 오래	rq	Has anybody ever told you to come here?	n	(=You shouldn't have come here)
+	0	누가 너 이리로 오래	rq	Has anybody ever told you to come here?	n	(=You shouldn't have come here)
+	0	누가 너 이리로 오래	c	Sbd asked you to come here	n	
+	0	누가 보러 온대	s	I heard that sbd will come here to see me/you/us	n	
+	0	누가 보러 온대	yn	Will anybody come here to see me/you/us?	n	
+	0	누가 보러 온대	wh	Who will come here to see me/you/us?	n	
+	0	누가 보러 온대	rq	Who says I'll come to see you?	n	(= I'll not come to see you)
+	0	누가 보러 온대요	s	I heard that sbd will come here to see me/you/us	p	
+	0	누가 보러 온대요	yn	Will anybody come here to see me/you/us?	p	
+	0	누가 보러 온대요	wh	Who will come here to see me/you/us?	p	
+	0	누가 보러 온대요	rq	Who says I'll come to see you?	p	(= I'll not come to see you)
+	0	누가 보러 오래	s	Sbd told me/you/us to come and see	n	
+	0	누가 보러 오래	rq	Has anybody ever told you to come and see?	n	
+	0	누가 보러 오래요	s	Sbd told me/you/us to come and see	p	
+	0	누가 보러 오래요	rq	Has anybody ever told you to come and see?	p	(= You shouldnt have to come here)
+	0	누구 와	s	Sbd is coming	n	
+	0	누구 와	yn	Is sbd coming?	n	
+	0	누구 와	wh	Who's coming?	n	
+	0	누구 와요	s	Sbd is coming	p	
+	0	누구 와요	yn	Is sbd coming?	p	
+	0	누구 와요	wh	Who's coming?	p	
+	0	누구 왔어	s	Sbd came	n	
+	0	누구 왔어	yn	Did/Has sbd come?	n	
+	0	누구 왔어	wh	Who came?	n	
+	0	누구 왔어요	s	Sbd came	p	
+	0	누구 왔어요	yn	Did/Has sbd come?	p	
+	0	누구 왔어요	wh	Who came?	p	
+위로하다	0	누가 위로해 준대요	s	Sbd told me they'd cheer me up	p	
+cheer up	0	누가 위로해 준대요	rq	Who says I'm gonna cheer you up?	p	(= I won't cheer you up)
+	0	누가 위로해 줘요	rq	Who on earth cheers you?	p	(= There must be nobody who cheers you up)
+	0	누가 위로해 줘요	c	Sbd please cheer me up	p	
+	0	누가 위로해 줬어	s	Sbd cheered me up	n	
+	0	누가 위로해 줬어	yn	Did anybody cheer you up?	n	
+	0	누가 위로해 줬어요	s	Sbd cheered me up	p	
+	0	누가 위로해 줬어요	yn	Did anybody cheer you up?	p	
+일어나다	0	누가 일어났어	s	Sbd woke up	n	
+wake up	0	누가 일어났어	yn	Did anyone wake up?	n	
+	0	누가 일어났어	wh	Who woke up?	n	
+	0	누가 일어났어요	s	Sbd woke up	p	
+	0	누가 일어났어요	yn	Did anyone wake up?	p	
+	0	누가 일어났어요	wh	Who woke up?	p	
+	0	누가 일어났대	s	I heard sbd woke up	n	
+	0	누가 일어났대	yn	Did anybody wake up?	n	rep
+	0	누가 일어났대	wh	Who woke up?	n	rep
+	0	누가 일어났대	rq	Who says I woke up?	n	(= I didn't wake up)
+	0	누가 일어났대요	s	I heard sbd woke up	p	
+	0	누가 일어났대요	yn	Did anybody wake up?	p	rep
+	0	누가 일어났대요	wh	Who woke up?	p	rep
+	0	누가 일어났대요	rq	Who says I woke up?	p	(= I didn't wake up)
+잡다	0	누가 잡아	wh	Who'll catch it?	n	
+catch	0	누가 잡아	c	Sbd catch it	n	
+arrest	0	누가 잡아요	wh	Who'll catch it?	p	
+	0	누가 잡아요	c	Sbd catch it	p	
+	0	누가 잡았대	s	I heard sbd caught it	n	
+	0	누가 잡았대	yn	Did anybody catch it?	n	rep
+	0	누가 잡았대	wh	Who caught it?	n	rep
+	0	누가 잡았대요	s	I heard sbd caught it	p	
+	0	누가 잡았대요	yn	Did anybody catch it?	p	rep
+	0	누가 잡았대요	wh	Who caught it?	p	rep
+	0	누가 잡혔어	s	Sbd was caught	n	
+	0	누가 잡혔어	yn	Was anybody caught?	n	
+	0	누가 잡혔어	wh	Who was caught?	n	
+	0	누가 잡혔어요	s	Sbd was caught	p	
+	0	누가 잡혔어요	yn	Was anybody caught?	p	
+	0	누가 잡혔어요	wh	Who was caught?	p	
+	0	누가 잡혔대	s	I heard sbd was caught	n	
+	0	누가 잡혔대	yn	Was anybody caught?	n	rep
+	0	누가 잡혔대	wh	Who was caught?	n	rep
+	0	누가 잡혔대요	s	I heard sbd was caught	p	
+	0	누가 잡혔대요	yn	Was anybody caught?	p	rep
+	0	누가 잡혔대요	wh	Who was caught?	p	rep
+	0	누가 잡혀갔어	s	Sbd was arrested	n	
+	0	누가 잡혀갔어	yn	Was sbd arrested?	n	
+	0	누가 잡혀갔어	wh	Who was arrested?	n	
+	0	누가 잡혀갔어요	s	Sbd was arrested	p	
+	0	누가 잡혀갔어요	yn	Was sbd arrested?	p	
+	0	누가 잡혀갔어요	wh	Who was arrested?	p	
+	0	누가 잡혀갔대	s	I heard sbd was arrested	n	
+	0	누가 잡혀갔대	yn	Do they say sbd was arrested?	n	rep
+	0	누가 잡혀갔대	wh	Who was arrested?	n	rep
+	0	누가 잡혀갔대요	s	I heard sbd was arrested	p	
+	0	누가 잡혀갔대요	yn	Do they say sbd was arrested?	p	rep
+	0	누가 잡혀갔대요	wh	Who was arrested?	p	rep
+	0	누구 잡았어	s	I caught sbd	n	
+	0	누구 잡았어	yn	Did you catch anybody?	n	
+	0	누구 잡았어	wh	Who did you catch?	n	
+	0	누구 잡았어요	s	I caught sbd	p	
+	0	누구 잡았어요	yn	Did you catch anybody?	p	
+	0	누구 잡았어요	wh	Who did you catch?	p	
+	0	누구 잡혀갔어	s	Sbd was arrested	n	
+	0	누구 잡혀갔어	yn	Was anyone arrested?	n	
+	0	누구 잡혀갔어	wh	Who was arrested?	n	
+	0	누구 잡혀갔어요	s	Sbd was arrested	p	
+	0	누구 잡혀갔어요	yn	Was anyone arrested?	p	
+	0	누구 잡혀갔어요	wh	Who was arrested?	p	
+전화하다	0	누가 전화했어	s	Sbd called	n	
+call	0	누가 전화했어	yn	Did sbd call?	n	
+	0	누가 전화했어	wh	Who called?	n	
+	0	누가 전화했어요	s	Sbd called	p	
+	0	누가 전화했어요	yn	Did sbd call?	p	
+	0	누가 전화했어요	wh	Who called?	p	
+	0	누가 전화하나 봐	s	It seems that sbd is calling	n	
+	0	누가 전화하나 봐	yn	Sbd is calling, right?	n	aff
+	0	누가 전화하나 봐	rc	See who calls	n	(= I won't call)
+	0	누구 전화한 사람 있어	s	Sbd called	n	
+	0	누구 전화한 사람 있어	yn	Is there anybody who called?	n	
+	0	누구 전화한 사람 있어요	s	Sbd called	p	
+	0	누구 전화한 사람 있어요	yn	Is there anybody who called?	p	
+	0	누구한테 전화왔어	s	There was a call from sbd	n	
+	0	누구한테 전화왔어	yn	Did anybody call?	n	
+	0	누구한테 전화왔어	wh	Who called?	n	
+	0	누구한테 전화왔어요	s	There was a call from sbd	p	
+	0	누구한테 전화왔어요	yn	Did anybody call?	p	
+	0	누구한테 전화왔어요	wh	Who called?	p	
+졸업하다	0	누구 졸업했어	s	Sbd graduated	n	
+graduate	0	누구 졸업했어	yn	Did sbd graduate?	n	
+	0	누구 졸업했어	wh	Who graduated?	n	
+	0	누구 졸업했어요	s	Sbd graduated	p	
+	0	누구 졸업했어요	yn	Did sbd graduate?	p	
+	0	누구 졸업했어요	wh	Who graduated?	p	
+	0	누구 졸업했대	s	I heard sbd graduated	n	
+	0	누구 졸업했대	yn	Did sbd graduate?	n	rep
+	0	누구 졸업했대	wh	Who graduated?	n	rep
+	0	누구 졸업했대요	s	I heard sbd graduated	p	
+	0	누구 졸업했대요	yn	Did sbd graduate?	p	rep
+	0	누구 졸업했대요	wh	Who graduated?	p	rep
+좋다	0	누가 좋대	s	Sbd likes me/you/us/it	n	
+like	0	누가 좋대	yn	Does anybody say they like me/you/us/it?	n	rep
+	0	누가 좋대	wh	Who likes me/you/us/it?	n	rep
+	0	누가 좋대	rq	Who says I like you/it?	n	(= I don't like you/it)
+	0	누가 좋대요	s	Sbd likes me/you/us/it	p	
+	0	누가 좋대요	yn	Does anybody say they like me/you/us/it?	p	rep
+	0	누가 좋대요	wh	Who likes me/you/us/it?	p	rep
+	0	누가 좋대요	rq	Who says I like you/it?	p	(= I don't like you/it)
+	0	누가 좋아한대	s	Sbd likes me/you/us/it	n	
+	0	누가 좋아한대	yn	Does anybody say they like me/you/us/it?	n	rep
+	0	누가 좋아한대	wh	Who likes me/you/us/it?	n	rep
+	0	누가 좋아한대	rq	Who says I like you/it?	n	(= I don't like you/it)
+	0	누가 좋아한대요	s	Sbd likes me/you/us/it	p	
+	0	누가 좋아한대요	yn	Does anybody say they like me/you/us/it?	p	rep
+	0	누가 좋아한대요	wh	Who likes me/you/us/it?	p	rep
+	0	누가 좋아한대요	rq	Who says I like you/it?	p	(= I don't like you/it)
+주다	0	누구 주려고	s	I'm just giving this to sbd	n	
+give	0	누구 주려고	yn	Are you giving it to sbd?	n	
+	0	누구 주려고	wh	To whom are giving it?	n	
+	0	누구 주려고요	s	I'm just giving this to sbd	p	
+	0	누구 주려고요	yn	Are you giving it to sbd?	p	
+	0	누구 주려고요	wh	To whom are giving it?	p	
+	0	누구 주게	s	I'm just giving this to sbd	n	
+	0	누구 주게	yn	Are you giving it to sbd?	n	
+	0	누구 주게	wh	To whom are you giving it?	n	
+	0	누구 주게요	s	I'm just giving this to sbd	p	
+	0	누구 주게요	yn	Are you giving it to sbd?	p	
+	0	누구 주게요	wh	To whom are you giving it?	p	
+	0	누구 줬어	s	I gave it to sbd	n	
+	0	누구 줬어	yn	Did you give it to sbd?	n	
+	0	누구 줬어	wh	To whom did you give it?	n	
+	0	누구 줬어요	s	I gave it to sbd	p	
+	0	누구 줬어요	yn	Did you give it to sbd?	p	
+	0	누구 줬어요	wh	To whom did you give it?	p	
+	0	누구 줄 거야	s	I'll give it to sbd	n	
+	0	누구 줄 거야	yn	Will you give it to sbd?	n	
+	0	누구 줄 거야	wh	To whom will you give it?	n	
+	0	누구 줄 거예요	s	I'll give it to sbd	p	
+	0	누구 줄 거예요	yn	Will you give it to sbd?	p	
+	0	누구 줄 거예요	wh	To whom will you give it?	p	
+	0	누구한테 줄 거야	s	I'll give it to sbd	n	
+	0	누구한테 줄 거야	yn	Will you give it to sbd?	n	
+	0	누구한테 줄 거야	wh	To whom will you give it?	n	
+	0	누구한테 줄 거예요	s	I'll give it to sbd	p	
+	0	누구한테 줄 거예요	yn	Will you give it to sbd?	p	
+	0	누구한테 줄 거예요	wh	To whom will you give it?	p	
+	0	누가 준대	s	Sbd said they're giving it to me/us	n	
+	0	누가 준대	yn	Is anybody giving it to me/you/us?	n	rep
+	0	누가 준대	wh	Who's giving it to me/you/us?	n	rep
+	0	누가 준대	rq	Who says I'm giving this to you?	n	(= I'm not giving this to you)
+	0	누가 준대요	s	Sbd said they're giving it to me/us	p	
+	0	누가 준대요	yn	Is anybody giving it to me/you/us?	p	rep
+	0	누가 준대요	wh	Who's giving it to me/you/us?	p	rep
+	0	누가 준대요	rq	Who says I'm giving this to you?	p	(= I'm not giving this to you)
+	0	누가 줬어	s	Sbd gave this to me	n	
+	0	누가 줬어	yn	Did anybody give it to you?	n	
+	0	누가 줬어	wh	Who gave it to me/you?	n	
+	0	누가 줬어요	s	Sbd gave this to me	p	
+	0	누가 줬어요	yn	Did anybody give it to you?	p	
+	0	누가 줬어요	wh	Who gave it to me/you?	p	
+	0	누가 주나 봐	s	Sbd seems to be giving	n	
+	0	누가 주나 봐	yn	Sbd is giving you, right?	n	aff
+	0	누가 주나 봐	rc	See who's giving?	n	(= I won't give)
+주문하다	0	누가 주문했어	s	Sbd ordered	n	
+order	0	누가 주문했어	yn	Did anybody order?	n	
+	0	누가 주문했어	wh	Who ordered?	n	
+	0	누가 주문했어요	s	Sbd ordered	p	
+	0	누가 주문했어요	yn	Did anybody order?	p	
+	0	누가 주문했어요	wh	Who ordered?	p	
+	0	누가 주문했대	s	I heard that sbd ordered	n	
+	0	누가 주문했대	yn	Did anybody order?	n	rep
+	0	누가 주문했대	wh	Who ordered?	n	rep
+	0	누가 주문했대요	s	I heard that sbd ordered	p	
+	0	누가 주문했대요	yn	Did anybody order?	p	rep
+	0	누가 주문했대요	wh	Who ordered?	p	rep
+	0	누가 주문해 줄래	wh	Who'll order?	n	
+	0	누가 주문해 줄래	r	Could sbd please order?	n	
+	0	누가 주문해 줄래요	wh	Who'll order?	p	
+	0	누가 주문해 줄래요	r	Could sbd please order?	p	
+중단하다	0	누가 중단했어	s	Sbd paused	n	
+pause	0	누가 중단했어	wh	Who paused?	n	
+	0	누가 중단했어요	s	Sbd paused	p	
+	0	누가 중단했어요	wh	Who paused?	p	
+	0	누가 중단했대	s	They said that sbd paused	n	
+	0	누가 중단했대	yn	Do they say sbd paused?	n	rep
+	0	누가 중단했대	wh	Who do they say paused?	n	rep
+	0	누가 중단하래	yn	Did anybody tell me/you/us to pause?	n	
+	0	누가 중단하래	rq	Has anyone ever told you to pause?	n	(= You should not stop)
+	0	누가 중단하래	c	Sbd told me that you should pause	n	
+	0	누가 중단하래요	yn	Did anybody tell me/you/us to pause?	p	
+	0	누가 중단하래요	rq	Has anyone ever told you to pause?	p	(= You should not stop)
+	0	누가 중단하래요	c	Sbd told me that you should pause	p	
+지원하다	0	누가 지원했어	s	Sbd applied	n	
+apply for	0	누가 지원했어	yn	Did sbd apply?	n	
+	0	누가 지원했어	wh	Who applied?	n	
+	0	누가 지원했어요	s	Sbd applied	p	
+	0	누가 지원했어요	yn	Did sbd apply?	p	
+	0	누가 지원했어요	wh	Who applied?	p	
+	0	누가 지원했대	s	I heard that sbd applied	n	
+	0	누가 지원했대	yn	Do they say sbd applied?	n	rep
+	0	누가 지원했대	wh	Who do they say applied?	n	rep
+	0	누가 지원했대요	s	I heard that sbd applied	p	
+	0	누가 지원했대요	yn	Do they say sbd applied?	p	rep
+	0	누가 지원했대요	wh	Who do they say applied?	p	rep
+	0	누구 지원한 사람 있어	s	There is sbd who applied	n	
+	0	누구 지원한 사람 있어	yn	Is there anybody who applied?	n	
+	0	누구 지원한 사람 있어요	s	There is sbd who applied	p	
+	0	누구 지원한 사람 있어요	yn	Is there anybody who applied?	p	
+찾다	0	누가 찾았어	s	Sbd looked for you/us	n	
+find	0	누가 찾았어	yn	Did sbd look for me/us?	n	
+	0	누가 찾았어	wh	Who looked for me?	n	
+	0	누가 찾았어요	s	Sbd looked for you/us	p	
+	0	누가 찾았어요	yn	Did sbd look for me/us?	p	
+	0	누가 찾았어요	wh	Who looked for me?	p	
+	0	누가 찾아줄래	wh	Who can find it for me/us?	n	
+	0	누가 찾아줄래	r	Could sbd find it for me/us?	n	
+	0	누가 찾아줄래요	wh	Who can find it for me/us?	p	
+	0	누가 찾아줄래요	r	Could sbd find it for me/us?	p	
+	0	누가 널 찾아	s	Sbd is looking for you	n	
+	0	누가 널 찾아	wh	Who is looking for you?	n	
+	0	누가 널 찾아	rq	Does anybody ever look for you?	n	(= Nobody will find you)
+	0	누가 날 찾아	s	Sbd is looking for me	n	
+	0	누가 날 찾아	yn	Is anybody looking for me?	n	
+	0	누가 날 찾아	wh	Who is looking for me?	n	
+	0	누가 절 찾아요	s	Sbd is looking for me	p	
+	0	누가 절 찾아요	yn	Is anybody looking for me?	p	
+	0	누가 절 찾아요	wh	Who is looking for me?	p	
+	0	누가 누굴 찾아	s	Sbd is looking for sbd	n	
+	0	누가 누굴 찾아	rq	Who is looking for who?	n	(= You don't have right to find them)
+	0	누가 누굴 찾아요	s	Sbd is looking for sbd	p	
+	0	누가 누굴 찾아요	rq	Who is looking for who?	p	(= You don't have right to find them)
+	0	누가 당신을 찾아	s	Sbd is looking for you	n	
+	0	누가 당신을 찾아	wh	Who is looking for you?	n	
+	0	누가 당신을 찾아	rq	Does anybody ever look for you?	n	(= Nobody will find you)
+	0	누가 당신을 찾아요	s	Sbd is looking for you	p	
+	0	누가 당신을 찾아요	wh	Who is looking for you?	p	
+	0	누가 당신을 찾아요	rq	Does anybody ever look for you?	p	(= Nobody will find you)
+	0	누구 찾은 사람 있어	s	There's sbd who found it	n	
+	0	누구 찾은 사람 있어	yn	Is there anybody who found it?	n	
+	0	누구 찾은 사람 있어요	s	There's sbd who found it	p	
+	0	누구 찾은 사람 있어요	yn	Is there anybody who found it?	p	
+	0	누구 찾아줄래	s	I want to find sbd for you	n	
+	0	누구 찾아줄래	r	Could you find sbd for me?	n	
+	0	누구 찾아줄래요	s	I want to find sbd for you	p	
+	0	누구 찾아줄래요	r	Could you find sbd for me?	p	
+책임지다	0	누가 책임져	wh	Who's gonna take charge of it?	n	
+take charge of	0	누가 책임져	rq	Does anybody ever take charge of it?	n	(= There's no proper person to take charge of it)
+	0	누가 책임져	c	Sbd please take charge of it	n	
+	0	누가 책임져요	wh	Who's gonna take charge of it?	p	
+	0	누가 책임져요	rq	Does anybody ever take charge of it?	p	(= There's no proper person to take charge of it)
+	0	누가 책임져요	c	Sbd please take charge of it	p	
+취소하다	0	누가 취소했어	s	Sbd canceled	n	
+cancel	0	누가 취소했어	yn	Did anybody cancel?	n	
+	0	누가 취소했어	wh	Who canceled?	n	
+	0	누가 취소했어요	s	Sbd canceled	p	
+	0	누가 취소했어요	yn	Did anybody cancel?	p	
+	0	누가 취소했어요	wh	Who canceled?	p	
+	0	누가 취소했대	s	I heard that sbd canceled	n	
+	0	누가 취소했대	yn	Did anybody cancel?	n	rep
+	0	누가 취소했대	wh	Who canceled?	n	rep
+	0	누가 취소했대요	s	I heard that sbd canceled	p	
+	0	누가 취소했대요	yn	Did anybody cancel?	p	rep
+	0	누가 취소했대요	wh	Who canceled?	p	rep
+	0	누가 취소하래	yn	Did anybody tell you to cancel?	n	
+	0	누가 취소하래	wh	Who told you to cancel?	n	
+	0	누가 취소하래	rq	Who the hell told you to cancel?	n	(= You shouln't have canceled)
+	0	누가 취소하래	c	Sbd told me that you should cancel it	n	
+	0	누가 취소하래요	yn	Did anybody tell you to cancel?	p	
+	0	누가 취소하래요	wh	Who told you to cancel?	p	
+	0	누가 취소하래요	rq	Who the hell told you to cancel?	p	(= You shouln't have canceled)
+	0	누가 취소하래요	c	Sbd told me that you should cancel it	p	
+	0	누가 취소하랬어	s	Sbd told me to cancel	n	
+	0	누가 취소하랬어	yn	Did anybody tell me to cancel?	n	
+	0	누가 취소하랬어	wh	Who told you to cancel?	n	
+	0	누가 취소하랬어	rq	Who the hell told you to cancel?	n	(= You shouln't have canceled)
+	0	누가 취소하랬어요	s	Sbd told me to cancel	p	
+	0	누가 취소하랬어요	yn	Did anybody tell me to cancel?	p	
+	0	누가 취소하랬어요	wh	Who told you to cancel?	p	
+	0	누가 취소하랬어요	rq	Who the hell told you to cancel?	p	(= You shouln't have canceled)
+취하다	0	누가 취했어	s	Sbd is drunk	n	
+be drunken	0	누가 취했어	yn	Is anybody drunk?	n	
+	0	누가 취했어	wh	Who is drunk?	n	
+	0	누가 취했어요	s	Sbd is drunk	p	
+	0	누가 취했어요	yn	Is anybody drunk?	p	
+	0	누가 취했어요	wh	Who is drunk?	p	
+	0	누가 취했대	s	I heard sbd is drunk	n	
+	0	누가 취했대	yn	Is anybody drunk?	n	rep
+	0	누가 취했대	wh	Who is drunk?	n	rep
+	0	누가 취했대	rq	Who says I am drunk?	n	(= I am not drunken)
+	0	누가 취했대요	s	I heard sbd is drunk	p	
+	0	누가 취했대요	yn	Is anybody drunk?	p	rep
+	0	누가 취했대요	wh	Who is drunk?	p	rep
+	0	누가 취했대요	rq	Who says I am drunk?	p	(= I am not drunken)
+	0	누구 취한 사람 있어	s	There is sbd who is drunk	n	
+	0	누구 취한 사람 있어	yn	Is there anybody who is drunk?	n	
+	0	누구 취한 사람 있어요	s	There is sbd who is drunk?	p	
+	0	누구 취한 사람 있어요	yn	Is there anybody who is drunk?	p	
+	0	누구 취했대	s	I heard that sbd is drunk	n	
+	0	누구 취했대	yn	Is sbd drunk?	n	rep
+	0	누구 취했대	wh	Who is drunk?	n	rep
+	0	누구 취했대요	s	I heard that sbd is drunk	p	
+	0	누구 취했대요	yn	Is sbd drunk?	p	rep
+	0	누구 취했대요	wh	Who is drunk?	p	rep
+타다	0	누가 탄대	s	Sbd is gonna take a ride	n	
+ride	0	누가 탄대	yn	Is sbd taking a ride?	n	rep
+	0	누가 탄대	wh	Who's gonna take a ride?	n	rep
+	0	누가 탄대	rq	Who says I am gonn take a ride?	n	
+	0	누가 탄대요	s	Sbd is gonna take a ride	p	
+	0	누가 탄대요	yn	Is sbd taking a ride?	p	rep
+	0	누가 탄대요	wh	Who's gonna take a ride?	p	rep
+	0	누가 탄대요	rq	Who says I am gonn take a ride?	p	
+	0	누가 타래	rq	Who ever said that you can take a ride?	n	(= You shouldn't have taken a ride)
+	0	누가 타래	c	Sbd told me that you should take a ride	n	
+	0	누가 타랬어	s	Sbd told me that I should take a ride	n	
+	0	누가 타랬어	rq	Who ever said that you can take a ride?	n	(= You shouldn't have taken a ride)
+	0	누가 타랬어요	s	Sbd told me that I should take a ride	p	
+	0	누가 타랬어요	rq	Who ever said that you can take a ride?	p	(= You shouldn't have taken a ride)
+	0	누가 여기 타래	s	Sbd told me to take a ride here	n	
+	0	누가 여기 타래	rq	Who ever said that you can take a ride?	n	(= You shouldn't take a ride here)
+	0	누가 여기 타래요	s	Sbd told me to take a ride here	p	
+	0	누가 여기 타래요	rq	Who ever said that you can take a ride?	p	(= You shouldn't take a ride here)
+	0	누구 타	yn	Will anybody take a ride?	n	
+	0	누구 타	wh	Who takes a ride?	n	
+	0	누구 타	c	Sbd take a ride	n	
+	0	누구 타요	yn	Will anybody take a ride?	p	
+	0	누구 타요	wh	Who takes a ride?	p	
+	0	누구 타요	c	Sbd take a ride	p	
+풀다	0	누가 풀었어	s	Sbd solved it	n	
+solve	0	누가 풀었어	yn	Did anybody solve it?	n	
+	0	누가 풀었어	wh	Who solved it?	n	
+	0	누가 풀었어요	s	Sbd solved it	p	
+	0	누가 풀었어요	yn	Did anybody solve it?	p	
+	0	누가 풀었어요	wh	Who solved it?	p	
+	0	누구 푼 사람 있어	s	There is sbd who solved it	n	
+	0	누구 푼 사람 있어	yn	Is there anybody who solved it?	n	
+	0	누구 푼 사람 있어요	s	There is sbd who solved it	p	
+	0	누구 푼 사람 있어요	yn	Is there anybody who solved it?	p	
+하다	0	누가 해달라고 했어	s	Sbd asked me to do it	n	
+ask	0	누가 해달라고 했어	yn	Did sbd ask me/you/us to do it?	n	
+	0	누가 해달라고 했어	wh	Who asked me/you/us to do it?	n	
+	0	누가 해달라고 했어	rq	Has anybody ever asked you to do it?	n	(= You didn't have to do it)
+	0	누가 해달라고 했어요	s	Sbd asked me to do it	p	
+	0	누가 해달라고 했어요	yn	Did sbd ask me/you/us to do it?	p	
+	0	누가 해달라고 했어요	wh	Who asked me/you/us to do it?	p	
+	0	누가 해달라고 했어요	rq	Has anybody ever asked you to do it?	p	(= You didn't have to do it)
+	0	누가 해달래	s	Sbd asked me to do it	n	
+	0	누가 해달래	yn	Did sbd ask me/you/us to do it?	n	
+	0	누가 해달래	wh	Who asked me/you/us to do it?	n	
+	0	누가 해달래	rq	Has anybody ever asked you to do it?	n	(= You didn't have to do it)
+	0	누가 해달래요	s	Sbd asked me to do it	p	
+	0	누가 해달래요	yn	Did sbd ask me/you/us to do it?	p	
+	0	누가 해달래요	wh	Who asked me/you/us to do it?	p	
+	0	누가 해달래요	rq	Has anybody ever asked you to do it?	p	(= You didn't have to do it)
+	0	누가 해달랬어	s	Sbd asked me to do it	n	
+	0	누가 해달랬어	yn	Has sbd asked me/you/us to do it?	n	
+	0	누가 해달랬어	wh	Who asked me/you/us to do it?	n	
+	0	누가 해달랬어	rq	Has anybody ever asked you to do it?	n	(= You didn't have to do it)
+	0	누가 해달랬어요	s	Sbd has asked me to do it	p	
+	0	누가 해달랬어요	yn	Has sbd asked me/you/us to do it?	p	
+	0	누가 해달랬어요	wh	Who asked me/you/us to do it?	p	
+	0	누가 해달랬어요	rq	Has anybody ever asked you to do it?	p	(= You didn't have to do it)
+	0	누가 해온대	s	Sbd told me s/he'll do it	n	
+	0	누가 해온대	yn	Does anybody say s/he will do it?	n	rep
+	0	누가 해온대	wh	Who says s/he will do it?	n	rep
+	0	누가 해온대	rq	Who says I'll do it?	n	(= I won't do it)
+	0	누가 해온대요	s	Sbd told me s/he'll do it	p	
+	0	누가 해온대요	yn	Does anybody say s/he will do it?	p	rep
+	0	누가 해온대요	wh	Who says s/he will do it?	p	rep
+	0	누가 해온대요	rq	Who says I'll do it?	p	(= I won't do it)
+	0	누가 해왔어	s	Sbd's done it	n	
+	0	누가 해왔어	yn	Has sbd done it?	n	
+	0	누가 해왔어	wh	Who's done it?	n	
+	0	누가 해왔어요	s	Sbd's done it	p	
+	0	누가 해왔어요	yn	Has sbd done it?	p	
+	0	누가 해왔어요	wh	Who's done it?	p	
+	0	누가 해오나 봐	s	Sbd seems to have done it	n	
+	0	누가 해오나 봐	yn	Has sbd done it?	n	aff
+	0	누가 해오나 봐	rc	See who does it	n	(= I won't do it)
+	0	누가 해주나 봐	s	Sbd seems to be doing it for me/you/us	n	
+	0	누가 해주나 봐	yn	Does sbd do it for me/you/us?	n	aff
+	0	누가 해주나 봐	rc	See who does it for you	n	(= I won't do it for you)
+	0	누가 해줬어	s	Sbd has done it for me	n	
+	0	누가 해줬어	yn	Has sbd done it for you/us?	n	
+	0	누가 해줬어	wh	Who's done it for me/you/us?	n	
+	0	누가 해줬어요	s	Sbd has done it for me	p	
+	0	누가 해줬어요	yn	Has sbd done it for you/us?	p	
+	0	누가 해줬어요	wh	Who's done it for me/you/us?	p	
+	0	누가 해줬대	s	Sbd has done it for me	n	
+	0	누가 해줬대	yn	Do they say sbd has done it for them?	n	rep
+	0	누가 해줬대	wh	Who's done it for them?	n	rep
+	0	누가 해줬대요	s	Sbd has done it for me	p	
+	0	누가 해줬대요	yn	Do they say sbd has done it for them?	p	rep
+	0	누가 해줬대요	wh	Who's done it for them?	p	rep
+	0	누가 해준대	s	Sbd is gonna do it for me/us 	n	
+	0	누가 해준대	yn	Do they say sbd is gonna do it for them?	n	rep
+	0	누가 해준대	wh	Who's gonna do it for them?	n	rep
+	0	누가 해준대	rq	Who says I'm doing it for you?	n	(= I won't do it for you)
+	0	누가 해준대요	s	Sbd is gonna do it for me/us 	p	
+	0	누가 해준대요	yn	Do they say sbd is gonna do it for them?	p	rep
+	0	누가 해준대요	wh	Who's gonna do it for them?	p	rep
+	0	누가 해준대요	rq	Who says I'm doing it for you?	p	(= I won't do it for you)
+	0	누가 너보고 해달래	yn	Did sbd ask you to do it?	n	
+	0	누가 너보고 해달래	rq	Who ever asked you to do it?	n	(= Don't do it)
+	0	누가 너보고 해달래	c	Sbd asked you to do it	n	
+	0	누가 너한테 해달래	yn	Did sbd ask you to do it?	n	
+	0	누가 너한테 해달래	rq	Who ever asked you to do it?	n	(= Don't do it)
+	0	누가 너한테 해달래	c	Sbd asked you to do it	n	
+	0	누가 당신보고 해달래	yn	Did sbd ask you to do it?	n	
+	0	누가 당신보고 해달래	rq	Who ever asked you to do it?	n	(= Don't do it)
+	0	누가 당신보고 해달래	c	Sbd asked you to do it	n	
+	0	누가 당신보고 해달래요	yn	Did sbd ask you to do it?	p	
+	0	누가 당신보고 해달래요	rq	Who ever asked you to do it?	p	(= Don't do it)
+	0	누가 당신보고 해달래요	c	Sbd asked you to do it	p	
+헤어지다	0	누구 헤어졌대	s	I heard sbd broke up	n	
+break up	0	누구 헤어졌대	yn	Did anybody break up?	n	rep
+	0	누구 헤어졌대	wh	Who broke up?	n	rep
+	0	누구 헤어졌대요	s	I heard sbd broke up	p	
+	0	누구 헤어졌대요	yn	Did anybody break up?	p	rep
+	0	누구 헤어졌대요	wh	Who broke up?	p	rep
+흘리다	0	누가 흘렸어	s	Sbd spilled it	n	
+spill	0	누가 흘렸어	yn	Did anybody spill it?	n	
+	0	누가 흘렸어	wh	Who spilled it?	n	
+	0	누가 흘렸어요	s	Sbd spilled it	p	
+	0	누가 흘렸어요	yn	Did anybody spill it?	p	
+	0	누가 흘렸어요	wh	Who spilled it?	p	
+가르치다	1	뭐 가르치는 게 있어	s	They teach something	n	
+teach	1	뭐 가르치는 게 있어	yn	Do they teach sth?	n	
+	1	뭐 가르치는 게 있어	rq	Is there anything they teach? 	n	
+	1	뭐 가르치는 게 있어요	s	They teach something	p	
+	1	뭐 가르치는 게 있어요	yn	Do they teach sth?	p	
+	1	뭐 가르치는 게 있어요	rq	Is there anything they teach?	p	 (= There is nothing they teach)
+	1	뭔지 가르쳐줘	yn	Should I tell you what it is?	n	
+	1	뭔지 가르쳐줘	c	Tell me what it is	n	
+	1	뭔지 가르쳐줘요	yn	Should I tell you what it is?	p	
+	1	뭔지 가르쳐줘요	c	Tell me what it is	p	
+	1	뭘 가르친다고 했지	yn	Do they teach sth?	n	aff
+	1	뭘 가르친다고 했지	wh	What did you say they teach?	n	
+	1	뭐 가르친대	s	I heard they teach sth	n	
+	1	뭐 가르친대	yn	Do they teach sth?	n	rep
+	1	뭐 가르친대	wh	What do they teach?	n	rep
+	1	뭐 가르친대요	s	I heard that they teach something	p	
+	1	뭐 가르친대요	yn	Did you hear that they teach something?	p	rep
+	1	뭐 가르친대요	wh	What did you hear they teach?	p	rep
+	1	뭐 가르치고 있대	s	I heard they are teaching something	n	
+	1	뭐 가르치고 있대	yn	Did you hear that they are teaching something?	n	rep
+	1	뭐 가르치고 있대	wh	What did you hear that they are teaching?	n	rep
+	1	뭐 가르치고 있대요	s	I heard they are teaching something	p	
+	1	뭐 가르치고 있대요	yn	Did you hear that they are teaching something?	p	rep
+	1	뭐 가르치고 있대요	wh	What did you hear that they are teaching?	p	rep
+	1	뭐 가르칠 게 있어	s	I have something to teach	n	
+	1	뭐 가르칠 게 있어	rq	Is there anything to be taught? 	n	(= There is nothing to be taught)
+	1	뭐 가르칠 게 있어요	s	I have something to teach	p	
+	1	뭐 가르칠 게 있어요	rq	Is there anything to be taught? 	p	(= There is nothing to be taught)
+	1	뭐 가르칠 게 있대	s	I heard there is something to be taught	n	
+	1	뭐 가르칠 게 있대	rq	Did you hear that there is anything to be taught?  	n	(= There is nothing to be taught)
+	1	뭐 가르칠 게 있대요	s	I heard there is something to be taught	p	
+	1	뭐 가르칠 게 있대요	rq	Did you hear that there is anything to be taught?  	p	(= There is nothing to be taught)
+가져오다	1	뭐 가져올게 있어	s	I have something to bring	n	
+bring	1	뭐 가져올게 있어	yn	Is there something to bring?	n	
+	1	뭐 가져올게 있어요	s	I have something to bring	n	
+	1	뭐 가져올게 있어요	yn	Is there something to bring?	p	
+	1	뭐 좀 가져와	yn	Should I bring something?	n	
+	1	뭐 좀 가져와	c	Bring something	n	
+	1	뭐 좀 가져와요	yn	Should I bring something?	p	
+	1	뭐 좀 가져와요	c	Bring something	p	
+	1	뭐 좀 가져온대	s	I heard they are bringing something	n	
+	1	뭐 좀 가져온대	yn	Do they say that they will bring something?	n	rep
+	1	뭐 좀 가져온대요	s	I heard they are bringing something	p	
+	1	뭐 좀 가져온대요	yn	Do they say that they will bring something?	p	rep
+	1	뭐 좀 가져올래	s	I will bring something	n	
+	1	뭐 좀 가져올래	r	Will you bring something?	n	
+	1	뭐 좀 가져올래요	s	I will bring something	p	
+	1	뭐 좀 가져올래요	r	Will you bring something?	p	
+가져가다	1	뭐 좀 가져가	yn	Should I take something?	n	
+take	1	뭐 좀 가져가	c	Take something	n	
+	1	뭐 좀 가져가요	yn	Should I take something?	p	
+	1	뭐 좀 가져가요	c	Take something	p	
+감상하다	1	뭐 감상하고 있어	s	I am appreciating something	n	
+appreciate	1	뭐 감상하고 있어	wh	What are you appreciating?	n	
+	1	뭐 감상하고 있어요	s	I am appreciating something	p	
+	1	뭐 감상하고 있어요	wh	What are you appreciating?	p	
+	1	뭐 감상하고 있대	s	They say that they are appreciating something	n	
+	1	뭐 감상하고 있대	wh	What are they appreciating?	n	rep
+	1	뭐 감상하고 있대요	s	They say that they are appreciating something	p	
+	1	뭐 감상하고 있대요	wh	What are they appreciating?	p	rep
+관련있다	1	뭐 관련 있어	s	It is related to something	n	
+be related to	1	뭐 관련 있어	yn	Is it related to something?	n	
+	1	뭐 관련 있어	rq	Is it related to anything? 	n	(= There is nothing related)
+	1	뭐 관련 있어요	s	It is related to something	p	
+	1	뭐 관련 있어요	yn	Is it related to something?	p	
+	1	뭐 관련 있어요	rq	Is it related to anything? 	p	(= There is nothing related)
+	1	뭐 관련돼 있어	s	It is related to something	n	
+	1	뭐 관련돼 있어	yn	Is it related to something?	n	
+	1	뭐 관련돼 있어	rq	Is it related to anything?	n	(= There is nothing related)
+	1	뭐 관련돼 있어요	s	It is related to something	p	
+	1	뭐 관련돼 있어요	yn	Is it related to something?	p	
+	1	뭐 관련돼 있어요	rq	Is it related to anything?	p	(= There is nothing related)
+	1	뭔가 관련돼 있어	s	It is related to something	n	
+	1	뭔가 관련돼 있어	yn	Is it related to something?	n	
+	1	뭔가 관련돼 있어요	s	It is related to something	p	
+	1	뭔가 관련돼 있어요	yn	Is it related to something?	p	
+기다리다	1	뭐 기다리고 있어	s	I am waiting for something	n	
+wait	1	뭐 기다리고 있어	yn	Are you waiting for something?	n	
+	1	뭐 기다리고 있어	wh	What are you waiting for?	n	
+	1	뭐 기다리고 있어요	s	I am waiting for something	p	
+	1	뭐 기다리고 있어요	yn	Are you waiting for something?	p	
+	1	뭐 기다리고 있어요	wh	What are you waiting for?	p	
+	1	뭐 기다리니	yn	Are you waiting for something?	n	
+	1	뭐 기다리니	wh	What are you waiting for?	n	
+	1	뭐 기다리냐	yn	Are you waiting for something?	n	
+	1	뭐 기다리냐	wh	What are you waiting for?	n	
+날아다니다	1	뭐가 날아다녀	s	Something is flying around	n	
+fly around	1	뭐가 날아다녀	yn	Is something flying around?	n	
+	1	뭐가 날아다녀	wh	What is flying around?	n	
+	1	뭐가 날아다녀요	s	Something is flying around	p	
+	1	뭐가 날아다녀요	yn	Is something flying around?	p	
+	1	뭐가 날아다녀요	wh	What is flying around?	p	
+	1	뭐가 날아다니고 있어	s	Something is flying around	n	
+	1	뭐가 날아다니고 있어	yn	Is something flying around?	n	
+	1	뭐가 날아다니고 있어	wh	What is flying around?	n	
+	1	뭐가 날아다니고 있어요	s	Something is flying around	p	
+	1	뭐가 날아다니고 있어요	yn	Is something flying around?	p	
+	1	뭐가 날아다니고 있어요	wh	What is flying around?	p	
+느껴지다	1	뭐가 느껴져	s	I feel something	n	
+feel	1	뭐가 느껴져	yn	Do you feel something?	n	
+	1	뭐가 느껴져	wh	What do you feel?	n	
+	1	뭐가 느껴져요	s	I feel something	p	
+	1	뭐가 느껴져요	yn	Do you feel something?	p	
+	1	뭐가 느껴져요	wh	What do you feel?	p	
+	1	뭔가 느껴져	s	I feel something	n	
+	1	뭔가 느껴져	yn	Do you feel something?	n	
+	1	뭔가 느껴져요	s	I feel something	p	
+	1	뭔가 느껴져요	yn	Do you feel something?	p	
+늘어나다	1	뭐가 늘어났어	s	Something is stretched	n	
+be stretched	1	뭐가 늘어났어	yn	Is something stretched?	n	
+	1	뭐가 늘어났어	wh	What is stretched?	n	
+	1	뭐가 늘어났어요	s	Something is stretched	p	
+	1	뭐가 늘어났어요	yn	Is something stretched?	p	
+	1	뭐가 늘어났어요	wh	What is stretched?	p	
+	1	뭔가 늘어났어	s	Something is stretched	n	
+	1	뭔가 늘어났어	yn	Is something stretched?	n	
+	1	뭔가 늘어났어요	s	Something is stretched	p	
+	1	뭔가 늘어났어요	yn	Is something stretched?	p	
+늘어서다	1	뭐가 늘어서 있어	s	Something has lined up	n	
+line up	1	뭐가 늘어서 있어	wh	What has lined up?	n	
+	1	뭐가 늘어서 있어요	s	Something has lined up	p	
+	1	뭐가 늘어서 있어요	wh	What has lined up?	p	
+들다	1	뭐 좀 드셔	yn	Does s/he eat anything?	n	
+eat	1	뭐 좀 드셔	wh	What does s/he eat	n	
+	1	뭐 좀 드셔	c	Eat something	n	
+	1	뭐 좀 드시지	yn	You eat something, right?	n	aff
+	1	뭐 좀 드시지	c	Eat something	n	
+드리다	1	뭐 드리게	s	I am giving them something	n	
+give	1	뭐 드리게	yn	Are you giving them something?	n	
+	1	뭐 드리게	wh	What are you giving them?	n	
+	1	뭐 드리게요	s	I am giving them something	p	
+	1	뭐 드리게요	yn	Are you giving them something?	p	
+	1	뭐 드리게요	wh	What are you giving them?	p	
+	1	뭐 드리려구	s	I am giving them something	n	
+	1	뭐 드리려구	yn	Are you giving them something?	n	
+	1	뭐 드리려구	wh	What are you giving them?	n	
+	1	뭐 드리려구	rq	Are you giving them something?	n	(= You don't have to give them anything)
+	1	뭐 드리려구요	s	I am giving them something	p	
+	1	뭐 드리려구요	yn	Are you giving them something?	p	
+	1	뭐 드리려구요	wh	What are you giving them?	p	
+	1	뭐 드리려구요	rq	Are you giving them something?	p	(= You don't have to give them anything)
+들리다	1	무슨 소리 들렸어	s	I heard something	n	
+hear	1	무슨 소리 들렸어	yn	Did you hear something?	n	
+	1	무슨 소리 들렸어요	s	I heard something	p	
+	1	무슨 소리 들렸어요	yn	Did you hear something?	p	
+들려주다	1	뭐 좀 들려줄래	s	I'm going to play something for you	n	
+play something	1	뭐 좀 들려줄래	r	Will you play something for me?	n	
+	1	뭐 좀 들려줄래요	s	I'm going to play something for you	p	
+	1	뭐 좀 들려줄래요	r	Will you play something for me?	p	
+들리다	1	뭐가 들려	s	I hear something	n	
+hear	1	뭐가 들려	yn	Do you hear something?	n	
+	1	뭐가 들려	wh	What do you hear?	n	
+	1	뭐가 들려요	s	I hear something	p	
+	1	뭐가 들려요	yn	Do you hear something?	p	
+	1	뭐가 들려요	wh	What do you hear?	p	
+	1	뭔가 들려	s	I hear something	n	
+	1	뭔가 들려	yn	Do you hear something?	n	
+	1	뭔가 들려요	s	I hear something	p	
+	1	뭔가 들려요	yn	Do you hear something?	p	
+땡기다	1	뭐가 땡겨	s	I feel like doing something	n	
+feel like	1	뭐가 땡겨	yn	Do you feel like doing something?	n	
+	1	뭐가 땡겨	wh	What do you feel like doing?	n	
+	1	뭐가 땡겨요	s	I feel like doing something	p	
+	1	뭐가 땡겨요	yn	Do you feel like doing something?	p	
+	1	뭐가 땡겨요	wh	What do you feel like doing?	p	
+	1	뭐가 땡기냐	yn	Do you feel like doing something?	n	
+	1	뭐가 땡기냐	wh	What do you feel like doing?	n	
+마시다	1	뭐 마시고 싶어	s	I want to drink something	n	
+drink	1	뭐 마시고 싶어	yn	Do you want to drink something?	n	
+	1	뭐 마시고 싶어	wh	What do you want to drink?	n	
+	1	뭐 마시고 싶어요	s	I want to drink something	p	
+	1	뭐 마시고 싶어요	yn	Do you want to drink something?	p	
+	1	뭐 마시고 싶어요	wh	What do you want to drink?	p	
+	1	뭐 마시고 싶은데	s	I want to drink something	n	
+	1	뭐 마시고 싶은데	wh	What do you want to drink?	n	
+	1	뭐 마시려고	s	I'm going to drink something	n	
+	1	뭐 마시려고	yn	Are you going to drink something?	n	
+	1	뭐 마시려고	wh	What are you going to drink?	n	
+	1	뭐 마실래	s	I'm going to drink something	n	
+	1	뭐 마실래	yn	Are you going to drink something?	n	
+	1	뭐 마실래	wh	What are you going to drink?	n	
+	1	뭐 마실래요	s	I'm going to drink something	p	
+	1	뭐 마실래요	yn	Are you going to drink something?	p	
+	1	뭐 마실래요	wh	What are you going to drink?	p	
+	1	뭐 마신대	s	I heard they are going to drink something	n	
+	1	뭐 마신대	yn	Do they say they are drinking something?	n	
+	1	뭐 마신대	wh	What do they say they are drinking?	n	
+	1	뭐 마신대요	s	I heard they will drink something	P	
+	1	뭐 마신대요	yn	Are they drinking something?	P	
+	1	뭐 마신대요	wh	What are they drinking?	P	
+	1	뭐 좀 마시지	yn	You drink something, right?	n	aff
+	1	뭐 좀 마시지	c	Drink something	n	
+	1	뭐 좀 마시게	yn	Are you going to drink sth?	n	
+	1	뭐 좀 마시게	c	Drink something	n	
+	1	뭐 좀 마셔야지	s	I am going to drink something	n	
+	1	뭐 좀 마셔야지	c	Drink something	n	
+	1	뭐라도 마시게	s	I am going to drink something	n	
+	1	뭐라도 마시게	yn	Are you going to drink sth?	n	
+	1	뭐라도 마시게	c	Drink something	n	
+	1	뭐라도 마시고 있게	s	I will be drinking something	n	
+	1	뭐라도 마시고 있게	yn	Will you be drinking something?	n	
+	1	뭐라도 마시고 있게	c	Drink something	n	
+만들다	1	뭐 만들게	s	I am going to make something	n	
+make	1	뭐 만들게	yn	Are you going to make something?	n	
+	1	뭐 만들게	wh	What are you going to make?	n	
+	1	뭐 만들게요	s	I am going to make something	p	
+	1	뭐 만들게요	yn	Are you going to make something?	p	
+	1	뭐 만들게요	wh	What are you going to make?	p	
+	1	뭐 만들려구	s	I am going to make something	n	
+	1	뭐 만들려구	yn	Are you going to make something?	n	
+	1	뭐 만들려구	wh	What are you going to make?	n	
+	1	뭐 만들려구요	s	I am going to make something	p	
+	1	뭐 만들려구요	yn	Are you going to make something?	p	
+	1	뭐 만들려구요	wh	What are you going to make?	p	
+	1	뭐 만들고 있어	s	I am making something	n	
+	1	뭐 만들고 있어	yn	Are you making something?	n	
+	1	뭐 만들고 있어	wh	What are you making?	n	
+	1	뭐 만들고 있어	c	Make something	n	
+	1	뭐 만들고 있어요	s	I am making something	p	
+	1	뭐 만들고 있어요	yn	Are you making something?	p	
+	1	뭐 만들고 있어요	wh	What are you making?	p	
+	1	뭐 만들고 있어요	c	Make something	p	
+	1	뭐 만들래	s	I am going to make something	n	
+	1	뭐 만들래	yn	Are you going to make something?	n	
+	1	뭐 만들래	wh	What are you going to make?	n	
+	1	뭐 만들래요	s	I am going to make something	p	
+	1	뭐 만들래요	yn	Are you going to make something?	p	
+	1	뭐 만들래요	wh	What are you going to make?	p	
+	1	뭐 좀 만들었어	s	I made something	n	
+	1	뭐 좀 만들었어	yn	Did you make something?	n	
+	1	뭐 좀 만들었어요	s	I made something	p	
+	1	뭐 좀 만들었어요	yn	Did you make something?	p	
+말하다	1	무슨 말 했어	s	I said something	n	
+say	1	무슨 말 했어	yn	Did you say something?	n	
+	1	무슨 말 했어	wh	What did you say?	n	
+	1	무슨 말 했어요	s	I said something	p	
+	1	무슨 말 했어요	yn	Did you say something?	p	
+	1	무슨 말 했어요	wh	What did you say?	p	
+	1	무슨 말 했대	s	I heard they said something	n	
+	1	무슨 말 했대	yn	Did you hear that they said something?	n	
+	1	무슨 말 했대	wh	What did you hear that they said?	n	
+	1	무슨 말 했대요	s	I heard they said something	p	
+	1	무슨 말 했대요	yn	Did you hear that they said something?	p	
+	1	무슨 말 했대요	wh	What did you hear that they said?	p	
+	1	뭐 말할 거 있어	s	I have something to say	n	
+	1	뭐 말할 거 있어	yn	Do you have something to say?	n	
+	1	뭐 말할 거 있어요	s	I have something to say	p	
+	1	뭐 말할 거 있어요	yn	Do you have something to say?	p	
+	1	뭐 말할 게 있어	s	I have something to say	n	
+	1	뭐 말할 게 있어	yn	Do you have something to say?	n	
+	1	뭐 말할 게 있어	rq	Do you have anything to say? 	n	(= You should have nothing to say)
+	1	뭐 말할 게 있어요	s	I have something to say	p	
+	1	뭐 말할 게 있어요	yn	Do you have something to say?	p	
+	1	뭐 말할 게 있어요	rq	Do you have anything to say? 	p	(= You should have nothing to say)
+	1	뭐 말할 게 있대	s	I heard that they have something to say	n	
+	1	뭐 말할 게 있대	yn	Do they say they have something to say?	n	rep
+	1	뭐 말할 게 있대	rq	Do they have anything to say? 	n	(=They should have nothing to say)
+	1	뭐 말할 게 있대요	s	I heard that they have something to say	p	
+	1	뭐 말할 게 있대요	yn	Do they say they have something to say?	p	rep
+	1	뭐 말할 게 있대요	rq	Do they have anything to say? 	p	(=They should have nothing to say)
+맛있다	1	뭐가 맛있어	yn	Does something taste good?	n	
+taste good	1	뭐가 맛있어	wh	What tastes good?	n	
+	1	뭐가 맛있어요	yn	Does something taste good?	p	
+	1	뭐가 맛있어요	wh	What tastes good?	p	
+	1	뭐가 맛있냐	yn	Does something taste good?	n	
+	1	뭐가 맛있냐	wh	What tastes good?	n	
+	1	뭐가 맛있냐	rq	Does anything taste good? 	n	(= There is nothing that tastes good)
+	1	뭐가 맛있다고	yn	Did you say that something tastes good?	n	
+	1	뭐가 맛있다고	wh	What did you say tastes good?	n	
+	1	뭐가 맛있다고	rq	Did you say that something tastes good? 	n	(= There is nothing that tastes good)
+먹다	1	뭐 먹고 싶어	s	I want to eat something	n	
+eat	1	뭐 먹고 싶어	yn	Do you want to eat something?	n	
+	1	뭐 먹고 싶어	wh	What did you say you want to eat?	n	
+	1	뭐 먹고 싶어	rq	Do you ever want to eat anything?	n	(= You sould not have anything you want to eat)
+	1	뭐 먹고 싶어요	s	I want to eat something	p	
+	1	뭐 먹고 싶어요	yn	Do you want to eat something?	p	
+	1	뭐 먹고 싶어요	wh	What did you say you want to eat?	p	
+	1	뭐 먹고 싶어요	rq	Do you ever want to eat anything? 	p	(= You sould not have anything you want to eat)
+	1	뭐 먹고 싶은데	s	I want to eat something	n	
+	1	뭐 먹고 싶은데	wh	What do you want to eat?	n	
+	1	뭐 먹고 있게	s	I will be eating something	n	
+	1	뭐 먹고 있게	yn	Will you be eating something?	n	
+	1	뭐 먹고 있게	wh	What will you be eating?	n	
+	1	뭐 먹고 있게	c	Eat something	n	
+	1	뭐 먹고 있게요	s	I will be eating something	p	
+	1	뭐 먹고 있게요	yn	Will you be eating something?	p	
+	1	뭐 먹고 있게요	wh	What will you be eating?	p	
+	1	뭐 먹고 있지	s	I am eating something	n	
+	1	뭐 먹고 있지	yn	You are eating something, right?	n	aff
+	1	뭐 먹고 있지	wh	What are you eating?	n	
+	1	뭐 먹으려고	s	I am going to eat something	n	
+	1	뭐 먹으려고	yn	Are you going to eat something?	n	
+	1	뭐 먹으려고	wh	What are you going to eat?	n	
+	1	뭐 먹으려고요	s	I am going to eat something	p	
+	1	뭐 먹으려고요	yn	Are you going to eat something?	p	
+	1	뭐 먹으려고요	wh	What are you going to eat?	p	
+	1	뭐 먹으려고 했지	s	I was going to eat something	n	
+	1	뭐 먹으려고 했지	yn	You were going to eat something, right?	n	aff
+	1	뭐 먹으려고 했지	wh	What were you going to eat?	n	
+	1	뭐 먹으려고 했지요	s	I was going to eat something	p	
+	1	뭐 먹으려고 했지요	yn	You were going to eat something, right?	p	aff
+	1	뭐 먹으려고 했지요	wh	What were you going to eat?	p	
+	1	뭐 먹을지 정했어	s	I decided what to eat	n	
+	1	뭐 먹을지 정했어	yn	Have you decided what to eat?	n	
+	1	뭐 먹을진 정했지	s	I decided what to eat	n	
+	1	뭐 먹을진 정했지	yn	Have you decided what to eat?	n	
+	1	뭐 먹으면 좋을 것 같아	s	It's a good idea to eat something	n	
+	1	뭐 먹으면 좋을 것 같아	wh	What do you think is good to eat?	n	
+	1	뭐 먹는다구	s	I said I'm gonna eat sth	n	
+	1	뭐 먹는다구	yn	Did you say you are going to eat something?	n	
+	1	뭐 먹는다구	wh	What did you say you were going to eat?	n	
+	1	뭐 먹는다구	rq	You are going to eat something, huh? 	n	(= It's not a good idea to eat something)
+	1	뭐 먹는다구요	s	I said I'm gonna eat sth	p	
+	1	뭐 먹는다구요	yn	Did you say you are going to eat something?	p	
+	1	뭐 먹는다구요	wh	What did you say you were going to eat?	p	
+	1	뭐 먹는다구요	rq	You are going to eat something, huh? 	p	(= It's not a good idea to eat something)
+	1	뭐 먹을라구	s	I am going to eat something	n	
+	1	뭐 먹을라구	yn	Are you going to eat something?	n	
+	1	뭐 먹을라구	wh	What are you going to eat?	n	
+	1	뭐 먹을라구	rq	You are going to eat something, huh? 	n	(= It's not a good idea to eat something)
+	1	뭐 먹을라구요	s	I am going to eat something	p	
+	1	뭐 먹을라구요	yn	Are you going to eat something?	p	
+	1	뭐 먹을라구요	wh	What are you going to eat?	p	
+	1	뭐 먹을라구요	rq	You are going to eat something, huh? 	p	(= It's not a good idea to eat something)
+	1	뭐 좀 먹게	s	I am going to eat something	n	
+	1	뭐 좀 먹게	yn	Are you going to eat something?	n	
+	1	뭐 좀 먹게	c	Eat something	n	
+	1	뭐 좀 먹게요	s	I am going to eat something	p	
+	1	뭐 좀 먹게요	yn	Are you going to eat something?	p	
+	1	뭐 좀 먹어야지	s	I should eat something	n	
+	1	뭐 좀 먹어야지	yn	You should eat something, right?	n	aff
+	1	뭐 좀 먹어야지	c	Eat something	n	
+	1	뭐 좀 먹을래	s	I am going to eat something	n	
+	1	뭐 좀 먹을래	yn	Do you want to eat sth?	n	
+	1	뭐 좀 먹을래요	s	I am going to eat something	p	
+	1	뭐 좀 먹을래요	yn	Do you want to eat sth?	p	
+	1	뭐 좀 먹고 가지	s	I am going to eat something before I leave	n	
+	1	뭐 좀 먹고 가지	yn	Will you eat something before you leave?	n	
+	1	뭐 좀 먹고 가지	c	Eat something before you leave	n	
+	1	뭐 좀 먹고 갈래	s	I am going to eat something before I leave	n	
+	1	뭐 좀 먹고 갈래	yn	Do you want to eat something before you leave?	n	
+	1	뭐 좀 먹고 갈래요	s	I am going to eat something before I leave	p	
+	1	뭐 좀 먹고 갈래요	yn	Do you want to eat something before you leave?	p	
+	1	뭐 좀 먹고 올래	s	I am going to eat something and come back	n	
+	1	뭐 좀 먹고 올래	yn	Do you want to eat something and come back?	n	
+	1	뭐 좀 먹고 올래요	s	I am going to eat something and come back	p	
+	1	뭐 좀 먹고 올래요	yn	Do you want to eat something and come back?	p	
+	1	뭐 좀 먹고 있어	s	I am eating something	n	
+	1	뭐 좀 먹고 있어	yn	Are you eating something?	n	
+	1	뭐 좀 먹고 있어	c	Eat something	n	
+	1	뭐 좀 먹고 있어요	s	I am eating something	p	
+	1	뭐 좀 먹고 있어요	yn	Are you eating something?	p	
+	1	뭐 좀 먹고 있어요	c	Eat something	p	
+	1	뭐 좀 먹지	s	I am going to eat something	n	
+	1	뭐 좀 먹지	yn	You eat something, right?	n	aff
+	1	뭐 좀 먹지	c	Eat something	n	
+	1	뭐가 먹고 싶어	s	I want to eat something	n	
+	1	뭐가 먹고 싶어	yn	Do you want to eat something?	n	
+	1	뭐가 먹고 싶어	wh	What do you want to eat?	n	
+	1	뭐가 먹고 싶어	rq	Do you really want to eat sth?	n	(= There should be nothing you want to eat)
+	1	뭐가 먹고 싶어요	s	I want to eat something	p	
+	1	뭐가 먹고 싶어요	yn	Do you want to eat something?	p	
+	1	뭐가 먹고 싶어요	wh	What do you want to eat?	p	
+	1	뭐가 먹고 싶어요	rq	Do you really want to eat sth?	p	(= There should be nothing you want to eat)
+	1	뭐가 먹고 싶길래	s	I wanted to eat something	n	
+	1	뭐가 먹고 싶길래	wh	What do you want to eat?	n	
+	1	뭐가 먹고 싶길래요	s	I wanted to eat something	p	
+	1	뭐가 먹고 싶길래요	wh	What do you want to eat?	p	
+	1	뭐가 먹고 싶은데	s	I want to eat something	n	
+	1	뭐가 먹고 싶은데	wh	What do you want to eat?	n	
+	1	뭐가 먹을 만 해	yn	Is something worth eating?	n	
+	1	뭐가 먹을 만 해	wh	What is worth eating?	n	
+	1	뭐가 먹을 만 해	rq	Is anything worth eating? 	n	(= There is nothing worth eating)
+	1	뭐가 먹을 만 해요	yn	Is something worth eating?	p	
+	1	뭐가 먹을 만 해요	wh	What is worth eating?	p	
+	1	뭐가 먹을 만 해요	rq	Is anything worth eating? 	p	(= There is nothing worth eating)
+	1	뭐라도 먹게	s	I am going to eat something	n	
+	1	뭐라도 먹게	yn	Are you going to eat something?	n	
+	1	뭐라도 먹게	c	Eat something	n	
+	1	뭐라도 먹고 있게	s	I will be eating something	n	
+	1	뭐라도 먹고 있게	yn	Will you be eating something?	n	
+	1	뭐라도 먹고 있게	c	Eat something	n	
+	1	뭘 먹고 싶은데	s	I want to eat something	n	
+	1	뭘 먹고 싶은데	wh	What do you want to eat?	n	
+	1	뭘 먹고 싶어	s	I want to eat something	n	
+	1	뭘 먹고 싶어	yn	Do you want to eat something?	n	
+	1	뭘 먹고 싶어	wh	What do you want to eat?	n	
+	1	뭘 먹고 싶어	rq	Do you ever want to eat anything? 	n	(= You sould not have anything you want to eat)
+	1	뭘 먹고 싶어요	s	I want to eat something	p	
+	1	뭘 먹고 싶어요	yn	Do you want to eat something?	p	
+	1	뭘 먹고 싶어요	wh	What do you want to eat?	p	
+	1	뭘 먹고 싶어요	rq	Do you ever want to eat anything? 	p	(= You sould not have anything you want to eat)
+모르다	1	뭔지 모르겠어	s	I don't know	n	
+don't know	1	뭔지 모르겠어	yn	Don't you know?	n	
+	1	뭔지 모르겠어	rq	Don't you know? 	n	(= You should know)
+	1	뭔지 모르겠어요	s	I don't know	p	
+	1	뭔지 모르겠어요	yn	Don't you know?	p	
+	1	뭔지 모르겠어요	rq	Don't you know? 	p	(= You should know)
+문제다	1	뭐가 문제야	s	Something is a problem	n	
+be a problem	1	뭐가 문제야	wh	What is the problem?	n	
+	1	뭐가 문제예요	s	Something is a problem	p	
+	1	뭐가 문제예요	wh	What is the problem?	p	
+바뀌다	1	뭐가 바뀐대	s	I heard something is going to change	n	
+change	1	뭐가 바뀐대	yn	Do they say something is going to change?	n	rep
+	1	뭐가 바뀐대	wh	What do they say is going to change?	n	rep
+	1	뭐가 바뀐대요	s	I heard something is going to change	p	
+	1	뭐가 바뀐대요	yn	Do they say something is going to change?	p	rep
+	1	뭐가 바뀐대요	wh	What do they say is going to change?	p	rep
+	1	뭐가 바뀌었어	s	Something changed	n	
+	1	뭐가 바뀌었어	yn	Did something change?	n	
+	1	뭐가 바뀌었어	wh	What changed?	n	
+	1	뭐가 바뀌었어요	s	Something changed	p	
+	1	뭐가 바뀌었어요	yn	Did something change?	p	
+	1	뭐가 바뀌었어요	wh	What changed?	p	
+바르다	1	뭐 발라	s	I am applying something on my skin	n	
+apply	1	뭐 발라	yn	Are you applying something on your skin?	n	
+	1	뭐 발라	wh	What are you applying on your skin?	n	
+	1	뭐 발라	c	Apply something on your skin	n	
+	1	뭐 발라요	s	I am applying something on my skin	p	
+	1	뭐 발라요	yn	Are you applying something on your skin?	p	
+	1	뭐 발라요	wh	What are you applying on your skin?	p	
+	1	뭐 발라요	c	Apply something on your skin	p	
+	1	뭐 바르려구	s	I am going to apply something on my skin	n	
+	1	뭐 바르려구	yn	Are you going to apply something on your skin?	n	
+	1	뭐 바르려구	wh	What are you going to apply on your skin?	n	
+	1	뭐 바르려구요	s	I am going to apply something on my skin	p	
+	1	뭐 바르려구요	yn	Are you going to apply something on your skin?	p	
+	1	뭐 바르려구요	wh	What are you going to apply on your skin?	p	
+	1	뭐 발라드려야 돼	s	I have to apply something on their skin	n	
+	1	뭐 발라드려야 돼	yn	Do you have to apply something on their skin?	n	
+	1	뭐 발라드려야 돼	wh	What do you have to apply on their skin?	n	
+	1	뭐 발라드려야 돼	c	You should apply something on their skin	n	
+	1	뭐 발라드려야 돼요	s	I have to apply something on their skin	p	
+	1	뭐 발라드려야 돼요	yn	Do you have to apply something on their skin?	p	
+	1	뭐 발라드려야 돼요	wh	What do you have to apply on their skin?	p	
+	1	뭐 발라드려야 돼요	c	You should apply something on their skin	p	
+받다	1	뭐 받았어	s	I got something	n	
+get	1	뭐 받았어	yn	Did you get something?	n	
+	1	뭐 받았어	wh	What did you get?	n	
+	1	뭐 받았어요	s	I got something	p	
+	1	뭐 받았어요	yn	Did you get something?	p	
+	1	뭐 받았어요	wh	What did you get?	p	
+	1	뭐 받아왔어	s	I got something	n	
+	1	뭐 받아왔어	yn	Did you get something?	n	
+	1	뭐 받아왔어	wh	What did you get?	n	
+	1	뭐 받아왔어요	s	I got something	p	
+	1	뭐 받아왔어요	yn	Did you get something?	p	
+	1	뭐 받아왔어요	wh	What did you get?	p	
+	1	뭐 받을 거 있어	s	I have something to get from them	n	
+	1	뭐 받을 거 있어	yn	Do you have something to get from them?	n	
+	1	뭐 받을 거 있어요	s	I have something to get from them	p	
+	1	뭐 받을 거 있어요	yn	Do you have something to get from them?	p	
+	1	뭐 받아오나 봐	s	It seems that they are getting something	n	
+	1	뭐 받아오나 봐	yn	It seems that they are getting something, right?	n	aff
+	1	뭐 받아오나 봐요	s	It seems that they are getting something	p	
+	1	뭐 받아오나 봐요	yn	It seems that they are getting something, right?	p	aff
+밝혀내다	1	뭔가 밝혀냈어	s	I found something	n	
+found	1	뭔가 밝혀냈어	yn	Did you find something?	n	
+	1	뭔가 밝혀냈어요	s	I found something	p	
+	1	뭔가 밝혀냈어요	yn	Did you find something?	p	
+보다	1	뭐 보려구	s	I want to see something	n	
+see	1	뭐 보려구	yn	Do you want to see something?	n	
+	1	뭐 보려구	wh	What do you want to see?	n	
+	1	뭐 보려구요	s	I want to see something	p	
+	1	뭐 보려구요	yn	Do you want to see something?	p	
+	1	뭐 보려구요	wh	What do you want to see?	p	
+	1	뭐 보고 싶어	s	I want to see something	n	
+	1	뭐 보고 싶어	yn	Do you want to see something?	n	
+	1	뭐 보고 싶어	wh	What do you want to see?	n	
+	1	뭐 보고 싶은 거 있어	s	I have something I want to see	n	
+	1	뭐 보고 싶은 거 있어	yn	Do you have something you want to see?	n	
+	1	뭐 보고 싶은 거 있어요	s	I have something I want to see	p	
+	1	뭐 보고 싶은 거 있어요	yn	Do you have something you want to see?	p	
+보여주다	1	뭐 좀 보여줄래	s	I will show you something	n	
+show	1	뭐 좀 보여줄래	r	Will you show me something?	n	
+	1	뭐 좀 보여줄래요	s	I will show you something	p	
+	1	뭐 좀 보여줄래요	r	Will you show me something?	p	
+보다	1	뭐 좀 볼 게 있어	s	I have something I need to see	n	
+see	1	뭐 좀 볼 게 있어	yn	Do you have something you need to see?	n	
+	1	뭐 좀 볼 게 있어요	s	I have something I need to see	p	
+	1	뭐 좀 볼 게 있어요	yn	Do you have something you need to see?	p	
+	1	뭐가 보고 싶길래	s	I wanted to see something	n	
+	1	뭐가 보고 싶길래	wh	What do you want to see?	n	
+	1	뭐가 보여	s	I see something	n	
+	1	뭐가 보여	yn	Do you see something?	n	
+	1	뭐가 보여	wh	What do you see?	n	
+	1	뭐가 보여요	s	I see something	p	
+	1	뭐가 보여요	yn	Do you see something?	p	
+	1	뭐가 보여요	wh	What do you see?	p	
+	1	뭔가 보여	s	I see something	n	
+	1	뭔가 보여	yn	Do you see something?	n	
+	1	뭔가 보여요	s	I see something	p	
+	1	뭔가 보여요	yn	Do you see something?	p	
+	1	뭘 보고 있어	s	I am looking at something	n	
+	1	뭘 보고 있어	yn	Are you looking at something?	n	
+	1	뭘 보고 있어	wh	What are you looking at?	n	
+	1	뭘 보고 있어	rq	What are you looking at? 	n	(= I feel offended that you are looking at me)
+	1	뭘 보고 있어요	s	I am looking at something	p	
+	1	뭘 보고 있어요	yn	Are you looking at something?	p	
+	1	뭘 보고 있어요	wh	What are you looking at?	p	
+	1	뭘 보고 있어요	rq	What are you looking at? 	p	(= I feel offended that you are looking at me)
+부르다	1	뭐 불러야 되나	yn	Should I call sbd?	n	
+call	1	뭐 불러야 되나	wh	Who should I call?	n	
+	1	뭐 불러야 되나요	yn	Should I call sbd?	p	
+	1	뭐 불러야 되나요	wh	Who should I call?	p	
+불편하다	1	뭐 불편한 건 없어	s	There is nothing uncomfortable	n	
+be uncomfortable	1	뭐 불편한 건 없어	yn	Is anything uncomfortable?	n	
+	1	뭐 불편한 건 없어요	s	There is nothing uncomfortable	p	
+	1	뭐 불편한 건 없어요	yn	Is anything uncomfortable?	p	
+	1	뭐 불편한 건 없지	s	There is nothing uncomfortable	n	
+	1	뭐 불편한 건 없지	yn	There is nothing uncomfortable, right?	n	aff
+	1	뭐 불편한 건 없죠	s	There is nothing uncomfortable	p	
+	1	뭐 불편한 건 없죠	yn	There is nothing uncomfortable, right?	p	aff
+빌리다	1	뭐 빌렸어	s	I borrowed something	n	
+borrow	1	뭐 빌렸어	yn	Did you borrow something?	n	
+	1	뭐 빌렸어	wh	What did you borrow?	n	
+	1	뭐 빌렸어요	s	I borrowed something	p	
+	1	뭐 빌렸어요	yn	Did you borrow something?	p	
+	1	뭐 빌렸어요	wh	What did you borrow?	p	
+	1	뭐 좀 빌렸어	s	I borrowed something	n	
+	1	뭐 좀 빌렸어	yn	Did you borrow something?	n	
+	1	뭐 좀 빌렸어요	s	I borrowed something	p	
+	1	뭐 좀 빌렸어요	yn	Did you borrow something?	p	
+	1	뭐 좀 빌렸대	s	I heard they borrowed something	n	
+	1	뭐 좀 빌렸대	yn	Do they say they borrowed something?	n	rep
+	1	뭐 좀 빌렸대요	s	I heard they borrowed something	p	
+	1	뭐 좀 빌렸대요	yn	Do they say they borrowed something?	p	rep
+빌려주다	1	뭐 좀 빌려줄래	s	I will lend them something	n	
+lend	1	뭐 좀 빌려줄래	r	Will you lend me something?	n	
+	1	뭐 좀 빌려줄래요	s	I will lend them something	p	
+	1	뭐 좀 빌려줄래요	r	Will you lend me something?	p	
+사다	1	뭐 사고 싶어	s	I want to buy something	n	
+buy	1	뭐 사고 싶어	yn	Do you want to buy something?	n	
+	1	뭐 사고 싶어	wh	What do you want to buy?	n	
+	1	뭐 사고 싶어요	s	I want to buy something	p	
+	1	뭐 사고 싶어요	yn	Do you want to buy something?	p	
+	1	뭐 사고 싶어요	wh	What do you want to buy?	p	
+	1	뭐 살 거 있어	s	I have something to buy	n	
+	1	뭐 살 거 있어	yn	Do you have something to buy?	n	
+	1	뭐 살 거 있어요	s	I have something to buy	p	
+	1	뭐 살 거 있어요	yn	Do you have something to buy?	p	
+	1	뭐 사 올까	yn	Should I buy something?	n	
+	1	뭐 사 올까	wh	What should I buy?	n	
+	1	뭐 사 올까요	yn	Should I buy something?	p	
+	1	뭐 사 올까요	wh	What should I buy?	p	
+	1	뭐 사오래	s	They told me to buy something	n	
+	1	뭐 사오래	yn	Did they tell you to buy something?	n	rep
+	1	뭐 사오래	wh	What did they tell you to buy?	n	rep
+	1	뭐 사오래요	s	They told me to buy something	p	
+	1	뭐 사오래요	yn	Did they tell you to buy something?	p	rep
+	1	뭐 사오래요	wh	What did they tell you to buy?	p	rep
+	1	뭐 사왔어	s	I bought something	n	
+	1	뭐 사왔어	yn	Did you buy something?	n	
+	1	뭐 사왔어	wh	What did you buy?	n	
+	1	뭐 사왔어요	s	I bought something	p	
+	1	뭐 사왔어요	yn	Did you buy something?	p	
+	1	뭐 사왔어요	wh	What did you buy?	p	
+	1	뭐 사오나 봐	s	It seems that they bought something	n	
+	1	뭐 사오나 봐	yn	It seems that they bought something, right?	n	aff
+	1	뭐 사오나 봐	rc	See what I buy	n	
+	1	뭐 사주나 봐	s	It seems that they buy something for you/me/us	n	
+	1	뭐 사주나 봐	yn	It seems that they buy something for you/me/us, right?	n	aff
+	1	뭐 사주나 봐	rc	See what I buy for you	n	
+	1	뭐 좀 산대	s	I heard they will buy something	n	
+	1	뭐 좀 산대	yn	Do they say they will buy something?	n	rep
+	1	뭐 좀 산대요	s	I heard they will buy something	p	
+	1	뭐 좀 산대요	yn	Do they say they will buy something?	p	rep
+	1	뭐 좀 샀대	s	I heard they bought something	n	
+	1	뭐 좀 샀대	yn	Do they say they bought something?	n	rep
+	1	뭐 좀 샀대요	s	I heard they bought something	p	
+	1	뭐 좀 샀대요	yn	Do they say they bought something?	p	rep
+	1	뭐 좀 사왔대	s	I heard they bought something	n	
+	1	뭐 좀 사왔대	yn	Do they say they bought something?	n	rep
+	1	뭐 좀 사왔대요	s	I heard they bought something	p	
+	1	뭐 좀 사왔대요	yn	Do they say they bought something?	p	rep
+	1	뭐 좀 사온대	s	I heard they will buy something	n	
+	1	뭐 좀 사온대	yn	Do they say they will buy something?	n	rep
+	1	뭐 좀 사온대요	s	I heard they will buy something	p	
+	1	뭐 좀 사온대요	yn	Do they say they will buy something?	p	rep
+생각나다	1	뭐 생각나는 거 있어	s	Something comes to my mind	n	
+come to mind	1	뭐 생각나는 거 있어	yn	Does anything come to your mind?	n	
+	1	뭐 생각나는 거 있어요	s	Something comes to my mind	p	
+	1	뭐 생각나는 거 있어요	yn	Does anything come to your mind?	p	
+슬프다	1	뭐가 그렇게 슬프대	s	They say something makes them so sad	n	
+sad	1	뭐가 그렇게 슬프대	wh	What do they say makes them so sad?	n	rep
+	1	뭐가 그렇게 슬프대	rq	What do they say makes them so sad? 	n	(= There is nothing that would make them sad)
+	1	뭐가 그렇게 슬프대요	s	They say something makes them so sad	p	
+	1	뭐가 그렇게 슬프대요	wh	What do they say makes them so sad?	p	rep
+	1	뭐가 그렇게 슬프대요	rq	What do they say makes them so sad? 	p	(= There is nothing that would make them sad)
+알겠다	1	뭔가 알겠어	s	I think I know something	n	
+know	1	뭔가 알겠어	yn	Do you think you know something?	n	
+	1	뭔가 알겠어요	s	I think I know something	p	
+	1	뭔가 알겠어요	yn	Do you think you know something?	p	
+	1	뭔지 알겠어	s	I know what it is	n	
+	1	뭔지 알겠어	yn	Do you know what it is?	n	
+	1	뭔지 알겠어요	s	I know what it is	p	
+	1	뭔지 알겠어요	yn	Do you know what it is?	p	
+없어지다	1	뭐 없어졌어	s	Something disappeared	n	
+disappear	1	뭐 없어졌어	yn	Has something disappeared?	n	
+	1	뭐 없어졌어	wh	What has disappeared?	n	
+	1	뭐 없어졌어요	s	Something disappeared	p	
+	1	뭐 없어졌어요	yn	Has something disappeared?	p	
+	1	뭐 없어졌어요	wh	What has disappeared?	p	
+	1	뭐가 없어	s	Something disappeared	n	
+	1	뭐가 없어	yn	Has something disappeared?	n	
+	1	뭐가 없어	wh	What has disappeared?	n	
+	1	뭐가 없어요	s	Something disappeared	p	
+	1	뭐가 없어요	yn	Has something disappeared?	p	
+	1	뭐가 없어요	wh	What has disappeared?	p	
+	1	뭐가 없어졌어	s	Something disappeared	n	
+	1	뭐가 없어졌어	yn	Has something disappeared?	n	
+	1	뭐가 없어졌어	wh	What has disappeared?	n	
+	1	뭐가 없어졌어요	s	Something disappeared	p	
+	1	뭐가 없어졌어요	yn	Has something disappeared?	p	
+	1	뭐가 없어졌어요	wh	What has disappeared?	p	
+	1	뭔가 없어졌어	s	Something disappeared	n	
+	1	뭔가 없어졌어	yn	Has something disappeared?	n	
+	1	뭔가 없어졌어요	s	Something disappeared	p	
+	1	뭔가 없어졌어요	yn	Has something disappeared?	p	
+예쁘다	1	뭐가 예뻐	wh	What is pretty?	n	
+be pretty	1	뭐가 예뻐	rq	What is pretty? 	n	(= There is nothing pretty)
+	1	뭐가 예뻐요	wh	What is pretty?	p	
+	1	뭐가 예뻐요	rq	What is pretty? 	p	(= There is nothing pretty)
+	1	뭐가 예쁘냐	wh	What is pretty?	n	
+	1	뭐가 예쁘냐	rq	What is pretty? 	n	(= There is nothing pretty)
+	1	뭐가 예쁘다고	wh	What is pretty?	n	
+	1	뭐가 예쁘다고	rq	What is pretty? 	n	(= There is nothing pretty)
+오다	1	뭐 온 거 있어	s	Something has been delivered	n	
+be delivered	1	뭐 온 거 있어	yn	Has anything been delivered?	n	
+	1	뭐 온 거 있어요	s	Something has been delivered	p	
+	1	뭐 온 거 있어요	yn	Has anything been delivered?	p	
+	1	뭐 왔어	s	Something has been delivered	n	
+	1	뭐 왔어	yn	Has something been delivered?	n	
+	1	뭐 왔어	wh	What has been delivered?	n	
+	1	뭐 왔어요	s	Something has been delivered	p	
+	1	뭐 왔어요	yn	Has something been delivered?	p	
+	1	뭐 왔어요	wh	What has been delivered?	p	
+	1	뭐 올 거 있어	s	Something will be delivered	n	
+	1	뭐 올 거 있어	yn	Is there anything that will be delivered?	n	
+	1	뭐 올 거 있어요	s	Something will be delivered	p	
+	1	뭐 올 거 있어요	yn	Is there anything that will be delivered?	p	
+	1	뭐 온대	s	I heard that something will be delivered	n	
+	1	뭐 온대	yn	Do they say something will be delivered?	n	
+	1	뭐 온대	wh	What do they say will be delivered?	n	
+	1	뭐 온대요	s	I heard that something will be delivered	p	
+	1	뭐 온대요	yn	Do they say something will be delivered?	p	
+	1	뭐 온대요	wh	What do they say will be delivered?	p	
+웃기다	1	뭐가 웃겨	wh	What is funny?	n	
+be funny	1	뭐가 웃겨	rq	What is funny? 	n	(= There is nothing funny)
+	1	뭐가 그렇게 웃겨	wh	What is so funny?	n	
+	1	뭐가 그렇게 웃겨	rq	What is so funny? 	n	(= There is nothing funny)
+	1	뭐가 그렇게 웃겨요	wh	What is so funny?	p	
+	1	뭐가 그렇게 웃겨요	rq	What is so funny? 	p	(= There is nothing funny)
+	1	뭐가 그렇게 웃기대	s	I heard that something is so funny	n	
+	1	뭐가 그렇게 웃기대	wh	What do they say is so funny?	n	rep
+	1	뭐가 그렇게 웃기대	rq	What do they say is so funny? 	n	(= There is nothing funny)
+	1	뭐가 그렇게 웃기대요	s	I heard that something is so funny	p	
+	1	뭐가 그렇게 웃기대요	wh	What do they say is so funny?	p	rep
+	1	뭐가 그렇게 웃기대요	rq	What do they say is so funny? 	p	(= There is nothing funny)
+이상하다	1	뭔가 이상해	s	Something is strange	n	
+be strange	1	뭔가 이상해	yn	Is something strange?	n	
+	1	뭔가 이상해요	s	Something is strange	p	
+	1	뭔가 이상해요	yn	Is something strange?	p	
+	1	뭔가 이상한 것 같아	s	I think something is strange	n	
+	1	뭔가 이상한 것 같아	yn	Do you think something is strange?	n	
+	1	뭔가 이상한 것 같아요	s	I think something is strange	p	
+	1	뭔가 이상한 것 같아요	yn	Do you think something is strange?	p	
+잃어버리다	1	뭐 잃어버렸어	s	I lost something	n	
+lose	1	뭐 잃어버렸어	yn	Have you lost something?	n	
+	1	뭐 잃어버렸어	wh	What have you lost?	n	
+	1	뭐 잃어버렸어요	s	I lost something	p	
+	1	뭐 잃어버렸어요	yn	Have you lost something?	p	
+	1	뭐 잃어버렸어요	wh	What have you lost?	p	
+	1	뭐 잃어버렸대	s	I heard they lost something	n	
+	1	뭐 잃어버렸대	yn	Did you hear that they lost something?	n	
+	1	뭐 잃어버렸대	wh	What did you hear that they lost?	n	
+	1	뭐 잃어버렸대요	s	I heard they lost something	p	
+	1	뭐 잃어버렸대요	yn	Did you hear that they lost something?	p	
+	1	뭐 잃어버렸대요	wh	What did you hear that they lost?	p	
+일이 있다	1	무슨 일 있어	s	Something happened	n	
+happen	1	무슨 일 있어	yn	Has something happened?	n	
+	1	무슨 일 있어요	s	Something happened	p	
+	1	무슨 일 있어요	yn	Has something happened?	p	
+	1	무슨 일 있대	s	I heard that something happened	n	
+	1	무슨 일 있대	yn	Do they say that something happened?	n	rep
+	1	무슨 일 있대요	s	I heard that something happened	p	
+	1	무슨 일 있대요	yn	Do they say that something happened?	p	rep
+있다	1	뭔가 있어	s	There is something about it	n	
+be	1	뭔가 있어	yn	Is there something about it?	n	
+	1	뭔가 있어요	s	There is something about it	p	
+	1	뭔가 있어요	yn	Is there something about it?	p	
+재미있다	1	뭐가 그렇게 재밌어	wh	What is so funny?	n	
+	1	뭐가 그렇게 재밌어	rq	What on earth is so funny? 	n	(= There is nothing funny about it)
+	1	뭐가 그렇게 재밌어요	wh	What is so funny?	p	
+	1	뭐가 그렇게 재밌어요	rq	What on earth is so funny? 	p	(= There is nothing funny about it)
+	1	뭐가 그렇게 재밌대	s	I heard something is so funny	n	
+	1	뭐가 그렇게 재밌대	wh	What do they say is so funny?	n	rep
+	1	뭐가 그렇게 재밌대	rq	What on earth do they say is so funny?	n	
+	1	뭐가 그렇게 재밌대요	s	I heard something is so funny	p	
+	1	뭐가 그렇게 재밌대요	wh	What do they say is so funny?	p	rep
+	1	뭐가 그렇게 재밌대요	rq	What on earth do they say is so funny?	p	
+주다	1	뭐 주게	s	I am going to give them something	n	
+give (out)	1	뭐 주게	yn	Are you going to give them something?	n	
+	1	뭐 주게	wh	What are you going to give them?	n	
+	1	뭐 주게요	s	I am going to give them something	p	
+	1	뭐 주게요	yn	Are you going to give them something?	p	
+	1	뭐 주게요	wh	What are you going to give them?	p	
+	1	뭐 주나 봐	s	It seems that they are giving out something	n	
+	1	뭐 주나 봐	yn	Are they giving out something?	n	
+	1	뭐 주나 봐	rc	See what I give you	n	
+	1	뭐 주는데	s	They are giving out something	n	
+	1	뭐 주는데	wh	What are they giving out?	n	
+	1	뭐 주는데	rq	What are they giving out?	n	(= I am skeptical about what they are giving out)
+	1	뭐 주는데요	wh	What are they giving out?	p	
+	1	뭐 주는데요	rq	What are they giving out?	p	(= I am skeptical about what they are giving out)
+	1	뭐 주려고	s	I am going to give them something	n	
+	1	뭐 주려고	yn	Are you going to give them something?	n	
+	1	뭐 주려고	wh	What are you going to give them?	n	
+	1	뭐 주려고요	s	I am going to give them something	p	
+	1	뭐 주려고요	yn	Are you going to give them something?	p	
+	1	뭐 주려고요	wh	What are you going to give them?	p	
+	1	뭐 준대	s	I heard that they are giving out something	n	
+	1	뭐 준대	yn	Is it true they are giving out something?	n	
+	1	뭐 준대	wh	What did you hear they are giving out?	n	
+	1	뭐 준대요	s	I heard that they are giving out something	p	
+	1	뭐 준대요	yn	Is it true they are giving out something?	p	
+	1	뭐 준대요	wh	What did you hear they are giving out?	p	
+	1	뭐 줄 거 있어	s	I have something to give you	n	
+	1	뭐 줄 거 있어	yn	Do you have something to give to me?	n	
+	1	뭐 줄 거 있어요	s	I have something to give you	p	
+	1	뭐 줄 거 있어요	yn	Do you have something to give to me?	p	
+	1	뭐 하나 줄래	s	I will give them something	n	
+	1	뭐 하나 줄래	r	Will you give me something?	n	
+	1	뭐 하나 줄래요	s	I will give them something	p	
+	1	뭐 하나 줄래요	r	Will you give me something?	p	
+	1	뭐 좀 줄래	s	I am going to give them something	n	
+	1	뭐 좀 줄래	wh	What will you give me?	n	
+	1	뭐 좀 줄래	r	Will you give me something?	n	
+	1	뭐 좀 줄래요	s	I am going to give them something	p	
+	1	뭐 좀 줄래요	wh	What will you give me?	p	
+	1	뭐 좀 줄래요	r	Will you give me something?	p	
+터지다	1	뭐가 터졌어	s	Something burst	n	
+burst	1	뭐가 터졌어	yn	Did something burst?	n	
+	1	뭐가 터졌어	wh	What burst?	n	
+	1	뭐가 터졌어요	s	Something burst	p	
+	1	뭐가 터졌어요	yn	Did something burst?	p	
+	1	뭐가 터졌어요	wh	What burst?	p	
+	1	뭐가 터졌대	s	I heard something burst	n	
+	1	뭐가 터졌대	yn	Do they say that something burst?	n	rep
+	1	뭐가 터졌대	wh	What do they say that burst?	n	rep
+	1	뭐가 터졌대요	s	I heard something burst	p	
+	1	뭐가 터졌대요	yn	Do they say that something burst?	p	rep
+	1	뭐가 터졌대요	wh	What do they say that burst?	p	rep
+하다	1	뭐 하고 있대	s	I heard they are doing something	n	
+do	1	뭐 하고 있대	yn	Do they say they are doing something?	n	rep
+stick around	1	뭐 하고 있대	wh	What do they say they are doing?	n	rep
+	1	뭐 하고 있대요	s	I heard they are doing something	p	
+	1	뭐 하고 있대요	yn	Do they say they are doing something?	p	rep
+	1	뭐 하고 있대요	wh	What do they say they are doing?	p	rep
+	1	뭐 하고 있어	s	I am doing something	n	
+	1	뭐 하고 있어	yn	Are you doing something?	n	
+	1	뭐 하고 있어	wh	What are you doing?	n	
+	1	뭐 하고 있어요	s	I am doing something	p	
+	1	뭐 하고 있어요	yn	Are you doing something?	p	
+	1	뭐 하고 있어요	wh	What are you doing?	p	
+	1	뭐 하기로 한 거 있어	s	I have something to do	n	
+	1	뭐 하기로 한 거 있어	yn	Do you have something to do?	n	
+	1	뭐 하기로 한 거 있어요	s	I have something to do	p	
+	1	뭐 하기로 한 거 있어요	yn	Do you have something to do?	p	
+	1	뭐 하려고	s	I am about to do something	n	
+	1	뭐 하려고	yn	Are you about to do something?	n	
+	1	뭐 하려고	wh	What are you about to do?	n	
+	1	뭐 하려고요	s	I am about to do something	p	
+	1	뭐 하려고요	yn	Are you about to do something?	p	
+	1	뭐 하려고요	wh	What are you about to do?	p	
+	1	뭐 하려고 그래	s	I am about to do something	n	
+	1	뭐 하려고 그래	yn	Are you about to do something?	n	
+	1	뭐 하려고 그래	wh	What are you about to do?	n	
+	1	뭐 하려고 그래	rq	What are you about to do? 	n	(= I am skeptical about what you do)
+	1	뭐 하려고 그래요	s	I am about to do something	p	
+	1	뭐 하려고 그래요	yn	Are you about to do something?	p	
+	1	뭐 하려고 그래요	wh	What are you about to do?	p	
+	1	뭐 하려고 그래요	rq	What are you about to do?	p	(= I am skeptical about what you do)
+	1	뭐 할 거 있어	s	I have something to do	n	
+	1	뭐 할 거 있어	yn	Do you have something to do?	n	
+	1	뭐 할 거 있어요	s	I have something to do	p	
+	1	뭐 할 거 있어요	yn	Do you have something to do?	p	
+	1	뭐 할 게 있다구	yn	What did you say you have to do?	n	
+	1	뭐 할 게 있다구	rq	What did you say you have to do? 	n	(= You should have nothing to do)
+	1	뭐 해야 되나	yn	Do I have to do something?	n	
+	1	뭐 해야 되나	wh	What do I have to do?	n	
+	1	뭐 해야 되나	rq	Do I have to do anything? 	n	(= There should be nothing I should do)
+	1	뭐 해야 되나요	yn	Do I have to do something?	p	
+	1	뭐 해야 되나요	wh	What do I have to do?	p	
+	1	뭐 해야 되나요	rq	Do I have to do anything? 	p	(= There should be nothing I should do)
+	1	뭐 해가야 되나	yn	Should I do sth before going there?	n	
+	1	뭐 해가야 되나	wh	What should I do before going there	n	
+	1	뭐 해가야 되나	rq	Do I have to do anything? 	n	(= There should be nothing I should do)
+	1	뭐 해가야 되나요	yn	Should I do sth before going there?	p	
+	1	뭐 해가야 되나요	wh	What should I do before going there	p	
+	1	뭐 해가야 되나요	rq	Do I have to do anything? 	p	(= There should be nothing I should do)
+	1	뭐 해가야 되려나	yn	Should I do something?	n	
+	1	뭐 해가야 되려나	wh	What should I do?	n	
+	1	뭐 해가야 되지	yn	I have to do something, right?	n	aff
+	1	뭐 해가야 되지	wh	What do I have to do?	n	
+	1	뭐 해가야 되죠	yn	I have to do something, right?	p	aff
+	1	뭐 해가야 되죠	wh	What do I have to do?	p	
+	1	뭐 해가나 봐	s	It seems that they are doing something	n	
+	1	뭐 해가나 봐	yn	It seems that they are doing something, right?	n	aff
+	1	뭐 해가나 봐	rc	See what I do for you	n	
+	1	뭐 좀 하고 있어	s	I am doing something	n	
+	1	뭐 좀 하고 있어	yn	Are you doing something?	n	
+	1	뭐 좀 하고 있어	c	Do something	n	
+	1	뭐 좀 하고 있어요	s	I am doing something	p	
+	1	뭐 좀 하고 있어요	yn	Are you doing something?	p	
+	1	뭐 좀 하고 있어요	c	Do something	p	
+	1	뭐 좀 한대	s	I heard they are doing something	n	
+	1	뭐 좀 한대	yn	Do they say they are doing something?	n	rep
+	1	뭐 좀 한대요	s	I heard they are doing something	p	
+	1	뭐 좀 한대요	yn	Do they say they are doing something?	p	rep
+	1	뭐 좀 할 게 있어	s	I have something to do	n	
+	1	뭐 좀 할 게 있어	yn	Do you have something to do?	n	
+	1	뭐 좀 할 게 있어요	s	I have something to do	p	
+	1	뭐 좀 할 게 있어요	yn	Do you have something to do?	p	
+	1	뭐 좀 할 게 있대	s	I heard they have something to do	n	
+	1	뭐 좀 할 게 있대	yn	Do they say they have something to do?	n	rep
+	1	뭐 좀 할 게 있대요	s	I heard they have something to do	p	
+	1	뭐 좀 할 게 있대요	yn	Do they say they have something to do?	p	rep
+	1	뭐 하나 해줄래	s	I will do something for you	n	
+	1	뭐 하나 해줄래	r	Would you do something for me?	n	
+	1	뭐 하나 해줄래요	s	I will do something for you	p	
+	1	뭐 하나 해줄래요	r	Would you do something for me?	p	
+	1	뭐든 하고 있게	s	I will be doing something	n	
+	1	뭐든 하고 있게	c	Do anything	n	
+	1	뭐라도 하고 있게	s	I will be doing something	n	
+	1	뭐라도 하고 있게	yn	Will you be doing something?	n	
+	1	뭐라도 하고 있게	c	Do anything	n	
+	1	뭘 해야 되나	yn	Do I have to do something?	n	
+	1	뭘 해야 되나	wh	What do I have to do?	n	
+	1	뭘 해야 되나	rq	Do I have to do something? (= There should be nothing I have to do)	n	
+	1	뭘 해야 되나요	yn	Do I have to do something?	p	
+	1	뭘 해야 되나요	wh	What do I have to do?	p	
+	1	뭘 해야 되나요	rq	Do I have to do something? (= There should be nothing I have to do)	p	
+흘리다	1	뭐 흘렸어	s	I spilled something	n	
+spill	1	뭐 흘렸어	yn	Did you spill something?	n	
+	1	뭐 흘렸어	wh	What did you spill?	n	
+	1	뭐 흘렸어요	s	I spilled something	p	
+	1	뭐 흘렸어요	yn	Did you spill something?	p	
+	1	뭐 흘렸어요	wh	What did you spill?	p	
+	1	뭐 흘렸대	s	I heard they spilled something	n	
+	1	뭐 흘렸대	yn	Do they say they spilled something?	n	rep
+	1	뭐 흘렸대	wh	What do they say they spilled?	n	rep
+	1	뭐 흘렸대요	s	I heard they spilled something	p	
+	1	뭐 흘렸대요	yn	Do they say they spilled something?	p	rep
+	1	뭐 흘렸대요	wh	What do they say they spilled?	p	rep
+	1	뭐 흘린 거 있어	s	I have spilled something	n	
+	1	뭐 흘린 거 있어	yn	Have you spilled something?	n	
+	1	뭐 흘린 거 있어요	s	I have spilled something	p	
+	1	뭐 흘린 거 있어요	yn	Have you spilled something?	p	
+힘들다	1	뭐 힘든 거 있어	s	Something bothers me	n	
+bother	1	뭐 힘든 거 있어	yn	Does something bother you?	n	
+	1	뭐 힘든 거 있어요	s	Something bothers me	p	
+	1	뭐 힘든 거 있어요	yn	Does something bother you?	p	
+	1	뭐 힘든 일 있어	s	Something bothers me	n	
+	1	뭐 힘든 일 있어	yn	Does something bother you?	n	
+	1	뭐 힘든 일 있어요	s	Something bothers me	p	
+	1	뭐 힘든 일 있어요	yn	Does something bother you?	p	
+	1	뭐가 그렇게 힘들어	wh	What bothers you?	n	
+	1	뭐가 그렇게 힘들어	rq	What bothers you? (= There is nothing to be bothered)	n	
+	1	뭐가 그렇게 힘들어요	wh	What bothers you?	p	
+	1	뭐가 그렇게 힘들어요	rq	What bothers you? (= There is nothing to be bothered)	p	
+	1	뭐가 그렇게 힘들대	s	I heard something bothers them	n	
+	1	뭐가 그렇게 힘들대	wh	What do they say bothers them?	n	rep
+	1	뭐가 그렇게 힘들대	rq	What do they say bothers them (= There is nothing to be bothered)	n	
+	1	뭐가 그렇게 힘들대요	s	I heard something bothers them	p	
+	1	뭐가 그렇게 힘들대요	wh	What do they say bothers them?	p	rep
+	1	뭐가 그렇게 힘들대요	rq	What do they say bothers them (= There is nothing to be bothered)	p	
+가다	2	어디 가는 중이야	s	I am going somewhere	n	
+go	2	어디 가는 중이야	yn	Are you going somewhere?	n	
+	2	어디 가는 중이야	wh	Where are you going?	n	
+	2	어디 가는 중이에요	s	I am going somewhere	p	
+	2	어디 가는 중이에요	yn	Are you going somewhere?	p	
+	2	어디 가는 중이에요	wh	Where are you going?	p	
+	2	어디 가려고	s	I am going somewhere	n	
+	2	어디 가려고	yn	Are you going somewhere?	n	
+	2	어디 가려고	wh	Where are you going?	n	
+	2	어디 가려고	rq	Where are you going?	n	(= You should not go anywhere)
+	2	어디 가려고요	s	I am going somewhere	p	
+	2	어디 가려고요	yn	Are you going somewhere?	p	
+	2	어디 가려고요	wh	Where are you going?	p	
+	2	어디 가려고요	rq	Where are you going?	p	(= You should not go anywhere)
+	2	어디 가려고 했지	s	I was about to go somewhere	n	
+	2	어디 가려고 했지	yn	Were you about to go somewhere?	n	
+	2	어디 가려고 했지	wh	Where were you about to go?	n	
+	2	어디 가려고 했죠	s	I was about to go somewhere	p	
+	2	어디 가려고 했죠	yn	Were you about to go somewhere?	p	
+	2	어디 가려고 했죠	wh	Where were you about to go?	p	
+	2	어디 가고 싶어	s	I want to go somewhere	n	
+	2	어디 가고 싶어	yn	Do you want to go somewhere?	n	
+	2	어디 가고 싶어	wh	Where do you want to go?	n	
+	2	어디 가고 싶어요	s	I want to go somewhere	p	
+	2	어디 가고 싶어요	yn	Do you want to go somewhere?	p	
+	2	어디 가고 싶어요	wh	Where do you want to go?	p	
+	2	어디 가나 봐	s	It seems that they are going somewhere	n	
+	2	어디 가나 봐	yn	It seems that they are going somewhere, right?	n	aff
+	2	어디 가나 봐	c	See where they are going	n	
+	2	어디 가나 봐	rc	See if I go anywhere	n	(= I won't go anywhere)
+	2	어디 가나 봐요	s	It seems that they are going somewhere	p	
+	2	어디 가나 봐요	yn	It seems that they are going somewhere, right?	p	aff
+	2	어디 가나 봐요	c	See where they are going	p	
+	2	어디 갈 곳 있어	s	I have somewhere to go	n	
+	2	어디 갈 곳 있어	yn	Do you have somewhere to go?	n	
+	2	어디 갈 곳 있어요	s	I have somewhere to go	p	
+	2	어디 갈 곳 있어요	yn	Do you have somewhere to go?	p	
+	2	어디 갈 데가 있어	s	I have somewhere to go	n	
+	2	어디 갈 데가 있어	yn	Do you have somewhere to go?	n	
+	2	어디 갈 데가 있어	rq	Do you have anywhere to go?	n	(= You should have nowhere to go)
+	2	어디 갈 데 있어요	s	I have somewhere to go	p	
+	2	어디 갈 데 있어요	yn	Do you have somewhere to go?	p	
+	2	어디 갈 데 있어요	rq	Do you have anywhere to go?	p	(= You should have nowhere to go)
+	2	어디 좀 갔다 왔어	s	I went somewhere	n	
+	2	어디 좀 갔다 왔어	yn	Did you go somewhere	n	
+	2	어디 좀 갔다 왔어요	s	I went somewhere	p	
+	2	어디 좀 갔다 왔어요	yn	Did you go somewhere	p	
+	2	어디로 가려고	s	I am going somewhere	n	
+	2	어디로 가려고	yn	Are you going somewhere?	n	
+	2	어디로 가려고	wh	Where are you going?	n	
+	2	어디로 가려고요	s	I am going somewhere	p	
+	2	어디로 가려고요	yn	Are you going somewhere?	p	
+	2	어디로 가려고요	wh	Where are you going?	p	
+	2	어디로 가게	yn	Are you going somewhere?	n	
+	2	어디로 가게	wh	Where are you going?	n	
+	2	어디로 가게요	yn	Are you going somewhere?	p	
+	2	어디로 가게요	wh	Where are you going?	p	
+	2	어딜 가고싶은 거야	yn	Do you want to go somewhere?	n	
+	2	어딜 가고싶은 거야	wh	Where do you want to go?	n	
+	2	어딜 가고싶은 거예요	yn	Do you want to go somewhere?	p	
+	2	어딜 가고싶은 거예요	wh	Where do you want to go?	p	
+가 있다	2	어디 가 있게	s	I will be staying somewhere	n	
+stay	2	어디 가 있게	yn	Will you be staying somewhere?	n	
+	2	어디 가 있게	wh	Where will you stay?	n	
+	2	어디 가 있게	c	Stay somewhere	n	
+	2	어디 가 있어	s	I am staying somewhere	n	
+	2	어디 가 있어	yn	Are you staying somewhere?	n	
+	2	어디 가 있어	wh	Where are you staying?	n	
+	2	어디 가 있어	c	Stay somewhere	n	
+	2	어디 가 있어요	s	I am staying somewhere	p	
+	2	어디 가 있어요	yn	Are you staying somewhere?	p	
+	2	어디 가 있어요	wh	Where are you staying?	p	
+	2	어디 가 있어요	c	Stay somewhere	p	
+	2	어디 좀 가 있어	s	I am staying somewhere	n	
+	2	어디 좀 가 있어	c	Stay somewhere	n	
+	2	어디 좀 가 있어요	s	I am staying somewhere	p	
+	2	어디 좀 가 있어요	c	Stay somewhere	p	
+갖다주다	2	어디 갖다 줄래	s	I will bring this to somewhere	n	
+bring	2	어디 갖다 줄래	wh	Where will you bring this to?	n	
+	2	어디 갖다 줄래	r	Will you bring this to somewhere?	n	
+	2	어디 갖다 줄래요	s	I will bring this to somewhere	p	
+	2	어디 갖다 줄래요	wh	Where will you bring this to?	p	
+	2	어디 갖다 줄래요	r	Will you bring this to somewhere?	p	
+괜찮다	2	어디 괜찮은 데 있나 봐	s	It seems that there is somewhere nice	n	
+nice	2	어디 괜찮은 데 있나 봐	yn	Is there somewhere nice?	n	
+	2	어디 괜찮은 데 있나 봐	c	See if there is somewhere nice	n	
+	2	어디 괜찮은 데 있나 봐요	s	It seems that there is somewhere nice	p	
+	2	어디 괜찮은 데 있나 봐요	yn	Is there somewhere nice?	p	
+	2	어디 괜찮은 데 있나 봐요	c	See if there is somewhere nice	p	
+다니다	2	어디 다녀	s	I work for somewhere	n	
+work for	2	어디 다녀	yn	Do you work for somewhere?	n	
+	2	어디 다녀	wh	Where do you work for?	n	
+	2	어디 다녀요	s	I work for somewhere	p	
+	2	어디 다녀요	yn	Do you work for somewhere?	p	
+	2	어디 다녀요	wh	Where do you work for?	p	
+	2	어디 다니고 있어	s	I am working for somewhere	n	
+	2	어디 다니고 있어	yn	Are you working for somewhere?	n	
+	2	어디 다니고 있어	wh	Where are you working for?	n	
+	2	어디 다니고 있어요	s	I am working for somewhere	p	
+	2	어디 다니고 있어요	yn	Are you working for somewhere?	p	
+	2	어디 다니고 있어요	wh	Where are you working for?	p	
+	2	어디 다니는 중이야	s	I am working for somewhere	n	
+	2	어디 다니는 중이야	yn	Are you working for somewhere?	n	
+	2	어디 다니는 중이야	wh	Where are you working for?	n	
+	2	어디 다니는 중이에요	s	I am working for somewhere	p	
+	2	어디 다니는 중이에요	yn	Are you working for somewhere?	p	
+	2	어디 다니는 중이에요	wh	Where are you working for?	p	
+	2	어디 좀 다니고 있어	s	I am working for somewhere	n	
+	2	어디 좀 다니고 있어	yn	Are you working for somewhere?	n	
+	2	어디 좀 다니고 있어요	s	I am working for somewhere	p	
+	2	어디 좀 다니고 있어요	yn	Are you working for somewhere?	p	
+다녀오다	2	어디 다녀왔어	s	I went somewhere	n	
+go	2	어디 다녀왔어	yn	Did you go somewhere?	n	
+	2	어디 다녀왔어	wh	Where did you go?	n	
+	2	어디 다녀왔어요	s	I went somewhere	p	
+	2	어디 다녀왔어요	yn	Did you go somewhere?	p	
+	2	어디 다녀왔어요	wh	Where did you go?	p	
+	2	어디 다녀오려고	s	I am going somewhere	n	
+	2	어디 다녀오려고	yn	Are you going somewhere?	n	
+	2	어디 다녀오려고	wh	Where are you going?	n	
+	2	어디 다녀오려고	rq	Where are you going?	n	(= You should not go anywhere)
+	2	어디 다녀오려고요	s	I am going somewhere	p	
+	2	어디 다녀오려고요	yn	Are you going somewhere?	p	
+	2	어디 다녀오려고요	wh	Where are you going?	p	
+	2	어디 다녀오려고요	rq	Where are you going?	p	(= You should not go anywhere)
+	2	어디 다녀오려고 했지	s	I was about to go somewhere	n	
+	2	어디 다녀오려고 했지	yn	Were you about to go somewhere?	n	
+	2	어디 다녀오려고 했지	wh	Where were you about to go?	n	
+	2	어디 다녀오려고 했지요	s	I was about to go somewhere	p	
+	2	어디 다녀오려고 했지요	yn	Were you about to go somewhere?	p	
+	2	어디 다녀오려고 했지요	wh	Where were you about to go?	p	
+	2	어디 다녀오고 싶어	s	I want to go somewhere	n	
+	2	어디 다녀오고 싶어	yn	Do you want to go somewhere?	n	
+	2	어디 다녀오고 싶어	wh	Where do you want to go?	n	
+	2	어디 다녀오고 싶어요	s	I want to go somewhere	p	
+	2	어디 다녀오고 싶어요	yn	Do you want to go somewhere?	p	
+	2	어디 다녀오고 싶어요	wh	Where do you want to go?	p	
+	2	어디 좀 다녀왔어	s	I went somewhere	n	
+	2	어디 좀 다녀왔어	yn	Did you go somewhere?	n	
+	2	어디 좀 다녀왔어요	s	I went somewhere	p	
+	2	어디 좀 다녀왔어요	yn	Did you go somewhere?	p	
+	2	어디 좀 다녀오게	s	I am going somewhere	n	
+	2	어디 좀 다녀오게	yn	Are you going somewhere?	n	
+	2	어디 좀 다녀오게	c	Go somewhere	n	
+데려가다	2	어디 데려갔어	s	I took them somewhere	n	
+take	2	어디 데려갔어	yn	Did you take them somewhere?	n	
+	2	어디 데려갔어	wh	Where did you take them?	n	
+	2	어디 데려갔어요	s	I took them somewhere	p	
+	2	어디 데려갔어요	yn	Did you take them somewhere?	p	
+	2	어디 데려갔어요	wh	Where did you take them?	p	
+	2	어디 데려갔대	s	I heard that they took them somewhere	n	
+	2	어디 데려갔대	yn	Do they say they took them somewhere?	n	rep
+	2	어디 데려갔대	wh	Where do they say they took them?	n	rep
+	2	어디 데려갔대요	s	I heard that they took them somewhere	p	
+	2	어디 데려갔대요	yn	Do they say they took them somewhere?	p	rep
+	2	어디 데려갔대요	wh	Where do they say they took them?	p	rep
+	2	어디 데려가줄래	wh	Where will you take me?	n	
+	2	어디 데려가줄래	r	Will you take me somewhere?	n	
+	2	어디 데려가줄래요	wh	Where will you take me?	p	
+	2	어디 데려가줄래요	r	Will you take me somewhere?	p	
+	2	어디 데리고 갔어	s	I took them somewhere	n	
+	2	어디 데리고 갔어	yn	Did you take them somewhere?	n	
+	2	어디 데리고 갔어	wh	Where did you take them?	n	
+	2	어디 데리고 갔어요	s	I took them somewhere	p	
+	2	어디 데리고 갔어요	yn	Did you take them somewhere?	p	
+	2	어디 데리고 갔어요	wh	Where did you take them?	p	
+	2	어디 데리고 간대	s	I heard that they will take them somewhere	n	
+	2	어디 데리고 간대	yn	Do they say they will take them somewhere?	n	rep
+	2	어디 데리고 간대	wh	Where do they say they will take them?	n	rep
+	2	어디 데리고 간대요	s	I heard that they will take them somewhere	p	
+	2	어디 데리고 간대요	yn	Do they say they will take them somewhere?	p	rep
+	2	어디 데리고 간대요	wh	Where do they say they will take them?	p	rep
+들르다	2	어디 들렀다 왔어	s	I stopped by somewhere	n	
+stop by	2	어디 들렀다 왔어	yn	Did you stop by somewhere?	n	
+	2	어디 들렀다 왔어	wh	Where did you stop by?	n	
+	2	어디 들렀다 왔어요	s	I stopped by somewhere	p	
+	2	어디 들렀다 왔어요	yn	Did you stop by somewhere?	p	
+	2	어디 들렀다 왔어요	wh	Where did you stop by?	p	
+	2	어디 들를 데 있어	s	I have somewhere to stop by	n	
+	2	어디 들를 데 있어	yn	Do you have somewhere to stop by?	n	
+	2	어디 들를 데 있어요	s	I have somewhere to stop by	p	
+	2	어디 들를 데 있어요	yn	Do you have somewhere to stop by?	p	
+	2	어디 들를 곳 있어	s	I have somewhere to stop by	n	
+	2	어디 들를 곳 있어	yn	Do you have somewhere to stop by?	n	
+	2	어디 들를 곳 있어요	s	I have somewhere to stop by	p	
+	2	어디 들를 곳 있어요	yn	Do you have somewhere to stop by?	p	
+떠나다	2	어디로 떠나려고	s	I am leaving for somewhere	n	
+leave	2	어디로 떠나려고	yn	Are you leaving for somewhere?	n	
+	2	어디로 떠나려고	wh	Where are you leaving for?	n	
+	2	어디로 떠나려고요	s	I am leaving for somewhere	p	
+	2	어디로 떠나려고요	yn	Are you leaving for somewhere?	p	
+	2	어디로 떠나려고요	wh	Where are you leaving for?	p	
+	2	어디로 떠나게	s	I am leaving for somewhere	n	
+	2	어디로 떠나게	yn	Are you leaving for somewhere?	n	
+	2	어디로 떠나게	wh	Where are you leaving for?	n	
+	2	어디로 떠나게	c	Leave for somewhere	n	
+	2	어디로 떠나게요	s	I am leaving for somewhere	p	
+	2	어디로 떠나게요	yn	Are you leaving for somewhere?	p	
+	2	어디로 떠나게요	wh	Where are you leaving for?	p	
+가보다	3	언제 가봤어	s	I have been there someday	n	
+have been	3	언제 가봤어	yn	Have you been there someday?	n	
+	3	언제 가봤어	wh	When have you been there?	n	
+	3	언제 가봤어요	s	I have been there someday	p	
+	3	언제 가봤어요	yn	Have you been there someday?	p	
+	3	언제 가봤어요	wh	When have you been there?	p	
+	3	언제 가봤대	s	I heard that they have been there someday	n	
+	3	언제 가봤대	yn	Do they say they have been there someday?	n	rep
+	3	언제 가봤대	wh	When do they say they have been there?	n	rep
+	3	언제 가봤대요	s	I heard that they have been there someday	p	
+	3	언제 가봤대요	yn	Do they say they have been there someday?	p	rep
+	3	언제 가봤대요	wh	When do they say they have been there?	p	rep
+	3	언제 가본 적 있어	s	I have been there someday	n	
+	3	언제 가본 적 있어	yn	Have you been there someday?	n	
+	3	언제 가본 적 있어요	s	I have been there someday	p	
+	3	언제 가본 적 있어요	yn	Have you been there someday?	p	
+그러다	3	언제 그랬대	s	I heard that they did so someday	n	
+do	3	언제 그랬대	yn	Do they say they did so someday?	n	rep
+	3	언제 그랬대	wh	When do they say they did so?	n	rep
+	3	언제 그랬대요	s	I heard that they did so someday	p	
+	3	언제 그랬대요	yn	Do they say they did so someday?	p	rep
+	3	언제 그랬대요	wh	When do they say they did so?	p	rep
+	3	언제 그런 적 있어	s	I have done so someday	n	
+	3	언제 그런 적 있어	yn	Have you done so someday?	n	
+	3	언제 그런 적 있어	rq	Have you done so someday?	n	(=You have not done so)
+	3	언제 그런 적 있어요	s	I have done so someday	p	
+	3	언제 그런 적 있어요	yn	Have you done so someday?	p	
+	3	언제 그런 적 있어요	rq	Have you done so someday?	p	(=You have not done so)
+만나다	3	언제 만나	yn	Shall we meet someday?	n	
+meet	3	언제 만나	wh	When do we meet?	n	
+	3	언제 만나	rc	When do we meet?	n	(=We don't need to meet)
+	3	언제 만나요	yn	Shall we meet someday?	p	
+	3	언제 만나요	wh	When do we meet?	p	
+	3	언제 만나요	rc	When do we meet?	p	(=We don't need to meet)
+	3	언제 만났어	s	I met them someday	n	
+	3	언제 만났어	yn	Did you meet them someday?	n	
+	3	언제 만났어	wh	When did you meet them?	n	
+	3	언제 만났어요	s	I met them someday	p	
+	3	언제 만났어요	yn	Did you meet them someday?	p	
+	3	언제 만났어요	wh	When did you meet them?	p	
+	3	언제 만났대	s	I heard that they met someday	n	
+	3	언제 만났대	yn	Do they say they met someday?	n	rep
+	3	언제 만났대	wh	When do they say they met?	n	rep
+	3	언제 만났대요	s	I heard that they met someday	p	
+	3	언제 만났대요	yn	Do they say they met someday?	p	rep
+	3	언제 만났대요	wh	When do they say they met?	p	rep
+	3	언제 다시 만나지	yn	We will meet again, right?	n	aff
+	3	언제 다시 만나지	wh	When shall we meet again?	n	
+	3	언제 다시 만나요	yn	Shall we meet again?	p	
+	3	언제 다시 만나요	wh	When shall we meet again?	p	
+	3	언제 다시 만나요	rc	Shall we meet again?	p	(=I am skeptical that we will meet again)
+	3	언제 다시 만나죠	yn	We will meet again, right?	p	
+	3	언제 다시 만나죠	wh	When shall we meet again?	p	
+	3	언제 다시 만나죠	rc	Let's meet again someday	p	
+모이다	3	언제 모여	yn	Shall we get together someday?	n	
+gather	3	언제 모여	wh	When do we get together?	n	
+	3	언제 모여	rc	Let's get together someday	n	(= I am skeptical that we will gather)
+	3	언제 모여요	yn	Shall we get together someday?	p	
+	3	언제 모여요	wh	When do we get together?	p	
+	3	언제 모여요	rc	Let's get together someday	p	(= I am skeptical that we will gather)
+	3	언제 다시 모여	yn	Shall we get together again someday?	n	
+	3	언제 다시 모여	wh	When shall we get together again?	n	
+	3	언제 다시 모여	rc	Let's get together again someday	n	(= I am skeptical that we will gather again)
+	3	언제 다시 모여요	yn	Shall we get together again someday?	p	
+	3	언제 다시 모여요	wh	When shall we get together again?	p	
+	3	언제 다시 모여요	rc	Let's get together again someday	p	(= I am skeptical that we will gather again)
+	3	언제 다시 모이죠	yn	We will get together again, right?	p	aff
+	3	언제 다시 모이죠	wh	When will we get together again?	p	
+	3	언제 다시 모이죠	rc	Let's get together again someday	p	(= I am skeptical that we will gather again)
+보다	3	언제 보지	yn	We will meet, right?	n	
+meet	3	언제 보지	wh	When shall we meet?	n	
+	3	언제 보죠	yn	We will meet, right?	p	
+	3	언제 보죠	wh	When shall we meet?	p	
+	3	언제 봐	yn	Shall we meet someday?	n	
+	3	언제 봐	wh	When will we meet?	n	
+	3	언제 봐	rc	Let's meet someday	n	(= I am skeptical that we will meet)
+	3	언제 봐요	yn	Shall we meet someday?	p	
+	3	언제 봐요	wh	When will we meet?	p	
+	3	언제 봐요	rc	Let's meet someday	p	(= I am skeptical that we will meet)
+	3	언제 또 봐	yn	Shall we meet again someday?	n	
+	3	언제 또 봐	wh	When shall we meet again?	n	
+	3	언제 또 봐	rc	Let's meet someday	n	(= I am skeptical that we will meet again)
+	3	언제 또 봐요	yn	Shall we meet again someday?	p	
+	3	언제 또 봐요	wh	When shall we meet again?	p	
+	3	언제 또 봐요	rc	Let's meet again someday	p	(= I am skeptical that we will meet again)
+	3	언제 다시 봐	yn	Shall we meet again someday?	n	
+	3	언제 다시 봐	wh	When will we meet again?	n	
+	3	언제 다시 봐	rc	Let's meet again someday	n	(= I am skeptical that we will meet again)
+	3	언제 다시 봐요	yn	Shall we meet again someday?	p	
+	3	언제 다시 봐요	wh	When will we meet again?	p	
+	3	언제 다시 봐요	rc	Let's meet again someday	p	(= I am skeptical that we will meet again)
+see	3	언제 봤어	yn	Did you see it someday?	n	
+	3	언제 봤어	wh	When did you see it?	n	
+	3	언제 봤어요	s	I saw it someday	p	
+	3	언제 봤어요	yn	Did you see it someday?	p	
+	3	언제 봤어요	wh	When did you see it?	p	
+	3	언제 본 적 있어	s	I have seen it someday	n	
+	3	언제 본 적 있어	yn	Have you seen it?	n	
+	3	언제 본 적 있어	rq	Have you seen it?	n	(= I am skeptical that you have seen it)
+	3	언제 본 적 있어요	s	I have seen it someday	p	
+	3	언제 본 적 있어요	yn	Have you seen it?	p	
+	3	언제 본 적 있어요	rq	Have you seen it?	p	(= I am skeptical that you have seen it)
+봐주다	3	언제 봐줬어	s	I took a look at it	n	
+take a look at	3	언제 봐줬어	yn	Did you take a look at it?	n	
+	3	언제 봐줬어	wh	When did you take a look at it?	n	
+	3	언제 봐줬어	rq	Did you ever take a look at it?	n	(= You have never taken a look at it)
+	3	언제 봐줬어요	s	I took a look at it	p	
+	3	언제 봐줬어요	yn	Did you take a look at it?	p	
+	3	언제 봐줬어요	wh	When did you take a look at it?	p	
+	3	언제 봐줬어요	rq	Did you ever take a look at it?	p	(= You have never taken a look at it)
+	3	언제 봐줬대	s	I heard that they took a look at it	n	
+	3	언제 봐줬대	yn	Did they take a look at it?	n	rep
+	3	언제 봐줬대	wh	When did they take a look at it?	n	rep
+	3	언제 봐줬대	rq	Did they ever take a look at it?	n	(= They have never taken a look at it)
+	3	언제 봐줬대요	s	I heard that they took a look at it	p	
+	3	언제 봐줬대요	yn	Did they take a look at it?	p	rep
+	3	언제 봐줬대요	wh	When did they take a look at it?	p	rep
+	3	언제 봐줬대요	rq	Did they ever take a look at it?	p	(= They have never taken a look at it)
+	3	언제 봐준 적 있어	s	I have taken a look at it	n	
+	3	언제 봐준 적 있어	yn	Have you taken a look at it?	n	
+	3	언제 봐준 적 있어	rq	Have you ever taken a look at it?	n	(= You have never taken a look at it)
+	3	언제 봐준 적 있어요	s	I have taken a look at it once	p	
+	3	언제 봐준 적 있어요	yn	Have you taken a look at it?	p	
+	3	언제 봐준 적 있어요	rq	Have you ever taken a look at it?	p	(= You have never taken a look at it)
+얘기하다	3	언제 얘기해봤어	s	I have talked with them someday	n	
+	3	언제 얘기해봤어	yn	Have you talked with them someday?	n	
+	3	언제 얘기해봤어	wh	When have you talked with them?	n	
+	3	언제 얘기해봤어	rq	Have you talked with them someday?	n	(= I am skeptical that you have talked with them)
+	3	언제 얘기해봤어요	s	I have talked with them someday	p	
+	3	언제 얘기해봤어요	yn	Have you talked with them someday?	p	
+	3	언제 얘기해봤어요	wh	When have you talked with them?	p	
+	3	언제 얘기해봤어요	rq	Have you talked with them someday?	p	(= I am skeptical that you have talked with them)
+	3	언제 얘기해본 적 있어	s	I have talked with them someday	n	
+	3	언제 얘기해본 적 있어	yn	Have you talked with them someday?	n	
+	3	언제 얘기해본 적 있어	rq	Have you talked with them someday?	n	(= I am skeptical that you have talked with them)
+	3	언제 얘기해본 적 있어요	s	I have talked with them someday	p	
+	3	언제 얘기해본 적 있어요	yn	Have you talked with them someday?	p	
+	3	언제 얘기해본 적 있어요	rq	Have you talked with them someday?	p	(= I am skeptical that you have talked with them)
+얘기해주다	3	언제 얘기해준 적 있어	s	I have told them someday	n	
+tell	3	언제 얘기해준 적 있어	yn	Have you told them someday?	n	
+	3	언제 얘기해준 적 있어	rq	Have you told them someday?	n	(= I am skeptical that you have told them)
+	3	언제 얘기해준 적 있어요	s	I have told them someday	p	
+	3	언제 얘기해준 적 있어요	yn	Have you told them someday?	p	
+	3	언제 얘기해준 적 있어요	rq	Have you told them someday?	p	(= I am skeptical that you have told them)
+	3	언제 얘기해줬어	s	I have told them someday	n	
+	3	언제 얘기해줬어	yn	Did you tell them someday?	n	
+	3	언제 얘기해줬어	wh	When did you tell them?	n	
+	3	언제 얘기해줬어	rq	Did you ever tell them? 	n	(= I am skeptical that you have told them)
+	3	언제 얘기해줬어요	s	I have told them someday	p	
+	3	언제 얘기해줬어요	yn	Did you tell them someday?	p	
+	3	언제 얘기해줬어요	wh	When did you tell them?	p	
+	3	언제 얘기해줬어요	rq	Did you ever tell them? 	p	(= I am skeptical that you have told them)
+	3	언제 얘기해줄래	s	I will tell them someday	n	
+	3	언제 얘기해줄래	rq	When will you tell me?	n	(= You haven't told me for so long time)
+	3	언제 얘기해줄래	r	Will you tell them someday?	n	
+	3	언제 얘기해줄래요	s	I will tell them someday	p	
+	3	언제 얘기해줄래요	rq	When will you tell me?	p	(= You haven't told me for so long time)
+	3	언제 얘기해줄래요	r	Will you tell them someday?	p	
+해보다	3	언제 해봤어	s	I tried it someday	n	
+try	3	언제 해봤어	yn	Did you try it someday?	n	
+	3	언제 해봤어	wh	When did you try it?	n	
+	3	언제 해봤어요	s	I tried it someday	p	
+	3	언제 해봤어요	yn	Did you try it someday?	p	
+	3	언제 해봤어요	wh	When did you try it?	p	
+	3	언제 해본 적 있어	s	I have tried it someday	n	
+	3	언제 해본 적 있어	yn	Have you tried it someday?	n	
+	3	언제 해본 적 있어요	s	I have tried it someday	p	
+	3	언제 해본 적 있어요	yn	Have you tried it someday?	p	
+해주다	3	언제 해줄래	rq	When will you do it?	n	(= I am skeptical that you will ever do it)
+do	3	언제 해줄래	r	Will you do it (for me) some time?	n	
+	3	언제 해줄래요	rq	When will you do it?	p	(= I am skeptical that you will ever do it)
+	3	언제 해줄래요	r	Will you do it (for me) some time?	p	
+되다	4	어떻게 돼도 괜찮아	s	I don't care how it ends up	n	
+	4	어떻게 돼도 괜찮아	yn	Do you not care how it ends up?	n	
+	4	어떻게 돼도 괜찮아요	s	I don't care how it ends up	p	
+	4	어떻게 돼도 괜찮아요	yn	Do you not care how it ends up?	p	
+	4	어떻게 돼도 괜찮대	s	I heard that they don't care how it ends up	n	
+	4	어떻게 돼도 괜찮대	yn	Do they say they don't care how it ends up?	n	rep
+	4	어떻게 돼도 괜찮대요	s	I heard that they don't care how it ends up	p	
+	4	어떻게 돼도 괜찮대요	yn	Do they say they don't care how it ends up?	p	rep
+끝나다	4	어떻게 끝났어	s	It ended somehow	n	
+end	4	어떻게 끝났어	yn	Did it end somehow?	n	
+	4	어떻게 끝났어	wh	How did it end?	n	
+	4	어떻게 끝났어요	s	It ended somehow	p	
+	4	어떻게 끝났어요	yn	Did it end somehow?	p	
+	4	어떻게 끝났어요	wh	How did it end?	p	
+	4	어떻게 끝났대	s	I heard it ended somehow	n	
+	4	어떻게 끝났대	yn	Do they say it ended somehow?	n	rep
+	4	어떻게 끝났대	wh	How do they say it ended?	n	rep
+	4	어떻게 끝났대요	s	I heard it ended somehow	p	
+	4	어떻게 끝났대요	yn	Do they say it ended somehow?	p	rep
+	4	어떻게 끝났대요	wh	How do they say it ended?	p	rep
+	4	어떻게 끝냈어	s	I finished it somehow	n	
+	4	어떻게 끝냈어	yn	Did you finish it somehow?	n	
+	4	어떻게 끝냈어	wh	How did you finish it?	n	
+	4	어떻게 끝냈어요	s	I finished it somehow	p	
+	4	어떻게 끝냈어요	yn	Did you finish it somehow?	p	
+	4	어떻게 끝냈어요	wh	How did you finish it?	p	
+	4	어떻게 잘 끝냈어	s	I finished it somehow	n	
+	4	어떻게 잘 끝냈어	yn	Did you finish it somehow?	n	
+	4	어떻게 잘 끝냈어요	s	I finished it somehow	p	
+	4	어떻게 잘 끝냈어요	yn	Did you finish it somehow?	p	
+	4	어떻게 잘 끝냈대	s	I heard they finished it somehow	n	
+	4	어떻게 잘 끝냈대	yn	Do they say they finished it somehow?	n	rep
+	4	어떻게 잘 끝냈대요	s	I heard they finished it somehow	p	
+	4	어떻게 잘 끝냈대요	yn	Do they say they finished it somehow?	p	rep
+	4	어떻게 잘 끝났어	s	It ended somehow	n	
+	4	어떻게 잘 끝났어	yn	Did it end somehow?	n	
+	4	어떻게 잘 끝났어요	s	It ended somehow	p	
+	4	어떻게 잘 끝났어요	yn	Did it end somehow?	p	
+	4	어떻게 잘 끝났대	s	I heard it ended somehow	n	
+	4	어떻게 잘 끝났대	yn	Do they say it ended somehow?	n	rep
+	4	어떻게 잘 끝났대요	s	I heard it ended somehow	p	
+	4	어떻게 잘 끝났대요	yn	Do they say it ended somehow?	p	rep
+	4	어떻게든 끝내봐	yn	Shall I end it somehow?	n	
+	4	어떻게든 끝내봐	c	Finish it somehow	n	
+	4	어떻게든 끝내봐요	yn	Shall I end it somehow?	p	
+	4	어떻게든 끝내봐요	c	Finish it somehow	p	
+되다	4	어떻게 잘 됐어	s	It ended up well	n	
+end up	4	어떻게 잘 됐어	yn	Did it end up well?	n	
+	4	어떻게 잘 됐어요	s	It ended up well	p	
+	4	어떻게 잘 됐어요	yn	Did it end up well?	p	
+들르다	4	어떻게 들르게 됐어	s	I ended up stopping by somehow	n	
+stop by	4	어떻게 들르게 됐어	yn	Did you end up stoppiyg by somehow?	n	
+	4	어떻게 들르게 됐어	wh	How did you end up stopping by?	n	
+	4	어떻게 들르게 됐어요	s	I ended up stopping by somehow	p	
+	4	어떻게 들르게 됐어요	yn	Did you end up stoppiyg by somehow?	p	
+	4	어떻게 들르게 됐어요	wh	How did you end up stopping by?	p	
+만나다	4	어떻게 만났어	s	We met somehow	n	
+meet	4	어떻게 만났어	yn	Did you meet somehow?	n	
+	4	어떻게 만났어	wh	How did you meet?	n	
+	4	어떻게 만났어요	s	We met somehow	p	
+	4	어떻게 만났어요	yn	Did you meet somehow?	p	
+	4	어떻게 만났어요	wh	How did you meet?	p	
+	4	어떻게 만났대	s	I heard that they met somehow	n	
+	4	어떻게 만났대	yn	Do they say they met somehow?	n	rep
+	4	어떻게 만났대	wh	How do they say they met?	n	rep
+	4	어떻게 만났대요	s	I heard that they met somehow	p	
+	4	어떻게 만났대요	yn	Do they say they met somehow?	p	rep
+	4	어떻게 만났대요	wh	How do they say they met?	p	rep
+잘 만나다	4	어떻게 잘 만나고 있어	s	We are getting along well	n	
+get along well	4	어떻게 잘 만나고 있어	yn	Are you getting along well?	n	
+	4	어떻게 잘 만나고 있어요	s	We are getting along well	p	
+	4	어떻게 잘 만나고 있어요	yn	Are you getting along well?	p	
+되다	4	어떻게 돼도 상관없어	s	It does not matter how it ends up	n	
+end up	4	어떻게 돼도 상관없어	yn	Does it not matter how it ends up?	n	
+	4	어떻게 돼도 상관없어요	s	It does not matter how it ends up	p	
+	4	어떻게 돼도 상관없어요	yn	Does it not matter how it ends up?	p	
+오다	4	어떻게 왔어	s	I came somehow	n	
+come	4	어떻게 왔어	wh	How did you come?	n	
+	4	어떻게 왔어요	s	I came somehow	p	
+	4	어떻게 왔어요	wh	How did you come?	p	
+	4	어떻게 오게 됐어	s	I came somehow	n	
+	4	어떻게 오게 됐어	wh	How did you come?	n	
+	4	어떻게 오게 됐어요	s	I came somehow	p	
+	4	어떻게 오게 됐어요	yn	Did you come somehow?	p	
+	4	어떻게 오게 됐어요	wh	How did you come?	p	
+	4	어떻게 오게 됐대	s	I heard that they came somehow	n	
+	4	어떻게 오게 됐대	yn	Do they say they came somehow?	n	rep
+	4	어떻게 오게 됐대	wh	How do they say they came?	n	rep
+	4	어떻게 오게 됐대요	s	I heard that they came somehow	p	
+	4	어떻게 오게 됐대요	yn	Do they say they came somehow?	p	rep
+	4	어떻게 오게 됐대요	wh	How do they say they came?	p	rep
+졸업하다	4	어떻게 졸업했어	s	I graduated somehow	n	
+	4	어떻게 졸업했어	yn	Did you graduate somehow?	n	
+	4	어떻게 졸업했어	rq	How did you graduate?	n	(=I am surprised that you graduated)
+	4	어떻게 졸업했어요	s	I graduated somehow	p	
+	4	어떻게 졸업했어요	yn	Did you graduate somehow?	p	
+	4	어떻게 졸업했어요	rq	How did you graduate?	p	(=I am surprised that you graduated)
+	4	어떻게 졸업하게 됐어	s	I graduated somehow	n	
+	4	어떻게 졸업하게 됐어	yn	Did you graduate somehow?	n	
+	4	어떻게 졸업하게 됐어	wh	How did you graduate?	n	
+	4	어떻게 졸업하게 됐어요	s	I graduated somehow	p	
+	4	어떻게 졸업하게 됐어요	yn	Did you graduate somehow?	p	
+	4	어떻게 졸업하게 됐어요	wh	How did you graduate?	p	
+	4	어떻게 잘 졸업했어	s	I graduated well somehow	n	
+	4	어떻게 잘 졸업했어	yn	Did you graduate somehow?	n	
+	4	어떻게 잘 졸업했어요	s	I graduated well somehow	p	
+	4	어떻게 잘 졸업했어요	yn	Did you graduate somehow?	p	
+찾아오다	4	어떻게 잘 찾아왔어	s	I found the way somehow	n	
+find a way	4	어떻게 잘 찾아왔어	yn	Have you found the way somehow?	n	
+	4	어떻게 잘 찾아왔대	s	I heard that they found the way somehow	n	
+	4	어떻게 잘 찾아왔대	yn	Did they find the way somehow?	n	rep
+	4	어떻게 잘 찾아왔대	rq	How did you find the way?	n	(=I am surprised that you found the way)
+	4	어떻게 잘 찾아왔대요	s	I heard that they found the way somehow	p	
+	4	어떻게 잘 찾아왔대요	yn	Did they find the way somehow?	p	rep
+	4	어떻게 잘 찾아왔대요	rq	How did you find the way?	p	(=I am surprised that you found the way)
+풀다	4	어떻게 풀었어	s	I solved it somehow	n	
+solve	4	어떻게 풀었어	yn	Did you solve it somehow?	n	
+	4	어떻게 풀었어	wh	How did you solve it?	n	
+	4	어떻게 풀었어	rq	How did you solve it?	n	(=I am surprised that you solved it)
+	4	어떻게 풀었어요	s	I solved it somehow	p	
+	4	어떻게 풀었어요	yn	Did you solve it somehow?	p	
+	4	어떻게 풀었어요	wh	How did you solve it?	p	
+	4	어떻게 풀었어요	rq	How did you solve it?	p	(=I am surprised that you solved it)
+	4	어떻게 풀었대	s	I heard they solved it somehow	n	
+	4	어떻게 풀었대	yn	Did they solve it somehow?	n	rep
+	4	어떻게 풀었대	wh	How do they say they solved it?	n	rep
+	4	어떻게 풀었대	rq	How did they solve it?	n	(= I am surprised that they solved it)
+	4	어떻게 풀었대요	s	I heard they solved it somehow	p	
+	4	어떻게 풀었대요	yn	Did they solve it somehow?	p	rep
+	4	어떻게 풀었대요	wh	How do they say they solved it?	p	rep
+	4	어떻게 풀었대요	rq	How did they solve it?	p	(= I am surprised that they solved it)
+	4	어떻게 잘 풀었어	s	I solved it somehow	n	
+	4	어떻게 잘 풀었어	yn	Did you solve it somehow?	n	
+	4	어떻게 잘 풀었어요	s	I solved it somehow	p	
+	4	어떻게 잘 풀었어요	yn	Did you solve it somehow?	p	
+	4	어떻게든 풀어봐	yn	Shall I solve it somehow?	n	
+	4	어떻게든 풀어봐	c	Solve it somehow	n	
+	4	어떻게든 풀어봐요	yn	Shall I solve it somehow?	p	
+	4	어떻게든 풀어봐요	c	Solve it somehow	p	
+해결하다	4	어떻게 해결했어	s	I solved it somehow	n	
+solve	4	어떻게 해결했어	yn	Did you solve it somehow?	n	
+	4	어떻게 해결했어	wh	How did you solve it?	n	
+	4	어떻게 해결했어요	s	I solved it somehow	p	
+	4	어떻게 해결했어요	yn	Did you solve it somehow?	p	
+	4	어떻게 해결했어요	wh	How did you solve it?	p	
+	4	어떻게 잘 해결했어	s	I solved it somehow	n	
+	4	어떻게 잘 해결했어	yn	Did you solve it somehow?	n	
+	4	어떻게 잘 해결했어요	s	I solved it somehow	p	
+	4	어떻게 잘 해결했어요	yn	Did you solve it somehow?	p	
+	4	어떻게 잘 해결됐어	s	It was solved somehow	n	
+	4	어떻게 잘 해결됐어	yn	Is it solved well?	n	
+	4	어떻게 잘 해결됐어요	s	It was solved somehow	p	
+	4	어떻게 잘 해결됐어요	yn	Is it solved well?	p	
+하게 되다	4	어떻게 하게 됐어	s	I ended up doing it somehow	n	
+end up doing	4	어떻게 하게 됐어	yn	Did you end up doing it?	n	
+	4	어떻게 하게 됐어	wh	How did you end up doing it?	n	
+	4	어떻게 하게 됐어요	s	I ended up doing it somehow	p	
+	4	어떻게 하게 됐어요	yn	Did you end up doing it?	p	
+	4	어떻게 하게 됐어요	wh	How did you end up doing it?	p	
+해보다	4	어떻게든 해봐	yn	Shall I try it somehow?	n	
+try	4	어떻게든 해봐	c	Try it 	n	
+	4	어떻게든 해봐요	yn	Shall I try it somehow?	p	
+	4	어떻게든 해봐요	c	Try it 	p	
+가져가다	5	몇 개 가져가	yn	Can I take some?	n	
+take	5	몇 개 가져가	wh	How many can I take?	n	
+	5	몇 개 가져가	c	Take some	n	
+	5	몇 개 가져가요	yn	Can I take some?	p	
+	5	몇 개 가져가요	wh	How many can I take?	p	
+	5	몇 개 가져가요	c	Take some	p	
+	5	몇 개 가져가래	yn	Can I take some?	n	rep
+	5	몇 개 가져가래	wh	How many can I take?	n	rep
+	5	몇 개 가져가래요	yn	Can I take some?	p	rep
+	5	몇 개 가져가래요	wh	How many can I take?	p	rep
+가져오다	5	몇 개 가져와	yn	Shall I bring some?	n	
+bring	5	몇 개 가져와	wh	How many should I bring?	n	
+	5	몇 개 가져와	c	Bring some	n	
+	5	몇 개 가져와요	yn	Shall I bring some?	p	
+	5	몇 개 가져와요	wh	How many should I bring?	p	
+	5	몇 개 가져와요	c	Bring some	p	
+	5	몇 개 가져오래	yn	Should I bring some?	n	rep
+	5	몇 개 가져오래	wh	How many should I bring?	n	rep
+	5	몇 개 가져오래요	yn	Should I bring some?	p	rep
+	5	몇 개 가져오래요	wh	How many should I bring?	p	rep
+	5	몇 개 가져갈까	yn	Shall I bring some?	n	
+	5	몇 개 가져갈까	wh	How many should I bring?	n	
+	5	몇 개 가져갈까요	yn	Shall I bring some?	p	
+	5	몇 개 가져갈까요	wh	How many should I bring?	p	
+	5	몇 개 가져다 줄래	s	I will bring some for them	n	
+	5	몇 개 가져다 줄래	wh	How many will you bring?	n	
+	5	몇 개 가져다 줄래	r	Will you bring some for me?	n	
+	5	몇 개 가져다 줄래요	s	I will bring some for them	p	
+	5	몇 개 가져다 줄래요	wh	How many will you bring?	p	
+	5	몇 개 가져다 줄래요	r	Will you bring some for me?	p	
+구하다	5	몇 개 구했어	s	I got some of them	n	
+save	5	몇 개 구했어	wh	How many did you get?	n	
+	5	몇 개 구했어요	s	I got some of them	p	
+	5	몇 개 구했어요	wh	How many did you get?	p	
+	5	몇 개 구했대	s	I heard that they got some	n	
+	5	몇 개 구했대	wh	How many do they say they got?	n	rep
+	5	몇 개 구했대요	s	I heard that they got some	p	
+	5	몇 개 구했대요	wh	How many do they say they got?	p	rep
+남다	5	몇 개 남았어	s	Some are left	n	
+leave	5	몇 개 남았어	wh	How many are left?	n	
+	5	몇 개 남았어요	s	Some are left	p	
+	5	몇 개 남았어요	wh	How many are left?	p	
+	5	몇 개 남았대	s	I heard that some are left	n	
+	5	몇 개 남았대	wh	How many do they say are left?	n	rep
+	5	몇 개 남았대요	s	I heard that some are left	p	
+	5	몇 개 남았대요	wh	How many do they say are left?	p	rep
+	5	몇 개 남겨줄래	s	I will leave some for you	n	
+	5	몇 개 남겨줄래	r	Will you leave some for me?	n	
+	5	몇 개 남겨줄래요	s	I will leave some for you	p	
+	5	몇 개 남겨줄래요	r	Will you leave some for me?	p	
+놓치다	5	몇 개 놓쳤어	s	I missed several of them	n	
+miss	5	몇 개 놓쳤어	wh	How many did you miss?	n	
+	5	몇 개 놓쳤어요	s	I missed several of them	p	
+	5	몇 개 놓쳤어요	wh	How many did you miss?	p	
+먹다	5	몇 개 먹으래	wh	How many can I eat?	n	rep
+eat	5	몇 개 먹으래	c	Eat some	n	
+	5	몇 개 먹으래요	wh	How many can I eat?	p	rep
+	5	몇 개 먹으래요	c	Eat some	p	
+	5	몇 개 먹을래	s	I will eat something	n	
+	5	몇 개 먹을래	yn	Will you eat something?	n	
+	5	몇 개 먹을래	wh	How many will you eat?	n	
+	5	몇 개 먹을래요	s	I will eat something	p	
+	5	몇 개 먹을래요	yn	Will you eat something?	p	
+	5	몇 개 먹을래요	wh	How many will you eat?	p	
+	5	몇 개 먹었어	s	I ate some	n	
+	5	몇 개 먹었어	wh	How many did you eat?	n	
+	5	몇 개 먹었어요	s	I ate some	p	
+	5	몇 개 먹었어요	wh	How many did you eat?	p	
+	5	몇 개 먹었대	s	I heard that they ate some	n	
+	5	몇 개 먹었대	wh	How many did they eat?	n	rep
+	5	몇 개 먹었대요	s	I heard that they ate some	p	
+	5	몇 개 먹었대요	wh	How many did they eat?	p	rep
+모자라다	5	몇 개 모자라	s	I need some more	n	
+be short of 	5	몇 개 모자라	yn	Do you need some more?	n	
+	5	몇 개 모자라	wh	How much do you need?	n	
+	5	몇 개 모자라요	s	I need some more	p	
+	5	몇 개 모자라요	yn	Do you need some more?	p	
+	5	몇 개 모자라요	wh	How much do you need?	p	
+	5	몇 개 부족해	s	I need some more	n	
+	5	몇 개 부족해	yn	Do you need some more?	n	
+	5	몇 개 부족해	wh	How much do you need?	n	
+	5	몇 개 부족해요	s	I need some more	p	
+	5	몇 개 부족해요	yn	Do you need some more?	p	
+	5	몇 개 부족해요	wh	How much do you need?	p	
+사오다	5	몇 개 사와	yn	Shall I buy some?	n	
+buy	5	몇 개 사와	wh	How many should I buy?	n	
+	5	몇 개 사와	c	Buy some	n	
+	5	몇 개 사와요	yn	Shall I buy some?	p	
+	5	몇 개 사와요	wh	How many should I buy?	p	
+	5	몇 개 사와요	c	Buy some	p	
+	5	몇 개 사다 줄래	s	I will buy some for them	n	
+	5	몇 개 사다 줄래	wh	How many will you buy?	n	
+	5	몇 개 사다 줄래	r	Will you buy some for me?	n	
+	5	몇 개 사다 줄래요	s	I will buy some for them	p	
+	5	몇 개 사다 줄래요	wh	How many will you buy?	p	
+	5	몇 개 사다 줄래요	r	Will you buy some for me?	p	
+	5	몇 번 더 하래	s	We should do it again several times	n	
+	5	몇 번 더 하래	yn	Should we do it again several times?	n	rep
+	5	몇 번 더 하래	wh	How many times should we do it again?	n	rep
+	5	몇 번 더 하래요	s	We should do it again several times	p	
+	5	몇 번 더 하래요	yn	Should we do it again several times?	p	rep
+	5	몇 번 더 하래요	wh	How many times should we do it again?	p	rep
+	5	몇 번 더 할까	yn	Shall we do it again several times?	n	
+	5	몇 번 더 할까	wh	How many times should we do it again?	n	
+	5	몇 번 더 할까요	yn	Shall we do it again several times?	p	
+	5	몇 번 더 할까요	wh	How many times should we do it again?	p	
+만나다	5	몇 번 만났대	s	I heard that they met several times	n	
+meet	5	몇 번 만났대	wh	How many times did they meet?	n	rep
+	5	몇 번 만났대요	s	I heard that they met several times	p	
+	5	몇 번 만났대요	wh	How many times did they meet?	p	rep
+	5	몇 번 만났어	s	I met them several times	n	
+	5	몇 번 만났어	wh	How many times did you meet them?	n	
+	5	몇 번 만났어요	s	I met them several times	p	
+	5	몇 번 만났어요	wh	How many times did you meet them?	p	
+보다	5	몇 번 봤어	s	I saw them several times	n	
+see	5	몇 번 봤어	wh	How many times did you see them?	n	
+	5	몇 번 봤어요	s	I saw them several times	p	
+	5	몇 번 봤어요	wh	How many times did you see them?	p	
+	5	몇 번 봤대	s	I heard that they saw them several times	n	
+	5	몇 번 봤대	wh	How many times did they meet?	n	rep
+	5	몇 번 봤대요	s	I heard that they saw them several times	p	
+	5	몇 번 봤대요	wh	How many times did they meet?	p	rep
+주고받다	5	몇 번 주고받았어	s	We gave it back and forth several times	n	
+	5	몇 번 주고받았어	wh	How many times did you give it back and forth?	n	
+	5	몇 번 주고받았어요	s	We gave it back and forth several times	p	
+	5	몇 번 주고받았어요	wh	How many times did you give it back and forth?	p	
+하다	5	몇 번 했대	s	I heard that they did it several times	n	
+do	5	몇 번 했대	wh	How many times do they say they did it?	n	rep
+	5	몇 번 했대요	s	I heard that they did it several times	p	
+	5	몇 번 했대요	wh	How many times do they say they did it?	p	rep
+	5	몇 번 했어	s	I did it several times	n	
+	5	몇 번 했어	wh	How many times did you do it?	n	
+	5	몇 번 했어요	s	I did it several times	p	
+	5	몇 번 했어요	wh	How many times did you do it?	p	
+가다	5	몇 명 갔어	s	Some people have gone	n	
+go	5	몇 명 갔어	yn	Have some people gone?	n	
+	5	몇 명 갔어	wh	How many people have gone?	n	
+	5	몇 명 갔어요	s	Some people have gone	p	
+	5	몇 명 갔어요	yn	Have some people gone?	p	
+	5	몇 명 갔어요	wh	How many people have gone?	p	
+나오다	5	몇 명 나온대	s	I heard some people will come out	n	
+come out	5	몇 명 나온대	wh	How many people will come out?	n	rep
+	5	몇 명 나온대요	s	I heard some people will come out	p	
+	5	몇 명 나온대요	wh	How many people will come out?	p	rep
+만나다	5	몇 명 만났어	s	I met some people	n	
+meet	5	몇 명 만났어	yn	Did you meet some people?	n	
+	5	몇 명 만났어	wh	How many people did you meet?	n	
+	5	몇 명 만났어요	s	I met some people	p	
+	5	몇 명 만났어요	yn	Did you meet some people?	p	
+	5	몇 명 만났어요	wh	How many people did you meet?	p	
+보내주다	5	몇 명 보내줄래	s	I will send you some people	n	
+send	5	몇 명 보내줄래	r	Will you send me some people?	n	
+	5	몇 명 보내줄래요	s	I will send you some people	p	
+	5	몇 명 보내줄래요	r	Will you send me some people?	p	
+살다	5	몇 명 살아	s	Some people live (here)	n	
+live	5	몇 명 살아	wh	How many people live (here)?	n	
+	5	몇 명 살아요	s	Some people live (here)	p	
+	5	몇 명 살아요	wh	How many people live (here)?	p	
+	5	몇 명 살았대	s	I heard that some people lived (here)	n	
+	5	몇 명 살았대	wh	How many people lived (here)?	n	rep
+	5	몇 명 살았대요	s	I heard that some people lived (here)	p	
+	5	몇 명 살았대요	wh	How many people lived (here)?	p	rep
+	5	몇 명 같이 살아	s	Some people live together (here)	n	
+	5	몇 명 같이 살아	wh	How many people live together?	n	
+	5	몇 명 같이 살아요	s	Some people live together (here)	p	
+	5	몇 명 같이 살아요	wh	How many people live together?	p	
+오다	5	몇 명 왔어	s	Some people came	n	
+come	5	몇 명 왔어	wh	How many people came?	n	
+	5	몇 명 왔어요	s	Some people came	p	
+	5	몇 명 왔어요	wh	How many people came?	p	
+죽다	5	몇 명 죽었어	s	Some people died	n	
+die	5	몇 명 죽었어	wh	How many people died?	n	
+	5	몇 명 죽었어요	s	Some people died	p	
+	5	몇 명 죽었어요	wh	How many people died?	p	
+	5	몇 명 죽었대	s	I heard that some people died	n	
+	5	몇 명 죽었대	yn	Do they say some people died?	n	rep
+	5	몇 명 죽었대	wh	How many people do they say died?	n	rep
+	5	몇 명 죽었대요	s	I heard that some people died	p	
+	5	몇 명 죽었대요	yn	Do they say some people died?	p	rep
+	5	몇 명 죽었대요	wh	How many people do they say died?	p	rep
+	5	몇 마리 죽었어	s	Some died	n	
+	5	몇 마리 죽었어	yn	Did some die?	n	
+	5	몇 마리 죽었어	wh	How many died?	n	
+	5	몇 마리 죽었어요	s	Some died	p	
+	5	몇 마리 죽었어요	yn	Did some die?	p	
+	5	몇 마리 죽었어요	wh	How many died?	p	
+살다	5	몇 마리 살았어	s	Several have survived	n	
+survive	5	몇 마리 살았어	wh	How many have survived?	n	
+	5	몇 마리 살았어요	s	Several have survived	p	
+	5	몇 마리 살았어요	wh	How many have survived?	p	
+사오다	5	몇 마리 사와	yn	Shall I buy some?	n	
+buy	5	몇 마리 사와	wh	How many should I buy?	n	
+	5	몇 마리 사와	c	Buy some	n	
+	5	몇 마리 사와요	yn	Shall I buy some?	p	
+	5	몇 마리 사와요	wh	How many should I buy?	p	
+	5	몇 마리 사와요	c	Buy some	p	
+되다	5	며칠 됐어	s	It has been several days	n	
+be	5	며칠 됐어	wh	How many days has it been?	n	
+	5	며칠 됐어요	s	It has been several days	p	
+	5	며칠 됐어요	wh	How many days has it been?	p	
+	5	며칠 됐대	s	I heard it has been several days	n	
+	5	며칠 됐대	wh	How many days do they say it has been?	n	
+	5	며칠 됐대요	s	I heard it has been several days	p	
+	5	며칠 됐대요	wh	How many days do they say it has been?	p	
+묵다	5	며칠 묵는대	s	I heard that they will stay for several days	n	
+stay	5	며칠 묵는대	yn	Do they say they will stay for several days?	n	
+	5	며칠 묵는대	wh	For how many days do they say they will stay?	n	
+	5	며칠 묵는대요	s	I heard that they will stay for several days	p	
+	5	며칠 묵는대요	yn	Do they say they will stay for several days?	p	
+	5	며칠 묵는대요	wh	For how many days do they say they will stay?	p	
+	5	며칠 묵어	s	I'm staying for several days	n	
+	5	며칠 묵어	yn	Are you staying for several days?	n	
+	5	며칠 묵어	wh	For how many days are you staying?	n	
+	5	며칠 묵어요	s	I'm staying for several days	p	
+	5	며칠 묵어요	yn	Are you staying for several days?	p	
+	5	며칠 묵어요	wh	For how many days are you staying?	p	
+있다	5	며칠 있어	s	I'm staying for several days	n	
+stay	5	며칠 있어	wh	For how many days are you staying?	n	
+	5	며칠 있어	c	Stay for several days	n	
+	5	며칠 있어요	s	I'm staying for several days	p	
+	5	며칠 있어요	wh	For how many days are you staying?	p	
+	5	며칠 있어요	c	Stay for several days	p	
+	5	며칠 있는대	s	I heard that they will stay for several days	n	
+	5	며칠 있는대	yn	Do they say they will stay for several days?	n	rep
+	5	며칠 있는대	wh	For how many days do they say they will stay?	n	rep
+	5	며칠 있는대요	s	I heard that they are staying for several days	p	
+	5	며칠 있는대요	yn	Do they say they will stay for several days?	p	rep
+	5	며칠 있는대요	wh	For how many days do they say they will stay?	p	rep
+	5	며칠 있으래	s	They told me to stay for several days	n	
+	5	며칠 있으래	yn	Did they tell you to stay for several days?	n	
+	5	며칠 있으래	wh	For how many days did they tell you to stay?	n	
+	5	며칠 있으래요	s	They told me to stay for several days	p	
+	5	며칠 있으래요	yn	Did they tell you to stay for several days?	p	
+	5	며칠 있으래요	wh	For how many days did they tell you to stay?	p	
+	5	며칠 있다 가	wh	For how many days will you stay?	n	
+	5	며칠 있다 가	c	Stay for several days	n	
+	5	며칠 있다 가요	wh	For how many days will you stay?	p	
+	5	며칠 있다 가요	c	Stay for several days	p	
+	5	며칠 있다 가래	s	They told me to stay for several days	n	
+	5	며칠 있다 가래	wh	For how many days did they tell you to stay?	n	
+	5	며칠 있다 가래요	s	They told me to stay for several days	p	
+	5	며칠 있다 가래요	wh	For how many days did they tell you to stay?	p	
+지나다	5	며칠 지났어	s	Several days have passed	n	
+pass	5	며칠 지났어	wh	How many days have passed?	n	
+	5	며칠 지났어요	s	Several days have passed	p	
+	5	며칠 지났어요	wh	How many days have passed?	p	
