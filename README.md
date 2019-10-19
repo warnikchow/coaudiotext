@@ -145,39 +145,41 @@ Remember: mel spectrogram still has a plenty of prosody-semantic information! Th
 
 ```python
 class Metricsf1macro_2input(Callback):
- def on_train_begin(self, logs={}):
-  self.val_f1s = []
-  self.val_recalls = []
-  self.val_precisions = []
-  self.val_f1s_w = []
-  self.val_recalls_w = []
-  self.val_precisions_w = []
- def on_epoch_end(self, epoch, logs={}):
-  if len(self.validation_data)>2:
-   val_predict = np.asarray(self.model.predict([self.validation_data[0],self.validation_data[1]]))
-   val_predict = np.argmax(val_predict,axis=1)
-   val_targ = self.validation_data[2]
-  else:
-   val_predict = np.asarray(self.model.predict(self.validation_data[0]))
-   val_predict = np.argmax(val_predict,axis=1)
-   val_targ = self.validation_data[1]
-  _val_f1 = metrics.f1_score(val_targ, val_predict, average="macro")
-  _val_f1_w = metrics.f1_score(val_targ, val_predict, average="weighted")
-  _val_recall = metrics.recall_score(val_targ, val_predict, average="macro")
-  _val_recall_w = metrics.recall_score(val_targ, val_predict, average="weighted")
-  _val_precision = metrics.precision_score(val_targ, val_predict, average="macro")
-  _val_precision_w = metrics.precision_score(val_targ, val_predict, average="weighted")
-  self.val_f1s.append(_val_f1)
-  self.val_recalls.append(_val_recall)
-  self.val_precisions.append(_val_precision)
-  self.val_f1s_w.append(_val_f1_w)
-  self.val_recalls_w.append(_val_recall_w)
-  self.val_precisions_w.append(_val_precision_w)
-  print("— val_f1: %f — val_precision: %f — val_recall: %f"%(_val_f1, _val_precision, _val_recall))
-  print("— val_f1_w: %f — val_precision_w: %f — val_recall_w: %f"%(_val_f1_w, _val_precision_w, _val_recall_w))
+    def on_train_begin(self, logs={}):
+        self.val_f1s = []
+        self.val_recalls = []
+        self.val_precisions = []
+        self.val_f1s_w = []
+        self.val_recalls_w = []
+        self.val_precisions_w = []
+    def on_epoch_end(self, epoch, logs={}):
+        if len(self.validation_data)>2:
+            val_predict = np.asarray(self.model.predict([self.validation_data[0],self.validation_data[1]]))
+            val_predict = np.argmax(val_predict,axis=1)
+            val_targ = self.validation_data[2]
+        else:
+            val_predict = np.asarray(self.model.predict(self.validation_data[0]))
+            val_predict = np.argmax(val_predict,axis=1)
+            val_targ = self.validation_data[1]
+           _val_f1 = metrics.f1_score(val_targ, val_predict, average="macro")
+           _val_f1_w = metrics.f1_score(val_targ, val_predict, average="weighted")
+           _val_recall = metrics.recall_score(val_targ, val_predict, average="macro")
+           _val_recall_w = metrics.recall_score(val_targ, val_predict, average="weighted")
+           _val_precision = metrics.precision_score(val_targ, val_predict, average="macro")
+           _val_precision_w = metrics.precision_score(val_targ, val_predict, average="weighted")
+           self.val_f1s.append(_val_f1)
+           self.val_recalls.append(_val_recall)
+           self.val_precisions.append(_val_precision)
+           self.val_f1s_w.append(_val_f1_w)
+           self.val_recalls_w.append(_val_recall_w)
+           self.val_precisions_w.append(_val_precision_w)
+           print("— val_f1: %f — val_precision: %f — val_recall: %f"%(_val_f1, _val_precision, _val_recall))
+           print("— val_f1_w: %f — val_precision_w: %f — val_recall_w: %f"%(_val_f1_w, _val_precision_w, _val_recall_w))
 
 metricsf1macro_2input = Metricsf1macro_2input()
 ```
+
+And here we define our self-attentive bilstm model which *sometimes* uses TensorFlow backend. This kind of design (utilizinig *Model* module) is inevitable since the pure Keras approach cannot guarantee that we can make up such a complicated layer... So, I attach a rather detailed comment to help the readers follow how the structure in [the paper](https://arxiv.org/abs/1703.03130) is implemented as a code.
 
 ```python
 def validate_rnn_self_drop(rnn_speech,train_y,hidden_lstm,hidden_con,hidden_dim,cw,val_sp,bat_size,filename):
@@ -213,7 +215,7 @@ def validate_rnn_self_drop(rnn_speech,train_y,hidden_lstm,hidden_con,hidden_dim,
     filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
     checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
     callbacks_list = [metricsf1macro_2input,checkpoint]   
-    model.fit([rnn_speech,att_source],train_y,validation_split=val_sp, epochs=100,batch_size=bat_size,callbacks=callbacks_list,class_weight=cw)
+    model.fit([rnn_speech,att_source],train_y,validation_split=val_sp,epochs=100,batch_size=bat_size, callbacks=callbacks_list,class_weight=cw)
 
 validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'model_icassp/total_bilstm_att')
 ```
