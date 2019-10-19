@@ -20,6 +20,40 @@ Here, we attack the issue above utilizing the speech corpus that is distributed 
 
 ## 1. Extracting acoustic features
 
+First, since we only utilize the utterances that can be disambiguated with speech, here we extract the acoustic features from the files. There are many ways to abstractize the physical components, but here we utilize [mel spectrogram](https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0) due to its rich acoustic information and intuitive concept. The process is done with [Librosa](https://librosa.github.io/librosa/), a python-based audio signal processing library.
+
+```python
+def make_data(fname,fnum,shuffle_name,mlen):
+    data_s_rmse = np.zeros((fnum,mlen,129))
+    for i in range(fnum):
+        if i%200 ==0:
+            print(i)
+        num = str(shuffle_name[i])
+        filename = fname+num+'.wav'
+        y, sr = librosa.load(filename)
+        D = np.abs(librosa.stft(y))**2
+        ss, phase = librosa.magphase(librosa.stft(y))
+        rmse = librosa.feature.rmse(S=ss)
+        rmse = rmse/np.max(rmse)
+        rmse = np.transpose(rmse)
+        S = librosa.feature.melspectrogram(S=D)
+        S = np.transpose(S)
+        if len(S)>=mlen:
+            data_s_rmse[i][:,0]=rmse[-mlen:,0]
+            data_s_rmse[i][:,1:]=S[-mlen:,:]
+        else:
+            data_s_rmse[i][-len(S):,0]=np.transpose(rmse)
+            data_s_rmse[i][-len(S):,1:]=S
+    return data_s_rmse
+
+fem_speech = make_data('speech/FEMALE/',3552,x_fem,200)
+mal_speech = make_data('speech/MALE/',3552,x_mal,200)
+
+total_speech_train = np.concatenate([fem_speech[:3196],mal_speech[:3196]])
+total_speech_test  = np.concatenate([fem_speech[3196:],mal_speech[3196:]])
+total_speech = np.concatenate([total_speech_train,total_speech_test])
+```
+
 ## 2. Speech-only analysis with Librosa and Keras
 
 ## 3. Self-attentive BiLSTM
