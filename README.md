@@ -180,34 +180,40 @@ metricsf1macro_2input = Metricsf1macro_2input()
 ```
 
 ```python
-def validate_rnn_self_drop(x_rnn,x_y,hidden_lstm,hidden_con,hidden_dim,cw,val_sp,bat_size,filename):
-    char_r_input = Input(shape=(len(x_rnn[0]),len(x_rnn[0][0])),dtype='float32')
-    r_seq = Bidirectional(LSTM(hidden_lstm,return_sequences=True))(char_r_input)
-    r_att = Dense(hidden_con, activation='tanh')(r_seq)
-    att_source   = np.zeros((len(x_rnn),hidden_con))
-    att_test     = np.zeros((len(x_rnn),hidden_con))
+def validate_rnn_self_drop(rnn_speech,train_y,hidden_lstm,hidden_con,hidden_dim,cw,val_sp,bat_size,filename):
+    ##### Speech input and BiLSTM with hidden layer sequence
+    speech_input = Input(shape=(len(rnn_speech[0]),len(rnn_speech[0][0])),dtype='float32')
+    speech_layer = Bidirectional(LSTM(hidden_lstm,return_sequences=True))(speech_input)
+    ##### Single layer perceptron for making up a context vector (of size hidden_con)
+    speech_att = Dense(hidden_con, activation='tanh')(speech_layer)
+    ##### Zeros-sourced attention vector computation and SLP (to make size hidden_con)
+    att_source   = np.zeros((len(rnn_speech),hidden_con))
     att_input    = Input(shape=(hidden_con,), dtype='float32')
-    att_vec      = Dense(hidden_con,activation='relu')(att_input)
-    att_vec      = Dropout(0.3)(att_vec)
-    att_vec      = Dense(hidden_con,activation='relu')(att_vec)
-    att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([att_vec,r_att])
-    att_vec = Dense(len(x_rnn[0]),activation='softmax')(att_vec)
-    att_vec = layers.Reshape((len(x_rnn[0]),1))(att_vec)
-    r_seq   = layers.multiply([att_vec,r_seq])
-    r_seq   = Lambda(lambda x: K.sum(x, axis=1))(r_seq)
-    r_seq   = Dense(hidden_dim, activation='relu')(r_seq)
-    r_seq   = Dropout(0.3)(r_seq)
-    r_seq   = Dense(hidden_dim, activation='relu')(r_seq)
-    r_seq   = Dropout(0.3)(r_seq)
-    main_output = Dense(int(max(x_y)+1),activation='softmax')(r_seq)
+    att_vec = Dense(hidden_con,activation='relu')(att_input)
+    att_vec = Dropout(0.3)(att_vec)
+    att_vec = Dense(hidden_con,activation='relu')(att_vec)
+    ##### Attention vector as an outupt of column-wise dot product of att_vec and speech_att
+    att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([att_vec,speech_att])
+    att_vec = Dense(len(rnn_speech[0]),activation='softmax')(att_vec)
+    att_vec = layers.Reshape((len(rnn_speech[0]),1))(att_vec)
+    ##### Column-wise scalar  multiplication of attention weight and the hidden layer sequence
+    speech_layer  = layers.multiply([att_vec,speech_layer])
+    ##### Summation for a final output + Dropouts to prevent overhead
+    speech_output = Lambda(lambda x: K.sum(x, axis=1))(speech_layer)
+    speech_output = Dense(hidden_dim, activation='relu')(speech_output)
+    speech_output = Dropout(0.3)(speech_output)
+    speech_output = Dense(hidden_dim, activation='relu')(speech_output)
+    speech_output = Dropout(0.3)(speech_output)
+    ##### Final softmax layer
+    main_output = Dense(int(max(train_y)+1),activation='softmax')(speech_output)
     model = Sequential()
-    model = Model(inputs=[char_r_input,att_input],outputs=[main_output])
+    model = Model(inputs=[speech_input,att_input],outputs=[main_output])
     model.summary()
     model.compile(optimizer=adam_half,loss="sparse_categorical_crossentropy",metrics=["accuracy"])
     filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
     checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
-    callbacks_list = [metricsf1macro_2input,checkpoint]
-    model.fit([x_rnn,att_source],x_y,validation_split=val_sp,epochs=100,batch_size= bat_size ,callbacks=callbacks_list,class_weight=cw)
+    callbacks_list = [metricsf1macro_2input,checkpoint]   
+    model.fit([rnn_speech,att_source],train_y,validation_split=val_sp, epochs=100,batch_size=bat_size,callbacks=callbacks_list,class_weight=cw)
 
 validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'model_icassp/total_bilstm_att')
 ```
