@@ -79,6 +79,8 @@ from keras import optimizers
 adam_half = optimizers.Adam(lr=0.0005)
 ```
 
+The next step is required for a balanced training and evaluation. *class_weights* denote the ratio that is to be weighted in training phase regarding the corpus utterance type volume, and by defining *F1 score*, we can get the point of the evaluation which *accuracy* usually fails to discern while using the imbalanced corpus.
+
 ```python
 ##### class_weights
 from sklearn.utils import class_weight
@@ -119,10 +121,12 @@ class Metricsf1macro(Callback):
 metricsf1macro = Metricsf1macro()
 ```
 
+The following denotes how we define the BiLSTM by using Keras, although no functional API is utilized here. We use only *Sequential()* since no more complex structure is used. We don't use dropout here since the hidden layers of this size are not expected to get overhead.
+
 ```python
-def validate_bilstm(result,y,hidden_lstm,hidden_dim,cw,val_sp,bat_size,filename):
+def validate_bilstm(rnn_speech,train_y,hidden_lstm,hidden_dim,cw,val_sp,bat_size,filename):
     model = Sequential()
-    model.add(Bidirectional(LSTM(hidden_lstm), input_shape=(len(result[0]), len(result[0][0]))))
+    model.add(Bidirectional(LSTM(hidden_lstm), input_shape=(len(rnn_speech[0]), len(rnn_speech[0][0]))))
     model.add(layers.Dense(hidden_dim, activation='relu'))
     model.add(layers.Dense(int(max(y)+1), activation='softmax'))
     model.summary()
@@ -130,7 +134,7 @@ def validate_bilstm(result,y,hidden_lstm,hidden_dim,cw,val_sp,bat_size,filename)
     filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
     checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
     callbacks_list = [metricsf1macro,checkpoint]
-    model.fit(result,y,validation_split=val_sp,epochs=100,batch_size=bat_size,callbacks=callbacks_list,class_weight=cw)
+    model.fit(rnn_speech,train_y,validation_split=val_sp,epochs=100,batch_size=bat_size,callbacks=callbacks_list,class_weight=cw)
 
 validate_bilstm(total_speech,total_label,64,128,class_weights,0.1,16,'model_icassp/total_bilstm')
 ```
