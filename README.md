@@ -56,6 +56,85 @@ total_speech = np.concatenate([total_speech_train,total_speech_test])
 
 ## 2. Speech-only analysis with Librosa and Keras
 
+Although people these days seem to migrate to TF2.0 and PyTorch, I still use [original Keras](https://keras.io/) for its conciseness. Hope this code be fit to whatever flatform the reader uses.
+
+```python
+import tensorflow as tf
+from keras.backend.tensorflow_backend import set_session
+config = tf.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.2
+set_session(tf.Session(config=config))
+
+from keras.models import Sequential, Model
+from keras.layers import TimeDistributed, Bidirectional, Concatenate
+from keras.layers import Input, Embedding, LSTM, GRU, SimpleRNN, Lambda
+from keras.layers.core import Dense, Dropout, Activation, Flatten, Reshape
+from keras.layers.normalization import BatchNormalization
+from keras.preprocessing import sequence
+import keras.backend as K
+from keras.callbacks import ModelCheckpoint
+import keras.layers as layers
+
+from keras import optimizers
+adam_half = optimizers.Adam(lr=0.0005)
+```
+
+```python
+##### class_weights
+from sklearn.utils import class_weight
+class_weights = class_weight.compute_class_weight('balanced', np.unique(fem_label), fem_label)
+
+##### f1 score ftn.
+from keras.callbacks import Callback
+from sklearn import metrics
+from sklearn.metrics import confusion_matrix, f1_score, precision_score, recall_score
+
+class Metricsf1macro(Callback):
+    def on_train_begin(self, logs={}):
+        self.val_f1s = []
+        self.val_recalls = []
+        self.val_precisions = []
+        self.val_f1s_w = []
+        self.val_recalls_w = []
+        self.val_precisions_w = []
+    def on_epoch_end(self, epoch, logs={}):
+        val_predict = np.asarray(self.model.predict(self.validation_data[0]))
+        val_predict = np.argmax(val_predict,axis=1)
+        val_targ = self.validation_data[1]
+        _val_f1 = metrics.f1_score(val_targ, val_predict, average="macro")
+        _val_f1_w = metrics.f1_score(val_targ, val_predict, average="weighted")
+        _val_recall = metrics.recall_score(val_targ, val_predict, average="macro")
+        _val_recall_w = metrics.recall_score(val_targ, val_predict, average="weighted")
+        _val_precision = metrics.precision_score(val_targ, val_predict, average="macro")
+        _val_precision_w = metrics.precision_score(val_targ, val_predict, average="weighted")
+        self.val_f1s.append(_val_f1)
+        self.val_recalls.append(_val_recall)
+        self.val_precisions.append(_val_precision)
+        self.val_f1s_w.append(_val_f1_w)
+        self.val_recalls_w.append(_val_recall_w)
+        self.val_precisions_w.append(_val_precision_w)
+        print("— val_f1: %f — val_precision: %f — val_recall: %f"%(_val_f1, _val_precision, _val_recall))
+        print("— val_f1_w: %f — val_precision_w: %f — val_recall_w: %f"%(_val_f1_w, _val_precision_w, _val_recall_w))
+
+metricsf1macro = Metricsf1macro()
+```
+
+```python
+def validate_bilstm(result,y,hidden_lstm,hidden_dim,cw,val_sp,bat_size,filename):
+    model = Sequential()
+    model.add(Bidirectional(LSTM(hidden_lstm), input_shape=(len(result[0]), len(result[0][0]))))
+    model.add(layers.Dense(hidden_dim, activation='relu'))
+    model.add(layers.Dense(int(max(y)+1), activation='softmax'))
+    model.summary()
+    model.compile(optimizer=adam_half, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
+    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
+    callbacks_list = [metricsf1macro,checkpoint]
+    model.fit(result,y,validation_split=val_sp,epochs=100,batch_size=bat_size,callbacks=callbacks_list,class_weight=cw)
+
+validate_bilstm(total_speech,total_label,64,128,class_weights,0.1,16,'model_icassp/total_bilstm')
+```
+
 ## 3. Self-attentive BiLSTM
 
 ## 4. Parallel utilization of audio and text data
