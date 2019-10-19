@@ -12,7 +12,7 @@ A short tutorial for the co-utilization of audio and text data (multi-modal anal
 
 ## 0. Problem definition & loading dataset
 
-Understanding the intention of an utterance is challenging for some prosody-sensitive cases, especially when it is in the written form as in a text chatting or speech recognition output. The main concern is detecting the directivity or rhetoricalness of an utterance and distinguishing the type of question. Since it is inevitable to face both the issues regarding prosody and semantics, the identification is expected be benefited from the observations on human language processing mechanism. 
+Understanding the intention of an utterance is challenging for some prosody-sensitive cases, especially when it is in the written form as in a text chatting or speech recognition output. **The main concern is detecting the directivity or rhetoricalness of an utterance and distinguishing the type of question.** Since it is inevitable to face both the issues regarding prosody and semantics, the identification is expected be benefited from the observations on human language processing mechanism. 
 
 Challenging issues for spoken language understanding (SLU) modules include inferring the intention of syntactically ambiguous utterances. If an utterance has an underspecified sentence ender whose role is decided only upon prosody, the inference requires whole the acoustic and textual data of the speech for SLUs (and even human) to correctly infer the intention, since the pitch sequence, the duration between the words, and the overall tone decides the intention of the utterance. For example, in Seoul Korean which is *wh-in-situ*, many sentences incorporate various ways of interpretation that depend on the intonation, as shown in our [ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf).
 
@@ -136,6 +136,77 @@ validate_bilstm(total_speech,total_label,64,128,class_weights,0.1,16,'model_icas
 ```
 
 ## 3. Self-attentive BiLSTM
+
+Remember: mel spectrogram still has a plenty of prosody-semantic information! Thus, we decided to apply a self-attentive embedding which has been successfully used in text procesisng. Before making up the module, in terms of *pure Keras* where F1 measure is removed (well if recent version has one, that's nice!), we need another definition of f1 score since additional input source is introduced (zero vector for attention source initialization).
+
+```python
+class Metricsf1macro_2input(Callback):
+ def on_train_begin(self, logs={}):
+  self.val_f1s = []
+  self.val_recalls = []
+  self.val_precisions = []
+  self.val_f1s_w = []
+  self.val_recalls_w = []
+  self.val_precisions_w = []
+ def on_epoch_end(self, epoch, logs={}):
+  if len(self.validation_data)>2:
+   val_predict = np.asarray(self.model.predict([self.validation_data[0],self.validation_data[1]]))
+   val_predict = np.argmax(val_predict,axis=1)
+   val_targ = self.validation_data[2]
+  else:
+   val_predict = np.asarray(self.model.predict(self.validation_data[0]))
+   val_predict = np.argmax(val_predict,axis=1)
+   val_targ = self.validation_data[1]
+  _val_f1 = metrics.f1_score(val_targ, val_predict, average="macro")
+  _val_f1_w = metrics.f1_score(val_targ, val_predict, average="weighted")
+  _val_recall = metrics.recall_score(val_targ, val_predict, average="macro")
+  _val_recall_w = metrics.recall_score(val_targ, val_predict, average="weighted")
+  _val_precision = metrics.precision_score(val_targ, val_predict, average="macro")
+  _val_precision_w = metrics.precision_score(val_targ, val_predict, average="weighted")
+  self.val_f1s.append(_val_f1)
+  self.val_recalls.append(_val_recall)
+  self.val_precisions.append(_val_precision)
+  self.val_f1s_w.append(_val_f1_w)
+  self.val_recalls_w.append(_val_recall_w)
+  self.val_precisions_w.append(_val_precision_w)
+  print("— val_f1: %f — val_precision: %f — val_recall: %f"%(_val_f1, _val_precision, _val_recall))
+  print("— val_f1_w: %f — val_precision_w: %f — val_recall_w: %f"%(_val_f1_w, _val_precision_w, _val_recall_w))
+
+metricsf1macro_2input = Metricsf1macro_2input()
+```
+
+```python
+def validate_rnn_self_drop(x_rnn,x_y,hidden_lstm,hidden_con,hidden_dim,cw,val_sp,bat_size,filename):
+    char_r_input = Input(shape=(len(x_rnn[0]),len(x_rnn[0][0])),dtype='float32')
+    r_seq = Bidirectional(LSTM(hidden_lstm,return_sequences=True))(char_r_input)
+    r_att = Dense(hidden_con, activation='tanh')(r_seq)
+    att_source   = np.zeros((len(x_rnn),hidden_con))
+    att_test     = np.zeros((len(x_rnn),hidden_con))
+    att_input    = Input(shape=(hidden_con,), dtype='float32')
+    att_vec      = Dense(hidden_con,activation='relu')(att_input)
+    att_vec      = Dropout(0.3)(att_vec)
+    att_vec      = Dense(hidden_con,activation='relu')(att_vec)
+    att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([att_vec,r_att])
+    att_vec = Dense(len(x_rnn[0]),activation='softmax')(att_vec)
+    att_vec = layers.Reshape((len(x_rnn[0]),1))(att_vec)
+    r_seq   = layers.multiply([att_vec,r_seq])
+    r_seq   = Lambda(lambda x: K.sum(x, axis=1))(r_seq)
+    r_seq   = Dense(hidden_dim, activation='relu')(r_seq)
+    r_seq   = Dropout(0.3)(r_seq)
+    r_seq   = Dense(hidden_dim, activation='relu')(r_seq)
+    r_seq   = Dropout(0.3)(r_seq)
+    main_output = Dense(int(max(x_y)+1),activation='softmax')(r_seq)
+    model = Sequential()
+    model = Model(inputs=[char_r_input,att_input],outputs=[main_output])
+    model.summary()
+    model.compile(optimizer=adam_half,loss="sparse_categorical_crossentropy",metrics=["accuracy"])
+    filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
+    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
+    callbacks_list = [metricsf1macro_2input,checkpoint]
+    model.fit([x_rnn,att_source],x_y,validation_split=val_sp,epochs=100,batch_size= bat_size ,callbacks=callbacks_list,class_weight=cw)
+
+validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'model_icassp/total_bilstm_att')
+```
 
 ## 4. Parallel utilization of audio and text data
 
