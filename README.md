@@ -222,6 +222,224 @@ validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'
 
 ## 4. Parallel utilization of audio and text data
 
+```python
+
+def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
+    ##### Speech BiLSTM-SA
+    speech_input = Input(shape=(len(rnn_speech[0]),len(rnn_speech[0][0])), dtype='float32')
+    speech_layer = Bidirectional(LSTM(hidden_lstm_speech,return_sequences=True))(speech_input)
+    speech_att   = Dense(hidden_con, activation='tanh')(speech_layer)
+    speech_att_source= np.zeros((len(rnn_speech),hidden_con))
+    speech_att_input = Input(shape=(hidden_con,),dtype='float32')
+    speech_att_vec   = Dense(hidden_con, activation='relu')(speech_att_input)
+    speech_att_vec   = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([speech_att_vec,speech_att])
+    speech_att_vec   = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_vec)
+    speech_att_vec   = layers.Reshape((len(rnn_speech[0]),1))(speech_att_vec)
+    speech_output= layers.multiply([speech_att_vec,speech_layer])
+    speech_output= Lambda(lambda x: K.sum(x, axis=1))(speech_output)
+    speech_output= Dense(hidden_dim, activation='relu')(speech_output)
+    ##### Text BiLSTM-SA
+    text_input = Input(shape=(len(rnn_text[0]),len(rnn_text[0][0])),dtype='float32')
+    text_layer = Bidirectional(LSTM(hidden_lstm_text,return_sequences=True))(text_input)
+    text_att   = Dense(hidden_con, activation='tanh')(text_layer)
+    text_att_source = np.zeros((len(rnn_text),hidden_con))
+    text_att_input  = Input(shape=(hidden_con,), dtype='float32')
+    text_att_vec    = Dense(hidden_con,activation='relu')(text_att_input)
+    text_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([text_att_vec,text_att])
+    text_att_vec = Dense(len(rnn_text[0]),activation='softmax')(text_att_vec)
+    text_att_vec = layers.Reshape((len(rnn_text[0]),1))(text_att_vec)
+    text_output  = layers.multiply([text_att_vec,text_layer])
+    text_output  = Lambda(lambda x: K.sum(x, axis=1))(text_output)
+    text_output  = Dense(hidden_dim, activation='relu')(text_output)
+    ##### Total output
+    output    = layers.concatenate([speech_output, text_output])
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    main_output = Dense(int(max(train_y)+1),activation='softmax')(output)
+    model = Sequential()
+    model = Model(inputs=[speech_input,speech_att_input,text_input,text_att_input], outputs=[main_output])
+    model.compile(optimizer=adam_half, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
+    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
+    #####
+    callbacks_list = [metricsf1macro_4input,checkpoint]
+    model.summary()
+    #####
+    model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
+
+    validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp/total_multi_bilstm_att_char')
+```
+
 ## 5. Multi-hop attention
 
+```python
+def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
+    ##### Speech BiLSTM-SA
+    speech_input = Input(shape=(len(rnn_speech[0]),len(rnn_speech[0][0])), dtype='float32')
+    speech_fw, speech_fw_h, speech_fw_c = LSTM(hidden_lstm_speech, return_state=True, return_sequences=True)(speech_input)
+    speech_bw, speech_bw_h, speech_bw_c = LSTM(hidden_lstm_speech, return_state=True, return_sequences=True,go_backwards=True)(speech_input)
+    speech_layer = layers.concatenate([speech_fw,speech_bw])
+    speech_final = layers.concatenate([speech_fw_h,speech_bw_h])
+    speech_att   = Dense(hidden_con, activation='tanh')(speech_layer)
+    speech_att_source = np.zeros((len(rnn_speech),hidden_con))
+    speech_att_input = Input(shape=(hidden_con,),dtype='float32')
+    speech_att_vec = Dense(hidden_con, activation='relu')(speech_att_input)
+    speech_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([speech_att_vec,speech_att])
+    speech_att_vec = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_vec)
+    speech_att_vec = layers.Reshape((len(rnn_speech[0]),1))(speech_att_vec)
+    speech_output= layers.multiply([speech_att_vec,speech_layer])
+    speech_output= Lambda(lambda x: K.sum(x, axis=1))(speech_output)
+    speech_output= Dense(hidden_dim, activation='relu')(speech_output)
+    ##### Text BiLSTM-SA with Speech HL output as an attention source
+    text_input = Input(shape=(len(rnn_text[0]),len(rnn_text[0][0])),dtype='float32')
+    text_layer = Bidirectional(LSTM(hidden_lstm_text,return_sequences=True))(text_input)
+    text_att = Dense(hidden_con, activation='tanh')(text_layer)
+    text_att_source = np.zeros((len(rnn_text),hidden_con))        # Dummy code
+    text_att_input  = Input(shape=(hidden_con,), dtype='float32') # Dummy code
+    text_att_vec    = Dense(hidden_con,activation='relu')(speech_final)	
+    text_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([text_att_vec,text_att])
+    text_att_vec = Dense(len(rnn_text[0]),activation='softmax')(text_att_vec)
+    text_att_vec = layers.Reshape((len(rnn_text[0]),1))(text_att_vec)
+    text_output  = layers.multiply([text_att_vec,text_layer])
+    text_output  = Lambda(lambda x: K.sum(x, axis=1))(text_output)
+    text_output  = Dense(hidden_dim, activation='relu')(text_output)
+    ##### Total output
+    output    = layers.concatenate([speech_output, text_output])
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    main_output = Dense(int(max(train_y)+1),activation='softmax')(output)
+    model = Sequential()
+    model = Model(inputs=[speech_input,speech_att_input,text_input,text_att_input], outputs=[main_output])
+    model.compile(optimizer=adam_half, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
+    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
+    #####
+    callbacks_list = [metricsf1macro_4input,checkpoint]
+    model.summary()
+    #####
+    model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
+
+
+validate_speech_self_text_self_mha_a(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_mha_a_att_char')
+```
+
+```python
+def validate_speech_self_text_self_mha_a_t(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
+    ##### Speech BiLSTM
+    speech_input = Input(shape=(len(rnn_speech[0]),len(rnn_speech[0][0])), dtype='float32')
+    speech_fw, speech_fw_h, speech_fw_c = LSTM(hidden_lstm_speech, return_state=True, return_sequences=True)(speech_input)
+    speech_bw, speech_bw_h, speech_bw_c = LSTM(hidden_lstm_speech, return_state=True, return_sequences=True,go_backwards=True)(speech_input)
+    speech_layer = layers.concatenate([speech_fw,speech_bw])
+    speech_final = layers.concatenate([speech_fw_h,speech_bw_h])
+    ##### Text BiLSTM-SA with Speech HL output as an attention source
+    text_input = Input(shape=(len(rnn_text[0]),len(rnn_text[0][0])),dtype='float32')
+    text_layer = Bidirectional(LSTM(hidden_lstm_text,return_sequences=True))(text_input)
+    text_att = Dense(hidden_con, activation='tanh')(text_layer)
+    text_att_source = np.zeros((len(rnn_text),hidden_con))        # Dummy code
+    text_att_input  = Input(shape=(hidden_con,), dtype='float32') # Dummy code
+    text_att_vec    = Dense(hidden_con,activation='relu')(speech_final)	
+    text_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([text_att_vec,text_att])
+    text_att_vec = Dense(len(rnn_text[0]),activation='softmax')(text_att_vec)
+    text_att_vec = layers.Reshape((len(rnn_text[0]),1))(text_att_vec)
+    text_output  = layers.multiply([text_att_vec,text_layer])
+    text_output  = Lambda(lambda x: K.sum(x, axis=1))(text_output)
+    text_output  = Dense(hidden_dim, activation='relu')(text_output)
+    ##### Speech BiLSTM-SA with Speech-Text HL output as an attention source
+    speech_att   = Dense(hidden_con, activation='tanh')(speech_layer)
+    speech_att_source = np.zeros((len(rnn_speech),hidden_con))    # Dummy code
+    speech_att_input = Input(shape=(hidden_con,),dtype='float32') # Dummy code
+    speech_att_vec = Dense(hidden_con, activation='relu')(text_output)
+    speech_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([speech_att_vec,speech_att])
+    speech_att_vec = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_vec)
+    speech_att_vec = layers.Reshape((len(rnn_speech[0]),1))(speech_att_vec)
+    speech_output= layers.multiply([speech_att_vec,speech_layer])
+    speech_output= Lambda(lambda x: K.sum(x, axis=1))(speech_output)
+    speech_output= Dense(hidden_dim, activation='relu')(speech_output)
+    ##### Total output
+    output    = layers.concatenate([speech_output, text_output])
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    main_output = Dense(int(max(train_y)+1),activation='softmax')(output)
+    model = Sequential()
+    model = Model(inputs=[speech_input,speech_att_input,text_input,text_att_input], outputs=[main_output])
+    model.compile(optimizer=adam_half, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
+    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
+    #####
+    callbacks_list = [metricsf1macro_4input,checkpoint]
+    model.summary()
+    #####
+    model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
+
+
+validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_mha_a_t_drop_att_char')
+```
+
 ## 6. Cross-attention
+
+```python
+def validate_speech_self_text_self_ca_mod(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
+    ##### Speech BiLSTM
+    speech_input = Input(shape=(len(rnn_speech[0]),len(rnn_speech[0][0])), dtype='float32')
+    speech_layer = Bidirectional(LSTM(hidden_lstm_speech,return_sequences=True))(speech_input)
+    speech_att   = Dense(hidden_con, activation='tanh')(speech_layer)
+    speech_att_source= np.zeros((len(rnn_speech),hidden_con))
+    speech_att_input = Input(shape=(hidden_con,),dtype='float32')
+    speech_att_vec   = Dense(hidden_con, activation='relu')(speech_att_input)
+    speech_att_vec   = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([speech_att_vec,speech_att])
+    speech_att_vec   = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_vec)
+    speech_att_vec   = layers.Reshape((len(rnn_speech[0]),1))(speech_att_vec)
+    speech_output= layers.multiply([speech_att_vec,speech_layer])
+    speech_output= Lambda(lambda x: K.sum(x, axis=1))(speech_output)
+    speech_output= Dense(hidden_dim, activation='relu')(speech_output)
+    ##### Text BiLSTM
+    text_input = Input(shape=(len(rnn_text[0]),len(rnn_text[0][0])),dtype='float32')
+    text_fw, text_fw_h, text_fw_c = LSTM(hidden_lstm_text, return_state=True, return_sequences=True)(text_input)
+    text_bw, text_bw_h, text_bw_c = LSTM(hidden_lstm_text, return_state=True, return_sequences=True,go_backwards=True)(text_input)
+    text_layer = layers.concatenate([text_fw,text_bw])
+    text_final = layers.concatenate([text_fw_h,text_bw_h])
+    text_att   = Dense(hidden_con, activation='tanh')(text_layer)	
+    text_att_source = np.zeros((len(rnn_text),hidden_con))        # Dummy code
+    text_att_input  = Input(shape=(hidden_con,), dtype='float32') # Dummy code	
+    ##### Exchange phase
+    speech_att_hop = Dense(hidden_con, activation='relu')(text_final)	
+    speech_att_hop = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([speech_att_hop,speech_att])
+    speech_att_hop = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_hop)
+    speech_att_hop = layers.Reshape((len(rnn_speech[0]),1))(speech_att_hop)	
+    speech_output_hop = layers.multiply([speech_att_hop,speech_layer])
+    speech_output_hop = Lambda(lambda x: K.sum(x, axis=1))(speech_output_hop)
+    speech_output_hop = Dense(hidden_dim, activation='relu')(speech_output_hop)
+    text_att_hop = Dense(hidden_con, activation='relu')(speech_output)	
+    text_att_hop = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([text_att_hop,text_att])
+    text_att_hop = Dense(len(rnn_text[0]),activation='softmax')(text_att_hop)
+    text_att_hop = layers.Reshape((len(rnn_text[0]),1))(text_att_hop)	
+    text_output_hop = layers.multiply([text_att_hop,text_layer])
+    text_output_hop = Lambda(lambda x: K.sum(x, axis=1))(text_output_hop)
+    text_output_hop = Dense(hidden_dim, activation='relu')(text_output_hop)	
+    ##### Total output
+    output    = layers.concatenate([speech_output_hop, text_output_hop])
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    output    = Dense(hidden_dim, activation='relu')(output)
+    output    = Dropout(0.3)(output)
+    main_output = Dense(int(max(train_y)+1),activation='softmax')(output)
+    model = Sequential()
+    model = Model(inputs=[speech_input,speech_att_input,text_input,text_att_input], outputs=[main_output])
+    model.compile(optimizer=adam_half, loss="sparse_categorical_crossentropy", metrics=["accuracy"])
+    filepath=filename+"-{epoch:02d}-{val_acc:.4f}.hdf5"
+    checkpoint = ModelCheckpoint(filepath, monitor='val_acc', verbose=1, mode='max')
+    #####
+    callbacks_list = [metricsf1macro_4input,checkpoint]
+    model.summary()
+    #####
+    model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
+
+
+validate_speech_self_text_self_ca_mod(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_ca_mod_att_char')
+```
