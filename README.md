@@ -16,7 +16,9 @@ Understanding the intention of an utterance is challenging for some prosody-sens
 
 Challenging issues for spoken language understanding (SLU) modules include inferring the intention of syntactically ambiguous utterances. If an utterance has an underspecified sentence ender whose role is decided only upon prosody, the inference requires whole the acoustic and textual data of the speech for SLUs (and even human) to correctly infer the intention, since the pitch sequence, the duration between the words, and the overall tone decides the intention of the utterance. For example, in Seoul Korean which is *wh-in-situ*, many sentences incorporate various ways of interpretation that depend on the intonation, as shown in our [ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf).
 
-Here, we attack the issue above utilizing the speech corpus that is distributed along with the paper. The scripts and speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. Also, place the folder *text* in YOUR DIRECTORY, which contains the scripts of the speech files.
+Here, we attack the issue above utilizing the speech corpus that is distributed along with the paper. First, git clone *this library* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech*. 
+
+*This tutorial is processed line-by-line, thus start with **python3** in bash!* 
 
 ## 1. Extracting acoustic features
 
@@ -46,8 +48,8 @@ def make_data(fname,fnum,shuffle_name,mlen):
             data_s_rmse[i][-len(S):,1:]=S
     return data_s_rmse
 
-fem_speech = make_data('speech/FEMALE/',3552,x_fem,200)
-mal_speech = make_data('speech/MALE/',3552,x_mal,200)
+fem_speech = make_data('ProSem_KOR_speech/FEMALE/',3552,x_fem,200)
+mal_speech = make_data('ProSem_KOR_speech/MALE/',3552,x_mal,200)
 
 total_speech_train = np.concatenate([fem_speech[:3196],mal_speech[:3196]])
 total_speech_test  = np.concatenate([fem_speech[3196:],mal_speech[3196:]])
