@@ -224,7 +224,7 @@ validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'
 
 ## 4. Parallel utilization of audio and text data
 
-The next step is to finally adopt the textual features that can bring the lexical meanings into the speech analysis. So far we've used the BiLSTM network that only exploits audio features, but here we make a representation for the sentences so that we can embed the input text to the input 
+The next step is to finally adopt the textual features that can bring the lexical meanings into the speech analysis. So far we've used the BiLSTM network that only exploits audio features, but here we make a representation for the sentences so that we can embed the input text and co-utilize it in the inference.
 
 ```python
 import hgtk
@@ -246,6 +246,8 @@ def featurize_rnn_only_char(corpus,maxlen):
     
 rec_char = featurize_rnn_only_char(total_data,30)
 ```
+
+The character-level text embedding is quite different from English, but instead of feature-based or fine-tuning approaches, here we utilize the multi-hot encoding that was shown to be useful in Korean sentence classification. All the characters are represented into 67-dim sparse vector with 2-3 non-zero terms, and the whole text feature has size 30 x 67. The maximum length 30 is enough for the experiment considering the property of the dataset.
 
 ```python
 
@@ -299,6 +301,8 @@ def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speec
 
 ## 5. Multi-hop attention
 
+In this section, multi-hop attention that was previously proposed for emotion recognition, is implemented in Keras and is applied to our task, speech intention disambiguation. The first version incorporates only one hopping, from audio representation output to the text features' hidden layers.
+
 ```python
 def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
     ##### Speech BiLSTM-SA
@@ -351,6 +355,8 @@ def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm
 
 validate_speech_self_text_self_mha_a(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_mha_a_att_char')
 ```
+
+And the next involves another hopping.
 
 ```python
 def validate_speech_self_text_self_mha_a_t(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
@@ -407,6 +413,8 @@ validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,6
 ```
 
 ## 6. Cross-attention
+
+Last step is building up a cross-attention network, which was inspired by the implementation regarding image-text matching.
 
 ```python
 def validate_speech_self_text_self_ca_mod(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
