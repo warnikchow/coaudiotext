@@ -224,6 +224,29 @@ validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'
 
 ## 4. Parallel utilization of audio and text data
 
+The next step is to finally adopt the textual features that can bring the lexical meanings into the speech analysis. So far we've used the BiLSTM network that only exploits audio features, but here we make a representation for the sentences so that we can embed the input text to the input 
+
+```python
+import hgtk
+import han2one
+from han2one import shin_onehot, cho_onehot, char2onehot
+alp = han2one.alp
+uniquealp = han2one.uniquealp
+
+def featurize_rnn_only_char(corpus,maxlen):
+    rnn_char  = np.zeros((len(corpus),maxlen,len(alp)))
+    for i in range(len(corpus)):
+        if i%1000 ==0:
+            print(i)
+        s = corpus[i]
+        for j in range(len(s)):
+            if j < maxlen and hgtk.checker.is_hangul(s[-j-1])==True:
+                rnn_char[i][-j-1,:] = char2onehot(s[-j-1])
+    return rnn_char
+    
+rec_char = featurize_rnn_only_char(total_data,30)
+```
+
 ```python
 
 def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
