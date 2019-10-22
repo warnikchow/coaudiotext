@@ -602,4 +602,4 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 **Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:** 
 
-#### ***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
+### ***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
