@@ -297,7 +297,7 @@ def featurize_rnn_only_char(corpus,maxlen):
                 rnn_char[i][-j-1,:] = char2onehot(s[-j-1])
     return rnn_char
     
-rec_char = featurize_rnn_only_char(total_data,30)
+total_rec_char = featurize_rnn_only_char(total_data,30)
 ```
 
 **Next, we should take into account that the number of inputs gets bigger again; this time to four - that we should define another class for evaluating the F1 score. It would have been best for us to put together these kinds of materials in a single *.py* file and import it. Well, the specification will be modified as this tutorial gets more organized.**
