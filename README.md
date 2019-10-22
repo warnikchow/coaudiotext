@@ -22,7 +22,7 @@ In this project, we handle one of less explored issues in spoken language unders
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/fig.png" width="500"></br>
           <strong>Prosody-semantics interface in Seoul Korean</strong>
 
-Here, we attack the issue above, utilizing the speech corpus that is distributed along with the paper. First, git clone *this library*, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, **YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech***.
+Here, we attack the issue above, utilizing the speech corpus that is distributed along with the paper. First, git clone *this library*, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. If you add another folder *model* to save your trained networks, every setting is over. In summary, **YOUR DIRECTORY may contain *han2one.py*, *text*, *ProSem_KOR_speech*, and *model***.
 
 *This tutorial is processed line-by-line, thus start with **python3** in bash!* 
 
@@ -178,7 +178,7 @@ def validate_bilstm(rnn_speech,train_y,hidden_lstm,hidden_dim,cw,val_sp,bat_size
     callbacks_list = [metricsf1macro,checkpoint]
     model.fit(rnn_speech,train_y,validation_split=val_sp,epochs=100,batch_size=bat_size,callbacks=callbacks_list,class_weight=cw)
 
-validate_bilstm(total_speech,total_label,64,128,class_weights,0.1,16,'model_icassp/total_bilstm')
+validate_bilstm(total_speech,total_label,64,128,class_weights,0.1,16,'model/total_bilstm')
 ```
 
 ## 3. Self-attentive BiLSTM
@@ -264,7 +264,7 @@ def validate_rnn_self_drop(rnn_speech,train_y,hidden_lstm,hidden_con,hidden_dim,
     callbacks_list = [metricsf1macro_2input,checkpoint]   
     model.fit([rnn_speech,att_source],train_y,validation_split=val_sp,epochs=100,batch_size=bat_size, callbacks=callbacks_list,class_weight=cw)
 
-validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'model_icassp/total_bilstm_att')
+validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'model/total_bilstm_att')
 ```
 
 ## 4. Parallel utilization of audio and text data
@@ -390,7 +390,7 @@ def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speec
     #####
     model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
     
-validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp/total_multi_bilstm_att_char')    
+validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model/total_multi_bilstm_att_char')    
 ```
 
 **The idea is straightforward and is widely used within many algorithms nowadays, yielding an adequate performance. Also, replacing the CNN - that was held for the spectrogram in the original reference - with BiLSTM, seems to be successful for AT LEAST IN OUR DATASET. The reason is assumed to be the property regarding syntax-semantics of the task, rather than only of semantics such as in sentiment analysis.**
@@ -453,7 +453,7 @@ def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm
     model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
 
 
-validate_speech_self_text_self_mha_a(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_mha_a_att_char')
+validate_speech_self_text_self_mha_a(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model/total_mha_a_att_char')
 ```
 
 **Note that the dummy code was commented to denote that the line was not removed to guarantee the same input formats. The next chunk involves another hopping.** 
@@ -509,7 +509,7 @@ def validate_speech_self_text_self_mha_a_t(rnn_speech,rnn_text,train_y,hidden_ls
     model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
 
 
-validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_mha_a_t_drop_att_char')
+validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model/total_mha_a_t_drop_att_char')
 ```
 
 ## 6. Cross-attention
@@ -578,10 +578,10 @@ def validate_speech_self_text_self_ca(rnn_speech,rnn_text,train_y,hidden_lstm_sp
     model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
 
 
-validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_ca_mod_att_char')
+validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model/total_ca_mod_att_char')
 ```
 
-**At this point, we think that summarizing the specification and hyperparameters of our implementation will be helpful to the readers.</br> - Device: NVidea Titan V</br> - Batch size: 64</br> - Width for the hidden layers of BiLSTM:  64 * 2 = 128</br> - Width for MLPs: 128</br> - Width of the context vector: 64</br> - Dropout rate: 0.3</br> - BiLSTM and MLPs implemented by Keras as TF backend**
+**At this point, we think that summarizing the specification and hyperparameters of our implementation will be helpful to the readers.</br> - Device: NVidea Titan V</br> - Batch size: 16</br> - Width for the hidden layers of BiLSTM:  64 * 2 = 128</br> - Width for MLPs: 128</br> - Width of the context vector: 64</br> - Dropout rate: 0.3</br> - Activation: *tanh* for the context vectors, *softmax* for the decision, and *ReLU* for others</br> - Optimizer: Adam (0.0005) </br>- BiLSTM and MLPs implemented by Keras as TF backend**
 
 **The below is the wrap-up for all the models implemented so far. God thanks *.pptx*!**
 
