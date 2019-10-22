@@ -31,6 +31,34 @@ Here, we attack the issue above, utilizing the speech corpus that is distributed
 **First, since we only utilize the utterances that can be disambiguated with speech, here we extract the acoustic features from the files. There are many ways to abstract the physical components, but here we utilize [mel spectrogram](https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0) due to its rich acoustic information and intuitive concept. The process is done with [Librosa](https://librosa.github.io/librosa/), a python-based audio signal processing library.**
 
 ```python
+import numpy as np
+import librosa
+
+def read_data(filename):
+    with open(filename, 'r') as f:
+        data = [line.split('\t') for line in f.read().splitlines()]
+    return data
+
+text_total = read_data('text/spec_final.txt')
+labels = ['s','yn','wh','rq','c','r','rc']
+text_answer_pair = [[t[2],labels.index(t[3])] for t in text_total]
+
+x_fem = np.load('text/x_fem.npy')
+x_mal = np.load('text/x_mal.npy')
+
+fem_data  = [text_answer_pair[int(n)][0] for n in x_fem]
+fem_label = [text_answer_pair[int(n)][1] for n in x_fem]
+mal_data  = [text_answer_pair[int(n)][0] for n in x_mal]
+mal_label = [text_answer_pair[int(n)][1] for n in x_mal]
+
+total_data_train = fem_data[:3196]+mal_data[:3196]
+total_data_test  = fem_data[3196:]+mal_data[3196:]
+total_data = total_data_train+total_data_test    # The data regarding text scripts, assumed perfectly transcribed
+
+total_label_train = fem_label[:3196]+mal_label[:3196]
+total_label_test  = fem_label[3196:]+mal_label[3196:]
+total_label = total_label_train+total_label_test # The data regarding the gold intention labels, 0 to 6
+
 def make_data(fname,fnum,shuffle_name,mlen):
     data_s_rmse = np.zeros((fnum,mlen,129))
     for i in range(fnum):
@@ -59,7 +87,7 @@ mal_speech = make_data('ProSem_KOR_speech/MALE/',3552,x_mal,200)
 
 total_speech_train = np.concatenate([fem_speech[:3196],mal_speech[:3196]])
 total_speech_test  = np.concatenate([fem_speech[3196:],mal_speech[3196:]])
-total_speech = np.concatenate([total_speech_train,total_speech_test])
+total_speech = np.concatenate([total_speech_train,total_speech_test]) # The audio features of speech files
 ```
 
 **Note that here, for every speech file, a feature of length 200 is yielded, with the width 129. 128 corresponds to the mel spectrogram, and the left one denotes an RMSE of each frame. The latter was attached to effectively represent the syllable-level discreteness of Korean spoken language, as suggested in [the previous experiment regarding intonation type identification](https://github.com/warnikchow/korinto).**
@@ -569,7 +597,7 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 ## 7. Result and analysis?
 
 <p align="center">
-    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/table.PNG" width="600"></br>
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/table.PNG" width="500"></br>
           [Result on the 10% test set. For each feature, the intersection was chosen among 5-best accuracy and F1 models that were yield during first 100 epochs of training.] 
 
 **Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:</br> - *It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
