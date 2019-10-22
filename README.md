@@ -604,15 +604,15 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 ### ***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
 
-## Maintainer
+### MAINTAINER
 Won Ik Cho (aka WarNik Chow)</br>
-[@Human Interface Laboratory](https://hi.snu.ac.kr/), Seoul National University, Seoul, Korea/br>
+[@Human Interface Laboratory](https://hi.snu.ac.kr/), Seoul National University, Seoul, Korea</br>
 If there is any issue, feel free to [contact](wicho@hi.snu.ac.kr). 
 
-## ACKNOWLEDGEMENT
+### ACKNOWLEDGEMENT
 The great thanks go to [Jeonghwa Cho](https://sites.google.com/site/jeonghwacho01), who's discussed the topic (syntactic ambiguity) together from ever since this project started, given helpful ideas on psycholinguistics, and co-organized [the very first ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf). The author also thanks Jeemin Kang and Woo Hyun Kang, who respectively checked [the original dataset](https://github.com/warnikchow/prosem) and edited [this paper](https://arxiv.org/abs/1910.09275).
 
-## Citation
+### CITATION
 If you want to utilize the analysis result or code of this project, the following is just a placeholder for the preprint:
 ```
 @article{cho2018disambiguating,
