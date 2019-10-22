@@ -555,7 +555,11 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 **At this point, we think that summarizing the specification and hyperparameters of our implementation will be helpful to the readers.</br> - Device: NVidea Titan V</br> - Batch size: 64</br> - Width for the hidden layers of BiLSTM:  64 * 2 = 128</br> - Width for MLPs: 128</br> - Width of the context vector: 64</br> - Dropout rate: 0.3</br> - BiLSTM and MLPs implemented by Keras as TF backend**
 
-**The below is the summarizing figure for all the models implemented so far. God thanks *.pptx*!**
+**The below is the wrap-up for all the models implemented so far. God thanks *.pptx*!**
+
+<p align="center">
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/diagram.png" width="800"></br>
+          [The block diagrams of the implemented models.]
 
 ## 7. Result and analysis?
 
