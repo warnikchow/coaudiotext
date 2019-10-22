@@ -20,7 +20,7 @@ In this project, we handle one of less explored issues in spoken language unders
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/fig.png" width="500"></br>
-          [Prosody-semantics interface in Seoul Korean]
+          <strong>Prosody-semantics interface in Seoul Korean</strong>
 
 Here, we attack the issue above, utilizing the speech corpus that is distributed along with the paper. First, git clone *this library*, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, **YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech***.
 
@@ -161,7 +161,7 @@ metricsf1macro = Metricsf1macro()
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/bilstm.png" width="600"></br>
-          [Concept of BiLSTM from http://www.gabormelli.com/RKB/Bidirectional_LSTM_(biLSTM)_Model]
+          <strong>Concept of BiLSTM from http://www.gabormelli.com/RKB/Bidirectional_LSTM_(biLSTM)_Model</strong>
 
 **The following denotes how we define the BiLSTM by using Keras, although no functional API is utilized here. We use only *Sequential()*, and no more complex structure is used. We don't use dropout here, since considering the hidden layers of this size, overhead is less expected.**
 
@@ -224,7 +224,7 @@ metricsf1macro_2input = Metricsf1macro_2input()
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/sa.png" width="600"></br>
-          [Self-attentive embedding for sentence representation]
+          <strong>Self-attentive embedding for sentence representation (Lin, 2017)</strong>
 
 **And here we define our self-attentive BiLSTM model which *sometimes* uses TensorFlow backend. This kind of design (utilizing *Model* module) is inevitable since the *pure* Keras approach cannot guarantee that we can make up such a complicated layer... So, rather detailed comments are attached to help the readers follow how the structure (above) in [the paper](https://arxiv.org/abs/1703.03130) is implemented as a code.**
 
@@ -273,7 +273,7 @@ validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/para.jpg" width="600"></br>
-          [The concatenated architecture we referred for Para-BRE-Att]
+          <strong>The concatenated architecture we referred for Para-BRE-Att (Gu, 2017)</strong>
 
 **The character-level text embedding is quite different from English, but instead of either feature-based or fine-tuning approaches, here we utilize the [multi-hot encoding](https://www.researchgate.net/publication/331987503_Sequence-to-Sequence_Autoencoder_based_Korean_Text_Error_Correction_using_Syllable-level_Multi-hot_Vector_Representation) that was [shown to be useful in Korean sentence classification](https://arxiv.org/abs/1905.13656). All the characters are represented into a 67-dim sparse vector with 2-3 non-zero terms, and the full text feature has size 30 x 67. The maximum length 30 is enough for the experiment considering the property of the dataset. Refer to [this repository](https://github.com/warnikchow/kcharemb) for other types of Korean character-level embedding! Well, at least at this point, we're going to use the type of character-level encoding that is as concise as possible, not heavy, and notwithstanding informative.**
 
@@ -401,7 +401,7 @@ validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/mha.PNG" width="700"></br>
-          [A simple BRE (BiLSTM), and three parallel variations namely MHA-1,2,3]
+          <strong>A simple BRE (BiLSTM), and three parallel variations namely MHA-1,2,3 (Yoon, 2019)</strong>
 
 ```python
 def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
@@ -518,7 +518,7 @@ validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,6
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/ca.PNG" width="700"></br>
-          [The concept of cross-attention, though the illustration is for vision domain]
+          <strong>The concept of cross-attention, though the illustration is for vision domain (Lee, 2018)</strong>
     
 ```python
 def validate_speech_self_text_self_ca(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
@@ -587,18 +587,18 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/diagram.png" width="700"></br>
-          [The block diagrams of the implemented models] </br>
+          <strong>The block diagrams of the implemented models</br>
     (1) Speech-only: Audio-BRE </br>
     (2) Self-attentive for Speech-only: Audio-BRE-Att </br>
     (3) Text-aided: Para-BRE-Att </br>
     (4) Multi-hop Attention: MHA-A,AT</br>
-    (5) Cross-attention: CA
+    (5) Cross-attention: CA </strong> 
 
 ## 7. Result and analysis?
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/table.PNG" width="500"></br>
-          [Result on the 10% test set. For each feature, the intersection was chosen among 5-best accuracy and F1 models that were yielded during first 100 epochs of training.] 
+          <strong> Result on the 10% test set. For each feature, the intersection was chosen among 5-best accuracy and F1 models that were yielded during first 100 epochs of training.</strong> 
 
 **Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:** 
 
