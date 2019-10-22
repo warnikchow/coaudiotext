@@ -14,21 +14,21 @@
 ## 0. Problem definition & loading dataset
 #### The introduction partly comes from [our submitted paper](https://arxiv.org/abs/1910.09275)!
 
-Understanding the intention of an utterance is challenging for some prosody-sensitive cases, especially when it is in the written form as in a text chatting or speech recognition output. **The main concern is detecting the directivity or rhetoricalness of an utterance and distinguishing the type of question.** Since it is inevitable to face both the issues regarding prosody and semantics, the identification is expected be benefited from the observations on human language processing mechanism. 
+Understanding the intention of an utterance is challenging for some prosody-sensitive cases, especially when it is in the written form, as in a text chatting or speech recognition output. **The main concern is detecting the directivity or rhetoricalness of an utterance and distinguishing the type of question.** Since it is inevitable to face both the issues regarding prosody and semantics, the identification is expected to be benefited from the observations on the human language processing mechanism. 
 
-Challenging issues for spoken language understanding (SLU) modules include inferring the intention of syntactically ambiguous utterances. If an utterance has an underspecified sentence ender whose role is decided only upon prosody, the inference requires whole the acoustic and textual data of the speech for SLUs (and even human) to correctly infer the intention, since the pitch sequence, the duration between the words, and the overall tone decides the intention of the utterance. For example, in Seoul Korean which is *wh-in-situ*, many sentences incorporate various ways of interpretation that depend on the intonation, as shown in our [ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf).
+Challenging issues for spoken language understanding (SLU) modules include **inferring the intention of syntactically ambiguous utterances**. If an utterance has an underspecified sentence ender whose role is decided only upon prosody, the inference requires whole the acoustic and textual data of the speech for SLUs (and even human) to correctly infer the intention, since the pitch sequence, the duration between the words, and the overall tone decide the intention of the utterance. For example, in Seoul Korean, which is *wh-in-situ*, many sentences incorporate various ways of interpretation that depend on the intonation, as shown in our [ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf).
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/fig.png" width="500"></br>
           [Prosody-semantics interface in Seoul Korean]
 
-Here, we attack the issue above utilizing the speech corpus that is distributed along with the paper. First, git clone *this library*, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, **YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech***.
+Here, we attack the issue above, utilizing the speech corpus that is distributed along with the paper. First, git clone *this library*, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, **YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech***.
 
 *This tutorial is processed line-by-line, thus start with **python3** in bash!* 
 
 ## 1. Extracting acoustic features
 
-**First, since we only utilize the utterances that can be disambiguated with speech, here we extract the acoustic features from the files. There are many ways to abstractize the physical components, but here we utilize [mel spectrogram](https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0) due to its rich acoustic information and intuitive concept. The process is done with [Librosa](https://librosa.github.io/librosa/), a python-based audio signal processing library.**
+**First, since we only utilize the utterances that can be disambiguated with speech, here we extract the acoustic features from the files. There are many ways to abstract the physical components, but here we utilize [mel spectrogram](https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0) due to its rich acoustic information and intuitive concept. The process is done with [Librosa](https://librosa.github.io/librosa/), a python-based audio signal processing library.**
 
 ```python
 def make_data(fname,fnum,shuffle_name,mlen):
@@ -62,11 +62,11 @@ total_speech_test  = np.concatenate([fem_speech[3196:],mal_speech[3196:]])
 total_speech = np.concatenate([total_speech_train,total_speech_test])
 ```
 
-**Note that here, for every speech file, a feature of length 200 is yielded, with the width 129. 128 corresponds to the mel spectrogram and the left one denotes an RMSE of each frame, which was attached to effectively represent the syllable-level discreteness of Korean spoken langauage, as suggested in [the previous experiment regarding intonation type identification](https://github.com/warnikchow/korinto).**
+**Note that here, for every speech file, a feature of length 200 is yielded, with the width 129. 128 corresponds to the mel spectrogram, and the left one denotes an RMSE of each frame. The latter was attached to effectively represent the syllable-level discreteness of Korean spoken language, as suggested in [the previous experiment regarding intonation type identification](https://github.com/warnikchow/korinto).**
 
 ## 2. Speech-only analysis with Librosa and Keras
 
-**Although people these days seem to migrate to TF2.0 and PyTorch, I still use [original Keras](https://keras.io/) for its conciseness. Hope this code be fit to whatever flatform the reader uses.**
+**Although people these days seem to migrate to TF2.0 and PyTorch, I still use [original Keras](https://keras.io/) for its conciseness. Hope this code fit to whatever flatform the reader uses.**
 
 ```python
 import tensorflow as tf
@@ -135,7 +135,7 @@ metricsf1macro = Metricsf1macro()
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/bilstm.png" width="600"></br>
           [Concept of BiLSTM from http://www.gabormelli.com/RKB/Bidirectional_LSTM_(biLSTM)_Model]
 
-**The following denotes how we define the BiLSTM by using Keras, although no functional API is utilized here. We use only *Sequential()* since no more complex structure is used. We don't use dropout here since the hidden layers of this size are not expected to get overhead.**
+**The following denotes how we define the BiLSTM by using Keras, although no functional API is utilized here. We use only *Sequential()*, and no more complex structure is used. We don't use dropout here, since considering the hidden layers of this size, overhead is less expected.**
 
 ```python
 def validate_bilstm(rnn_speech,train_y,hidden_lstm,hidden_dim,cw,val_sp,bat_size,filename):
@@ -155,7 +155,7 @@ validate_bilstm(total_speech,total_label,64,128,class_weights,0.1,16,'model_icas
 
 ## 3. Self-attentive BiLSTM
 
-**Remember: mel spectrogram still has a plenty of prosody-semantic information! Thus, we decided to apply a self-attentive embedding which has been successfully used in text procesisng. Before making up the module, in terms of *pure Keras* where F1 measure is removed (well if recent version has one, that's nice!), we need another definition of f1 score since additional input source is introduced (zero vector for attention source initialization).**
+**Remember: mel spectrogram still has plenty of prosody-semantic information! Thus, we decided to apply a self-attentive embedding which has been successfully used in text processng. Before making up the module, in view of *pure Keras* where F1 measure is removed (well if the recent version has one, that's nice!), we need another definition of F1 score since additional input source is introduced (zero vector for attention source initialization).**
 
 ```python
 ##### f1-2input
@@ -198,7 +198,7 @@ metricsf1macro_2input = Metricsf1macro_2input()
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/sa.png" width="600"></br>
           [Self-attentive embedding for sentence representation]
 
-**And here we define our self-attentive bilstm model which *sometimes* uses TensorFlow backend. This kind of design (utilizinig *Model* module) is inevitable since the pure Keras approach cannot guarantee that we can make up such a complicated layer... So, I attach a rather detailed comment to help the readers follow how the structure (above) in [the paper](https://arxiv.org/abs/1703.03130) is implemented as a code.**
+**And here we define our self-attentive BiLSTM model which *sometimes* uses TensorFlow backend. This kind of design (utilizing *Model* module) is inevitable since the *pure* Keras approach cannot guarantee that we can make up such a complicated layer... So, rather detailed comments are attached to help the readers follow how the structure (above) in [the paper](https://arxiv.org/abs/1703.03130) is implemented as a code.**
 
 ```python
 def validate_rnn_self_drop(rnn_speech,train_y,hidden_lstm,hidden_con,hidden_dim,cw,val_sp,bat_size,filename):
@@ -241,13 +241,15 @@ validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'
 
 ## 4. Parallel utilization of audio and text data
 
-**The next step is to finally adopt the textual features that can bring the lexical meanings into the speech analysis. So far we've used the BiLSTM network that only exploits audio features, but here we make a representation for the sentences so that we can embed the input text and co-utilize it in the inference. The concatenation is similar to the network (below) suggested in [the paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6261374/) that dealt with multimodal speech intention understanding, but the detailed architecture differs.**
+**The next step is to finally adopt the textual features that can bring the lexical meanings into the speech analysis. So far, we've used the BiLSTM network that only exploits audio features, but here we make a representation for the sentences so that we can embed the input text and co-utilize it in the inference. The concatenation is similar to the network (below) suggested in [the paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6261374/) that dealt with multimodal speech intention understanding, but the detailed architecture differs.**
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/para.jpg" width="600"></br>
           [The concatenated architecture we referred for Para-BRE-Att]
 
-**The character-level text embedding is quite different from English, but instead of feature-based or fine-tuning approaches, here we utilize the [multi-hot encoding](https://www.researchgate.net/publication/331987503_Sequence-to-Sequence_Autoencoder_based_Korean_Text_Error_Correction_using_Syllable-level_Multi-hot_Vector_Representation) that was [shown to be useful in Korean sentence classification](https://arxiv.org/abs/1905.13656). All the characters are represented into 67-dim sparse vector with 2-3 non-zero terms, and the whole text feature has size 30 x 67. The maximum length 30 is enough for the experiment considering the property of the dataset. Refer to [this repository](https://github.com/warnikchow/kcharemb) for other types of Korean character-level embedding! Well, at least at this point, we're going to use the type of character-level encoding that is as concise as possible, not heavy, and notwithstanding informative.**
+**The character-level text embedding is quite different from English, but instead of either feature-based or fine-tuning approaches, here we utilize the [multi-hot encoding](https://www.researchgate.net/publication/331987503_Sequence-to-Sequence_Autoencoder_based_Korean_Text_Error_Correction_using_Syllable-level_Multi-hot_Vector_Representation) that was [shown to be useful in Korean sentence classification](https://arxiv.org/abs/1905.13656). All the characters are represented into a 67-dim sparse vector with 2-3 non-zero terms, and the full text feature has size 30 x 67. The maximum length 30 is enough for the experiment considering the property of the dataset. Refer to [this repository](https://github.com/warnikchow/kcharemb) for other types of Korean character-level embedding! Well, at least at this point, we're going to use the type of character-level encoding that is as concise as possible, not heavy, and notwithstanding informative.**
+
+***Note that this process is very, very language-dependent. You can replace this procedure with whatever corpus and tokenization you utilize. Just make sure that the format fits as a BiLSTM input.***
 
 ```python
 import hgtk
@@ -270,7 +272,7 @@ def featurize_rnn_only_char(corpus,maxlen):
 rec_char = featurize_rnn_only_char(total_data,30)
 ```
 
-**Next, we should take into account that the number of inputs gets bigger again; this time to four - that we should define another class for evaluating the F1 score. It would have been best for us to put together these kind of materials in a single *.py* file and just import it. Well, the specification will be modified as this tutorial gets organized.**
+**Next, we should take into account that the number of inputs gets bigger again; this time to four - that we should define another class for evaluating the F1 score. It would have been best for us to put together these kinds of materials in a single *.py* file and import it. Well, the specification will be modified as this tutorial gets more organized.**
 
 ```python
 ##### f1-4input
@@ -363,11 +365,11 @@ def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speec
     validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp/total_multi_bilstm_att_char')
 ```
 
-**The idea is very simple and actually is widely used within many algorithms nowadays, yielding a sufficient performance. Also, replacing the CNN - for the spectroram that was held in the original reference - with BiLSTM, seems to be successful for AT LEAST IN OUR DATASET. The reason is assumed to be the syntax-semantic propery of the task, rather than only of semantics such as sentiment analysis.**
+**The idea is straightforward and is widely used within many algorithms nowadays, yielding an adequate performance. Also, replacing the CNN - that was held for the spectrogram in the original reference - with BiLSTM, seems to be successful for AT LEAST IN OUR DATASET. The reason is assumed to be the property regarding syntax-semantics of the task, rather than only of semantics such as in sentiment analysis.**
 
 ## 5. Multi-hop attention
 
-**In this section, multi-hop attention that was [previously proposed for emotion recognition](https://arxiv.org/abs/1904.10788), is implemented in Keras and is applied to our task; speech intention disambiguation. The first module incorporates only one hopping, from audio representation output to the text features' hidden layers. The picture below may help you understand how hopping occurs, in very intuitive way. Slightly different from the original paper, we've named MHA-1 as MHA-A, and MHA-2 as MHA-AT, to reflect the features that are utilized.**
+**In this section, multi-hop attention that was [previously proposed for emotion recognition](https://arxiv.org/abs/1904.10788), is implemented in Keras and is applied to our task, speech intention disambiguation. The first module incorporates only one hopping, from audio representation output to the text features' hidden layers. The picture below may help you understand how hopping occurs, in a very intuitive way. Slightly different from the original paper, we've named MHA-1 as MHA-A, and MHA-2 as MHA-AT, to reflect the features that are utilized.**
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/mha.PNG" width="700"></br>
@@ -484,7 +486,7 @@ validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,6
 
 ## 6. Cross-attention
 
-**Last step is building up a cross-attention network, which was inspired by [the implementation regarding image-text matching](https://kuanghuei.github.io/SCANProject/). Due to the different nature of speech and image, we've utilized a slightly different type of architecture; but the philosophy still holds. Rather than giving attention to a single feature at a time and doing that to the other subsequentially, how about observing both of them simultaneously?**
+**The last step is building up a cross-attention network, which was inspired by [the implementation regarding image-text matching](https://kuanghuei.github.io/SCANProject/). Due to the different nature of speech and image, we've utilized a slightly different type of architecture; but the philosophy still holds. Rather than giving attention to a single feature at a time and doing that to the other subsequentially, how about observing both of them simultaneously?**
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/ca.PNG" width="700"></br>
@@ -557,4 +559,4 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 ## 7. Result and analysis?
 
-**Currently in [the paper](https://arxiv.org/abs/1910.09275), but to be supplemented afterwards.**
+**Currently can be found in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterwards. But for TL;DR:</br> - *It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and a speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
