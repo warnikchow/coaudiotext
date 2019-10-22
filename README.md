@@ -24,7 +24,7 @@ In this project, we handle one of less explored issues in spoken language unders
 
 Here, we attack the issue above, utilizing the speech corpus that is distributed along with the paper. First, git clone *this library*, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. If you add another folder *model* in YOUR DIRECTORY to save your trained networks, every setting is over. In summary, **YOUR DIRECTORY may contain *han2one.py*, *text*, *ProSem_KOR_speech*, and *model***.
 
-*This tutorial is processed line-by-line, thus start with **python3** in bash!* 
+*This tutorial is processed line-by-line, thus start with **python** in bash!* 
 
 ## 1. Extracting acoustic features
 
@@ -224,7 +224,7 @@ metricsf1macro_2input = Metricsf1macro_2input()
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/sa.png" width="600"></br>
-          <strong>Self-attentive embedding for sentence representation (Lin, 2017)</strong>
+          <strong>Self-attentive embedding for sentence representation (Lin et al., 2017)</strong>
 
 **And here we define our self-attentive BiLSTM model which *sometimes* uses TensorFlow backend. This kind of design (utilizing *Model* module) is inevitable since the *pure* Keras approach cannot guarantee that we can make up such a complicated layer... So, rather detailed comments are attached to help the readers follow how the structure (above) in [the paper](https://arxiv.org/abs/1703.03130) is implemented as a code.**
 
@@ -273,7 +273,7 @@ validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/para.jpg" width="600"></br>
-          <strong>The concatenated architecture we referred for Para-BRE-Att (Gu, 2017)</strong>
+          <strong>The concatenated architecture we referred for Para-BRE-Att (Gu et al., 2017)</strong>
 
 **The character-level text embedding is quite different from English, but instead of either feature-based or fine-tuning approaches, here we utilize the [multi-hot encoding](https://www.researchgate.net/publication/331987503_Sequence-to-Sequence_Autoencoder_based_Korean_Text_Error_Correction_using_Syllable-level_Multi-hot_Vector_Representation) that was [shown to be useful in Korean sentence classification](https://arxiv.org/abs/1905.13656). All the characters are represented into a 67-dim sparse vector with 2-3 non-zero terms, and the full text feature has size 30 x 67. The maximum length 30 is enough for the experiment considering the property of the dataset. Refer to [this repository](https://github.com/warnikchow/kcharemb) for other types of Korean character-level embedding! Well, at least at this point, we're going to use the type of character-level encoding that is as concise as possible, not heavy, and notwithstanding informative.**
 
@@ -401,7 +401,7 @@ validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/mha.PNG" width="700"></br>
-          <strong>A simple BRE (BiLSTM), and three parallel variations namely MHA-1,2,3 (Yoon, 2019)</strong>
+          <strong>A simple BRE (BiLSTM), and three parallel variations namely MHA-1,2,3 (Yoon et al., 2019)</strong>
 
 ```python
 def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
@@ -518,7 +518,7 @@ validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,6
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/ca.PNG" width="700"></br>
-          <strong>The concept of cross-attention, though the illustration is for vision domain (Lee, 2018)</strong>
+          <strong>The concept of cross-attention, though the illustration is for vision domain (Lee et al., 2018)</strong>
     
 ```python
 def validate_speech_self_text_self_ca(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
