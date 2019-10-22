@@ -307,7 +307,7 @@ metricsf1macro_4input = Metricsf1macro_4input()
 
 ```
 
-**And here comes the model architecture for our Para-BRE-Att, which incorporates two BiLSTM network each contains the information regarding audio and text of the speech, and then concatenation. **
+**And here comes the model architecture for our Para-BRE-Att, which incorporates two BiLSTM network each contains the information regarding audio and text of the speech, and then concatenation.**
 
 ```python
 
@@ -422,7 +422,7 @@ def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm
 validate_speech_self_text_self_mha_a(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_mha_a_att_char')
 ```
 
-Note that the dummy code was commented to denote that the line was And the next involves another hopping.
+**Note that the dummy code was commented to denote that the line was not removed to guarantee the same input formats. The next chunk involves another hopping.** 
 
 ```python
 def validate_speech_self_text_self_mha_a_t(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
@@ -480,8 +480,12 @@ validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,6
 
 ## 6. Cross-attention
 
-Last step is building up a cross-attention network, which was inspired by the implementation regarding image-text matching.
+**Last step is building up a cross-attention network, which was inspired by [the implementation regarding image-text matching](https://kuanghuei.github.io/SCANProject/). Due to the different nature of speech and image, we've utilized a slightly different type of architecture; but the philosophy still holds. Rather than giving attention to a single feature at a time and doing that to the other subsequentially, how about observing both of them simultaneously?**
 
+<p align="center">
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/ca.PNG" width="700"></br>
+          [The concept of cross-attention, though the illustration is for vision domain]
+    
 ```python
 def validate_speech_self_text_self_ca_mod(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
     ##### Speech BiLSTM
