@@ -306,36 +306,36 @@ rec_char = featurize_rnn_only_char(total_data,30)
 ##### f1-4input
 
 class Metricsf1macro_4input(Callback):
- def on_train_begin(self, logs={}):
-  self.val_f1s = []
-  self.val_recalls = []
-  self.val_precisions = []
-  self.val_f1s_w = []
-  self.val_recalls_w = []
-  self.val_precisions_w = []
- def on_epoch_end(self, epoch, logs={}):
-  if len(self.validation_data)>2:
-   val_predict = np.asarray(self.model.predict([self.validation_data[0],self.validation_data[1],self.validation_data[2],self.validation_data[3]]))
-   val_predict = np.argmax(val_predict,axis=1)
-   val_targ = self.validation_data[4]
-  else:
-   val_predict = np.asarray(self.model.predict(self.validation_data[0]))
-   val_predict = np.argmax(val_predict,axis=1)
-   val_targ = self.validation_data[1]
-  _val_f1 = metrics.f1_score(val_targ, val_predict, average="macro")
-  _val_f1_w = metrics.f1_score(val_targ, val_predict, average="weighted")
-  _val_recall = metrics.recall_score(val_targ, val_predict, average="macro")
-  _val_recall_w = metrics.recall_score(val_targ, val_predict, average="weighted")
-  _val_precision = metrics.precision_score(val_targ, val_predict, average="macro")
-  _val_precision_w = metrics.precision_score(val_targ, val_predict, average="weighted")
-  self.val_f1s.append(_val_f1)
-  self.val_recalls.append(_val_recall)
-  self.val_precisions.append(_val_precision)
-  self.val_f1s_w.append(_val_f1_w)
-  self.val_recalls_w.append(_val_recall_w)
-  self.val_precisions_w.append(_val_precision_w)
-  print("— val_f1: %f — val_precision: %f — val_recall: %f"%(_val_f1, _val_precision, _val_recall))
-  print("— val_f1_w: %f — val_precision_w: %f — val_recall_w: %f"%(_val_f1_w, _val_precision_w, _val_recall_w))
+    def on_train_begin(self, logs={}):
+        self.val_f1s = []
+        self.val_recalls = []
+        self.val_precisions = []
+        self.val_f1s_w = []
+        self.val_recalls_w = []
+        self.val_precisions_w = []
+    def on_epoch_end(self, epoch, logs={}):
+        if len(self.validation_data)>2:
+            val_predict = np.asarray(self.model.predict([self.validation_data[0],self.validation_data[1],self.validation_data[2],self.validation_data[3]]))
+            val_predict = np.argmax(val_predict,axis=1)
+            val_targ = self.validation_data[4]
+        else:
+            val_predict = np.asarray(self.model.predict(self.validation_data[0]))
+            val_predict = np.argmax(val_predict,axis=1)
+            val_targ = self.validation_data[1]
+           _val_f1 = metrics.f1_score(val_targ, val_predict, average="macro")
+           _val_f1_w = metrics.f1_score(val_targ, val_predict, average="weighted")
+           _val_recall = metrics.recall_score(val_targ, val_predict, average="macro")
+           _val_recall_w = metrics.recall_score(val_targ, val_predict, average="weighted")
+           _val_precision = metrics.precision_score(val_targ, val_predict, average="macro")
+           _val_precision_w = metrics.precision_score(val_targ, val_predict, average="weighted")
+           self.val_f1s.append(_val_f1)
+           self.val_recalls.append(_val_recall)
+           self.val_precisions.append(_val_precision)
+           self.val_f1s_w.append(_val_f1_w)
+           self.val_recalls_w.append(_val_recall_w)
+           self.val_precisions_w.append(_val_precision_w)
+           print("— val_f1: %f — val_precision: %f — val_recall: %f"%(_val_f1, _val_precision, _val_recall))
+           print("— val_f1_w: %f — val_precision_w: %f — val_recall_w: %f"%(_val_f1_w, _val_precision_w, _val_recall_w))
 
 metricsf1macro_4input = Metricsf1macro_4input()
 
@@ -389,8 +389,8 @@ def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speec
     model.summary()
     #####
     model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
-
-    validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp/total_multi_bilstm_att_char')
+    
+validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp/total_multi_bilstm_att_char')    
 ```
 
 **The idea is straightforward and is widely used within many algorithms nowadays, yielding an adequate performance. Also, replacing the CNN - that was held for the spectrogram in the original reference - with BiLSTM, seems to be successful for AT LEAST IN OUR DATASET. The reason is assumed to be the property regarding syntax-semantics of the task, rather than only of semantics such as in sentiment analysis.**
@@ -602,4 +602,4 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 **Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:** 
 
-***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
+#### ***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
