@@ -558,9 +558,18 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 **The below is the wrap-up for all the models implemented so far. God thanks *.pptx*!**
 
 <p align="center">
-    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/diagram.png" width="800"></br>
-          [The block diagrams of the implemented models.]
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/diagram.png" width="700"></br>
+          [The block diagrams of the implemented models] </br>
+    (1) Speech-only: Audio-BRE </br>
+    (2) Self-attentive for Speech-only: Audio-BRE-Att </br>
+    (3) Text-aided: Para-BRE-Att </br>
+    (4) Multi-hop Attention: MHA-A,AT</br>
+    (5) Cross-attention: CA
 
 ## 7. Result and analysis?
 
-**Currently can be found in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterwards. But for TL;DR:</br> - *It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and a speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
+<p align="center">
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/table.PNG" width="600"></br>
+          [Result on the 10% test set. For each feature, the intersection was chosen among 5-best accuracy and F1 models that were yield during first 100 epochs of training.] 
+
+**Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:</br> - *It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
