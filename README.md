@@ -603,3 +603,32 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 **Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:** 
 
 ### ***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
+
+## Maintainer
+Won Ik Cho (aka WarNik Chow)</br>
+[@Human Interface Laboratory](https://hi.snu.ac.kr/), Seoul National University, Seoul, Korea/br>
+If there is any issue, feel free to [contact](wicho@hi.snu.ac.kr). 
+
+## ACKNOWLEDGEMENT
+The great thanks go to [Jeonghwa Cho](https://sites.google.com/site/jeonghwacho01), who's discussed the topic (syntactic ambiguity) together from ever since this project started, given helpful ideas on psycholinguistics, and co-organized [the very first ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf). The author also thanks Jeemin Kang and Woo Hyun Kang, who respectively checked [the original dataset](https://github.com/warnikchow/prosem) and edited [this paper](https://arxiv.org/abs/1910.09275).
+
+## Citation
+If you want to utilize the analysis result or code of this project, the following is just a placeholder for the preprint:
+```
+@article{cho2018disambiguating,
+    title={Disambiguating Speech Intention via Audio-Text Co-attention Framework: A Case of Prosody-semantics Interface},
+    author={Cho, Won Ik and Cho, Jeonghwa and Kang, Woo Hyun and Kim, Nam Soo},
+    journal={arXiv preprint arXiv:1910.09275},
+    year={2019}
+}
+```
+And if you want to exploit the dataset merely, the following will be helpful:
+```
+@inproceedings{cho2019prosody,
+	title={Prosody-semantics interface in Seoul Korean: Corpus for a disambiguation of wh-intervention},
+	author={Cho, Won Ik and Cho, Jeonghwa and Kang, Jeemin and Kim, Nam Soo},
+	booktitle={Proceedings of the 19th International Congress of the Phonetic Sciences (ICPhS 2019)},
+	pages={3902--3906},
+	year={2019}
+}
+```
