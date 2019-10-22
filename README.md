@@ -607,7 +607,7 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 ### MAINTAINER
 Won Ik Cho (aka WarNik Chow)</br>
 [@Human Interface Laboratory](https://hi.snu.ac.kr/), Seoul National University, Seoul, Korea</br>
-If there is any issue, feel free to [contact](wicho@hi.snu.ac.kr). 
+If there is any issue, feel free to contact by wicho@hi.snu.ac.kr. 
 
 ### ACKNOWLEDGEMENT
 The great thanks go to [Jeonghwa Cho](https://sites.google.com/site/jeonghwacho01), who's discussed the topic (syntactic ambiguity) together from ever since this project started, given helpful ideas on psycholinguistics, and co-organized [the very first ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf). The author also thanks Jeemin Kang and Woo Hyun Kang, who respectively checked [the original dataset](https://github.com/warnikchow/prosem) and proofread [this paper](https://arxiv.org/abs/1910.09275). The reference and further correspondence goes to [Nam Soo Kim](https://hi.snu.ac.kr/), my advisor, and this project was largely supported by Technology Innovation Program (10076583, Development of free-running speech recognition technologies for embedded robot system) funded by the Ministry of Trade, Industry & Energy (MOTIE, Korea).
