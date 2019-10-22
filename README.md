@@ -22,7 +22,7 @@ Challenging issues for spoken language understanding (SLU) modules include infer
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/fig.png" width="500"></br>
           [Prosody-semantics interface in Seoul Korean]
 
-Here, we attack the issue above utilizing the speech corpus that is distributed along with the paper. First, git clone *this library* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, **YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech***.
+Here, we attack the issue above utilizing the speech corpus that is distributed along with the paper. First, git clone *this library*, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, **YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech***.
 
 *This tutorial is processed line-by-line, thus start with **python3** in bash!* 
 
@@ -61,6 +61,8 @@ total_speech_train = np.concatenate([fem_speech[:3196],mal_speech[:3196]])
 total_speech_test  = np.concatenate([fem_speech[3196:],mal_speech[3196:]])
 total_speech = np.concatenate([total_speech_train,total_speech_test])
 ```
+
+**Note that here, for every speech file, a feature of length 200 is yielded, with the width 129. 128 corresponds to the mel spectrogram and the left one denotes an RMSE of each frame, which was attached to effectively represent the syllable-level discreteness of Korean spoken langauage, as suggested in [the previous experiment regarding intonation type identification](https://github.com/warnikchow/korinto).**
 
 ## 2. Speech-only analysis with Librosa and Keras
 
