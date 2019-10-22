@@ -605,8 +605,8 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 ### ***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
 
 ### MAINTAINER
-Won Ik Cho (aka WarNik Chow)</br>
-[@Human Interface Laboratory](https://hi.snu.ac.kr/), Seoul National University, Seoul, Korea</br>
+[Won Ik Cho](https://sites.google.com/site/warnikchow) (aka WarNik Chow)</br>
+[@Human Interface Laboratory](https://hi.snu.ac.kr/), Dept. of ECE and INMC, Seoul National University, Seoul, Korea</br>
 If there is any issue, feel free to contact by wicho@hi.snu.ac.kr. 
 
 ### ACKNOWLEDGEMENT
