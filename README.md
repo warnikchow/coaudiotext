@@ -9,10 +9,10 @@
 [4. Parallel utilization of audio and text data](https://github.com/warnikchow/coaudiotext/blob/master/README.md#4-parallel-utilization-of-audio-and-text-data)</br>
 [5. Multi-hop attention](https://github.com/warnikchow/coaudiotext/blob/master/README.md#5-multi-hop-attention)</br>
 [6. Cross-attention](https://github.com/warnikchow/coaudiotext/blob/master/README.md#6-cross-attention)</br>
-7. Result and analysis?
+[7. Result and analysis?](https://github.com/warnikchow/coaudiotext#7-result-and-analysis)
 
 ## 0. Problem definition & loading dataset
-#### The introduction partly comes from our submitted paper!
+#### The introduction partly comes from [our submitted paper](https://arxiv.org/abs/1910.09275)!
 
 Understanding the intention of an utterance is challenging for some prosody-sensitive cases, especially when it is in the written form as in a text chatting or speech recognition output. **The main concern is detecting the directivity or rhetoricalness of an utterance and distinguishing the type of question.** Since it is inevitable to face both the issues regarding prosody and semantics, the identification is expected be benefited from the observations on human language processing mechanism. 
 
@@ -309,7 +309,7 @@ metricsf1macro_4input = Metricsf1macro_4input()
 
 ```
 
-**And here comes the model architecture for our Para-BRE-Att, which incorporates two BiLSTM network each contains the information regarding audio and text of the speech, and then concatenation.**
+**And here comes the model architecture for our Para-BRE-Att, which incorporates two BiLSTM networks that each contains the information regarding audio and text of the speech, and then concatenation.**
 
 ```python
 
@@ -551,6 +551,8 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 **At this point, we think that summarizing the specification and hyperparameters of our implementation will be helpful to the readers.</br> - Device: NVidea Titan V</br> - Batch size: 64</br> - Width for the hidden layers of BiLSTM:  64 * 2 = 128</br> - Width for MLPs: 128</br> - Width of the context vector: 64</br> - Dropout rate: 0.3</br> - BiLSTM and MLPs implemented by Keras as TF backend**
 
+**The below is the summarizing figure for all the models implemented so far. God thanks *.pptx*!**
+
 ## 7. Result and analysis?
 
-**Currently in the paper, but to be supplemented afterwards.**
+**Currently in [the paper](https://arxiv.org/abs/1910.09275), but to be supplemented afterwards.**
