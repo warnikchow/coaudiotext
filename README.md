@@ -17,10 +17,10 @@ Understanding the intention of an utterance is challenging for some prosody-sens
 Challenging issues for spoken language understanding (SLU) modules include inferring the intention of syntactically ambiguous utterances. If an utterance has an underspecified sentence ender whose role is decided only upon prosody, the inference requires whole the acoustic and textual data of the speech for SLUs (and even human) to correctly infer the intention, since the pitch sequence, the duration between the words, and the overall tone decides the intention of the utterance. For example, in Seoul Korean which is *wh-in-situ*, many sentences incorporate various ways of interpretation that depend on the intonation, as shown in our [ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf).
 
 <p align="center">
-    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/fig.png" width="400"></br>
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/fig.png" width="500"></br>
           [Prosody-semantics interface in Seoul Korean]
 
-Here, we attack the issue above utilizing the speech corpus that is distributed along with the paper. First, git clone *this library* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech*. 
+Here, we attack the issue above utilizing the speech corpus that is distributed along with the paper. First, git clone *this library* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. So, in summary, **YOUR DIRECTORY may contain *text*, *han2one.py*, and *ProSem_KOR_speech***.
 
 *This tutorial is processed line-by-line, thus start with **python3** in bash!* 
 
@@ -128,7 +128,7 @@ metricsf1macro = Metricsf1macro()
 ```
 
 <p align="center">
-    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/bilstm.png" width="400"></br>
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/bilstm.png" width="600"></br>
           [Concept of BiLSTM from http://www.gabormelli.com/RKB/Bidirectional_LSTM_(biLSTM)_Model]
 
 **The following denotes how we define the BiLSTM by using Keras, although no functional API is utilized here. We use only *Sequential()* since no more complex structure is used. We don't use dropout here since the hidden layers of this size are not expected to get overhead.**
@@ -154,6 +154,7 @@ validate_bilstm(total_speech,total_label,64,128,class_weights,0.1,16,'model_icas
 **Remember: mel spectrogram still has a plenty of prosody-semantic information! Thus, we decided to apply a self-attentive embedding which has been successfully used in text procesisng. Before making up the module, in terms of *pure Keras* where F1 measure is removed (well if recent version has one, that's nice!), we need another definition of f1 score since additional input source is introduced (zero vector for attention source initialization).**
 
 ```python
+##### f1-2input
 class Metricsf1macro_2input(Callback):
     def on_train_begin(self, logs={}):
         self.val_f1s = []
@@ -190,7 +191,7 @@ metricsf1macro_2input = Metricsf1macro_2input()
 ```
 
 <p align="center">
-    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/sa.png" width="400"></br>
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/sa.png" width="600"></br>
           [Self-attentive embedding for sentence representation]
 
 **And here we define our self-attentive bilstm model which *sometimes* uses TensorFlow backend. This kind of design (utilizinig *Model* module) is inevitable since the pure Keras approach cannot guarantee that we can make up such a complicated layer... So, I attach a rather detailed comment to help the readers follow how the structure (above) in [the paper](https://arxiv.org/abs/1703.03130) is implemented as a code.**
@@ -239,8 +240,10 @@ validate_rnn_self_drop(total_speech,total_label,64,64,128,class_weights,0.1,16,'
 **The next step is to finally adopt the textual features that can bring the lexical meanings into the speech analysis. So far we've used the BiLSTM network that only exploits audio features, but here we make a representation for the sentences so that we can embed the input text and co-utilize it in the inference. The concatenation is similar to the network (below) suggested in [the paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6261374/) that dealt with multimodal speech intention understanding, but the detailed architecture differs.**
 
 <p align="center">
-    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/para.jpg" width="400"></br>
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/para.jpg" width="600"></br>
           [The concatenated architecture we referred for Para-BRE-Att]
+
+**The character-level text embedding is quite different from English, but instead of feature-based or fine-tuning approaches, here we utilize the [multi-hot encoding](https://www.researchgate.net/publication/331987503_Sequence-to-Sequence_Autoencoder_based_Korean_Text_Error_Correction_using_Syllable-level_Multi-hot_Vector_Representation) that was [shown to be useful in Korean sentence classification](https://arxiv.org/abs/1905.13656). All the characters are represented into 67-dim sparse vector with 2-3 non-zero terms, and the whole text feature has size 30 x 67. The maximum length 30 is enough for the experiment considering the property of the dataset. Refer to [this repository](https://github.com/warnikchow/kcharemb) for other types of Korean character-level embedding! Well, at least at this point, we're going to use the type of character-level encoding that is as concise as possible, not heavy, and notwithstanding informative.**
 
 ```python
 import hgtk
@@ -263,7 +266,48 @@ def featurize_rnn_only_char(corpus,maxlen):
 rec_char = featurize_rnn_only_char(total_data,30)
 ```
 
-**The character-level text embedding is quite different from English, but instead of feature-based or fine-tuning approaches, here we utilize the [multi-hot encoding](https://www.researchgate.net/publication/331987503_Sequence-to-Sequence_Autoencoder_based_Korean_Text_Error_Correction_using_Syllable-level_Multi-hot_Vector_Representation) that was [shown to be useful in Korean sentence classification](https://arxiv.org/abs/1905.13656). All the characters are represented into 67-dim sparse vector with 2-3 non-zero terms, and the whole text feature has size 30 x 67. The maximum length 30 is enough for the experiment considering the property of the dataset. Refer to [this repository](https://github.com/warnikchow/kcharemb) for other types of Korean character-level embedding! Well, at least at this point, we're going to use the type of character-level encoding that is as concise as possible, not heavy, and notwithstanding informative.**
+**Next, we should take into account that the number of inputs gets bigger again; this time to four - that we should define another class for evaluating the F1 score. It would have been best for us to put together these kind of materials in a single *.py* file and just import it. Well, the specification will be modified as this tutorial gets organized.**
+
+```python
+##### f1-4input
+
+class Metricsf1macro_4input(Callback):
+ def on_train_begin(self, logs={}):
+  self.val_f1s = []
+  self.val_recalls = []
+  self.val_precisions = []
+  self.val_f1s_w = []
+  self.val_recalls_w = []
+  self.val_precisions_w = []
+ def on_epoch_end(self, epoch, logs={}):
+  if len(self.validation_data)>2:
+   val_predict = np.asarray(self.model.predict([self.validation_data[0],self.validation_data[1],self.validation_data[2],self.validation_data[3]]))
+   val_predict = np.argmax(val_predict,axis=1)
+   val_targ = self.validation_data[4]
+  else:
+   val_predict = np.asarray(self.model.predict(self.validation_data[0]))
+   val_predict = np.argmax(val_predict,axis=1)
+   val_targ = self.validation_data[1]
+  _val_f1 = metrics.f1_score(val_targ, val_predict, average="macro")
+  _val_f1_w = metrics.f1_score(val_targ, val_predict, average="weighted")
+  _val_recall = metrics.recall_score(val_targ, val_predict, average="macro")
+  _val_recall_w = metrics.recall_score(val_targ, val_predict, average="weighted")
+  _val_precision = metrics.precision_score(val_targ, val_predict, average="macro")
+  _val_precision_w = metrics.precision_score(val_targ, val_predict, average="weighted")
+  self.val_f1s.append(_val_f1)
+  self.val_recalls.append(_val_recall)
+  self.val_precisions.append(_val_precision)
+  self.val_f1s_w.append(_val_f1_w)
+  self.val_recalls_w.append(_val_recall_w)
+  self.val_precisions_w.append(_val_precision_w)
+  print("— val_f1: %f — val_precision: %f — val_recall: %f"%(_val_f1, _val_precision, _val_recall))
+  print("— val_f1_w: %f — val_precision_w: %f — val_recall_w: %f"%(_val_f1_w, _val_precision_w, _val_recall_w))
+
+metricsf1macro_4input = Metricsf1macro_4input()
+
+```
+
+**And here comes the model architecture for our Para-BRE-Att, which incorporates two BiLSTM network each contains the information regarding audio and text of the speech, and then concatenation. **
 
 ```python
 
@@ -315,9 +359,15 @@ def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speec
     validate_speech_self_text_self(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp/total_multi_bilstm_att_char')
 ```
 
+**The idea is very simple and actually is widely used within many algorithms nowadays, yielding a sufficient performance. Also, replacing the CNN - for the spectroram that was held in the original reference - with BiLSTM, seems to be successful for AT LEAST IN OUR DATASET. The reason is assumed to be the syntax-semantic propery of the task, rather than only of semantics such as sentiment analysis.**
+
 ## 5. Multi-hop attention
 
-In this section, multi-hop attention that was previously proposed for emotion recognition, is implemented in Keras and is applied to our task, speech intention disambiguation. The first version incorporates only one hopping, from audio representation output to the text features' hidden layers.
+**In this section, multi-hop attention that was [previously proposed for emotion recognition](https://arxiv.org/abs/1904.10788), is implemented in Keras and is applied to our task; speech intention disambiguation. The first module incorporates only one hopping, from audio representation output to the text features' hidden layers. The picture below may help you understand how hopping occurs, in very intuitive way. Slightly different from the original paper, we've named MHA-1 as MHA-A, and MHA-2 as MHA-AT, to reflect the features that are utilized.**
+
+<p align="center">
+    <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/mha.PNG" width="700"></br>
+          [A simple BRE (BiLSTM), and three parallel variations namely MHA-1,2,3]
 
 ```python
 def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
@@ -372,7 +422,7 @@ def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm
 validate_speech_self_text_self_mha_a(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_mha_a_att_char')
 ```
 
-And the next involves another hopping.
+Note that the dummy code was commented to denote that the line was And the next involves another hopping.
 
 ```python
 def validate_speech_self_text_self_mha_a_t(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
