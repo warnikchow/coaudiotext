@@ -8,9 +8,11 @@
 [3. Self-attentive BiLSTM](https://github.com/warnikchow/coaudiotext/blob/master/README.md#3-self-attentive-bilstm)</br>
 [4. Parallel utilization of audio and text data](https://github.com/warnikchow/coaudiotext/blob/master/README.md#4-parallel-utilization-of-audio-and-text-data)</br>
 [5. Multi-hop attention](https://github.com/warnikchow/coaudiotext/blob/master/README.md#5-multi-hop-attention)</br>
-[6. Cross-attention](https://github.com/warnikchow/coaudiotext/blob/master/README.md#6-cross-attention)
+[6. Cross-attention](https://github.com/warnikchow/coaudiotext/blob/master/README.md#6-cross-attention)</br>
+7. Result and analysis?
 
 ## 0. Problem definition & loading dataset
+#### The introduction partly comes from our submitted paper!
 
 Understanding the intention of an utterance is challenging for some prosody-sensitive cases, especially when it is in the written form as in a text chatting or speech recognition output. **The main concern is detecting the directivity or rhetoricalness of an utterance and distinguishing the type of question.** Since it is inevitable to face both the issues regarding prosody and semantics, the identification is expected be benefited from the observations on human language processing mechanism. 
 
@@ -487,7 +489,7 @@ validate_speech_self_text_self_mha_a_t(total_speech,total_rec_char,total_label,6
           [The concept of cross-attention, though the illustration is for vision domain]
     
 ```python
-def validate_speech_self_text_self_ca_mod(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
+def validate_speech_self_text_self_ca(rnn_speech,rnn_text,train_y,hidden_lstm_speech,hidden_con,hidden_lstm_text,hidden_dim,cw,val_sp,bat_size,filename):
     ##### Speech BiLSTM
     speech_input = Input(shape=(len(rnn_speech[0]),len(rnn_speech[0][0])), dtype='float32')
     speech_layer = Bidirectional(LSTM(hidden_lstm_speech,return_sequences=True))(speech_input)
@@ -544,5 +546,11 @@ def validate_speech_self_text_self_ca_mod(rnn_speech,rnn_text,train_y,hidden_lst
     model.fit([rnn_speech,speech_att_source,rnn_text,text_att_source],train_y,validation_split = val_sp,epochs=100,batch_size= bat_size,callbacks=callbacks_list,class_weight=cw)
 
 
-validate_speech_self_text_self_ca_mod(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_ca_mod_att_char')
+validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,32,128,class_weights,0.1,16,'model_icassp_temp/total_ca_mod_att_char')
 ```
+
+**At this point, we think that summarizing the specification and hyperparameters of our implementation will be helpful to the readers.</br> - Device: NVidea Titan V</br> - Batch size: 64</br> - Width for the hidden layers of BiLSTM:  64 * 2 = 128</br> - Width for MLPs: 128</br> - Width of the context vector: 64</br> - Dropout rate: 0.3</br> - BiLSTM and MLPs implemented by Keras as TF backend**
+
+## 7. Result and analysis?
+
+**Currently in the paper, but to be supplemented afterwards.**
