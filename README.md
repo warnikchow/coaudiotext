@@ -598,6 +598,8 @@ validate_speech_self_text_self_ca(total_speech,total_rec_char,total_label,64,64,
 
 <p align="center">
     <image src="https://github.com/warnikchow/coaudiotext/blob/master/images/table.PNG" width="500"></br>
-          [Result on the 10% test set. For each feature, the intersection was chosen among 5-best accuracy and F1 models that were yield during first 100 epochs of training.] 
+          [Result on the 10% test set. For each feature, the intersection was chosen among 5-best accuracy and F1 models that were yielded during first 100 epochs of training.] 
 
-**Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:</br> - *It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
+**Details are currently available in [the paper](https://arxiv.org/abs/1910.09275), and to be supplemented here afterward. But for TL;DR:** 
+
+***It is assumed that speech intention analysis is affected dominantly by the combination of speech analysis and speech-aided text analysis, preferably with the smaller contribution of text-aided speech analysis.***
