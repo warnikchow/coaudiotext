@@ -615,7 +615,7 @@ The great thanks go to [Jeonghwa Cho](https://sites.google.com/site/jeonghwacho0
 ### CITATION
 If you want to utilize the analysis result or code of this project, the following is just a placeholder for the preprint:
 ```
-@article{cho2018disambiguating,
+@article{cho2019disambiguating,
     title={Disambiguating Speech Intention via Audio-Text Co-attention Framework: A Case of Prosody-semantics Interface},
     author={Cho, Won Ik and Cho, Jeonghwa and Kang, Woo Hyun and Kim, Nam Soo},
     journal={arXiv preprint arXiv:1910.09275},
