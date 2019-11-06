@@ -76,7 +76,7 @@ def make_data(fname,fnum,shuffle_name,mlen):
         ss, phase = librosa.magphase(librosa.stft(y))
         rmse = librosa.feature.rmse(S=ss)
         rmse = rmse/np.max(rmse)
-        rmse = np.transpose(rmse)     # normalized RMSE sequence augmented to reflect syllable-timedness
+        rmse = np.transpose(rmse)     # ormalized RMSE sequence augmented to reflect syllable-timedness
         S = librosa.feature.melspectrogram(S=D)
         S = np.transpose(S)           # Conventional mel spectrogram
         if len(S)>=mlen:              # Max frame length about 200 (~7s)
@@ -543,27 +543,29 @@ def validate_speech_self_text_self_ca(rnn_speech,rnn_text,train_y,hidden_lstm_sp
     speech_output= Lambda(lambda x: K.sum(x, axis=1))(speech_output)
     speech_output= Dense(hidden_dim, activation='relu')(speech_output)
     ##### Text BiLSTM
+    ##### The attention source is simply the final hidden layer, not the weight summed sequence
+    ##### This kind of implementation was done empirically, upon the performance
     text_input = Input(shape=(len(rnn_text[0]),len(rnn_text[0][0])),dtype='float32')
     text_fw, text_fw_h, text_fw_c = LSTM(hidden_lstm_text, return_state=True, return_sequences=True)(text_input)
     text_bw, text_bw_h, text_bw_c = LSTM(hidden_lstm_text, return_state=True, return_sequences=True,go_backwards=True)(text_input)
     text_layer = layers.concatenate([text_fw,text_bw])
     text_final = layers.concatenate([text_fw_h,text_bw_h])
     text_att   = Dense(hidden_con, activation='tanh')(text_layer)	
-    text_att_source = np.zeros((len(rnn_text),hidden_con))        # Dummy code
-    text_att_input  = Input(shape=(hidden_con,), dtype='float32') # Dummy code	
+    text_att_source = np.zeros((len(rnn_text),hidden_con))              # Dummy code
+    text_att_input  = Input(shape=(hidden_con,), dtype='float32')       # Dummy code	
     ##### Exchange phase
     speech_att_hop = Dense(hidden_con, activation='relu')(text_final)	
     speech_att_hop = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([speech_att_hop,speech_att])
     speech_att_hop = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_hop)
     speech_att_hop = layers.Reshape((len(rnn_speech[0]),1))(speech_att_hop)	
-    speech_output_hop = layers.multiply([speech_att_hop,speech_layer])
+    speech_output_hop = layers.multiply([speech_att_hop,speech_layer])  # Text-influenced attention for audio
     speech_output_hop = Lambda(lambda x: K.sum(x, axis=1))(speech_output_hop)
     speech_output_hop = Dense(hidden_dim, activation='relu')(speech_output_hop)
     text_att_hop = Dense(hidden_con, activation='relu')(speech_output)	
     text_att_hop = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([text_att_hop,text_att])
     text_att_hop = Dense(len(rnn_text[0]),activation='softmax')(text_att_hop)
     text_att_hop = layers.Reshape((len(rnn_text[0]),1))(text_att_hop)	
-    text_output_hop = layers.multiply([text_att_hop,text_layer])
+    text_output_hop = layers.multiply([text_att_hop,text_layer])        # Audio-influenced attention for text
     text_output_hop = Lambda(lambda x: K.sum(x, axis=1))(text_output_hop)
     text_output_hop = Dense(hidden_dim, activation='relu')(text_output_hop)	
     ##### Total output
