@@ -24,7 +24,7 @@ In this project, we handle one of less explored issues in spoken language unders
 
 Here, we attack the issue above, utilizing the speech corpus that is distributed along with the paper. First, *git clone* this repository, *pip install -r Requirements.txt* and let it be YOUR DIRECTORY. It then contains the folder *text*, which contains the scripts of the speech files, and *han2one.py* that contains the function that converts the Korean characters to multi-hot vectors. The speech files are available in [this github repository](https://github.com/warnikchow/prosem). As you download the folder from [the dropbox](https://www.dropbox.com/s/3tm6ylu21jpmnj8/ProSem_KOR_speech.zip?dl=0), unzip the folder in YOUR DIRECTORY so that you have *ProSem_KOR_speech* folder there. In it, there are the folders named *FEMALE* and *MALE* each containing 3,551 Korean speech utterances. If you add another folder *model* in YOUR DIRECTORY to save your trained networks, every setting is over. In summary, **YOUR DIRECTORY may contain *han2one.py*, *text*, *ProSem_KOR_speech*, and *model***.
 
-*This tutorial is processed line-by-line, thus start with **python** in bash!* 
+*This tutorial is processed line-by-line, thus start with **python** (best if 3.5.2) in bash!* 
 
 ## 1. Extracting acoustic features
 
@@ -39,10 +39,14 @@ def read_data(filename):
         data = [line.split('\t') for line in f.read().splitlines()]
     return data
 
+##### Reads the data from a text file that contains intention labels and scripts
+##### Seven labels are utilized in total, and each utterance corresponds to 2 ~ 4 labels depending on the prosody
+##### Scripts are all the same for the ambiguous utterances
 text_total = read_data('text/spec_final.txt')
 labels = ['s','yn','wh','rq','c','r','rc']
 text_answer_pair = [[t[2],labels.index(t[3])] for t in text_total]
 
+##### The array that contains the shuffled indices of the utterances
 x_fem = np.load('text/x_fem.npy')
 x_mal = np.load('text/x_mal.npy')
 
@@ -59,6 +63,7 @@ total_label_train = fem_label[:3196]+mal_label[:3196]
 total_label_test  = fem_label[3196:]+mal_label[3196:]
 total_label = total_label_train+total_label_test # The data regarding the gold intention labels, 0 to 6
 
+##### Acoustic featurization
 def make_data(fname,fnum,shuffle_name,mlen):
     data_s_rmse = np.zeros((fnum,mlen,129))
     for i in range(fnum):
@@ -71,13 +76,13 @@ def make_data(fname,fnum,shuffle_name,mlen):
         ss, phase = librosa.magphase(librosa.stft(y))
         rmse = librosa.feature.rmse(S=ss)
         rmse = rmse/np.max(rmse)
-        rmse = np.transpose(rmse)
+        rmse = np.transpose(rmse)     # normalized RMSE sequence augmented to reflect syllable-timedness
         S = librosa.feature.melspectrogram(S=D)
-        S = np.transpose(S)
-        if len(S)>=mlen:
+        S = np.transpose(S)           # Conventional mel spectrogram
+        if len(S)>=mlen:              # Max frame length about 200 (~7s)
             data_s_rmse[i][:,0]=rmse[-mlen:,0]
             data_s_rmse[i][:,1:]=S[-mlen:,:]
-        else:
+        else:                         # Padding from the back part, considering head-finality
             data_s_rmse[i][-len(S):,0]=np.transpose(rmse)
             data_s_rmse[i][-len(S):,1:]=S
     return data_s_rmse
@@ -87,7 +92,7 @@ mal_speech = make_data('ProSem_KOR_speech/MALE/',3552,x_mal,200)
 
 total_speech_train = np.concatenate([fem_speech[:3196],mal_speech[:3196]])
 total_speech_test  = np.concatenate([fem_speech[3196:],mal_speech[3196:]])
-total_speech = np.concatenate([total_speech_train,total_speech_test]) # The audio features of speech files
+total_speech = np.concatenate([total_speech_train,total_speech_test]) # The acoustic features of the speech files
 ```
 
 **Note that here, for every speech file, a feature of length 200 is yielded, with the width 129. 128 corresponds to the mel spectrogram, and the left one denotes an RMSE of each frame. The latter was attached to effectively represent the syllable-level discreteness of Korean spoken language, as suggested in [the previous experiment regarding intonation type identification](https://github.com/warnikchow/korinto).**
@@ -166,6 +171,7 @@ metricsf1macro = Metricsf1macro()
 **The following denotes how we define the BiLSTM by using Keras, although no functional API is utilized here. We use only *Sequential()*, and no more complex structure is used. We don't use dropout here, since considering the hidden layers of this size, overhead is less expected.**
 
 ```python
+##### Vanilla BiLSTM utilizes only Sequential() module of Keras
 def validate_bilstm(rnn_speech,train_y,hidden_lstm,hidden_dim,cw,val_sp,bat_size,filename):
     model = Sequential()
     model.add(Bidirectional(LSTM(hidden_lstm), input_shape=(len(rnn_speech[0]), len(rnn_speech[0][0]))))
