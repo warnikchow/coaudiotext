@@ -292,6 +292,7 @@ from han2one import shin_onehot, cho_onehot, char2onehot
 alp = han2one.alp
 uniquealp = han2one.uniquealp
 
+##### Featurization for character-level multi-hot (sparse) representation
 def featurize_rnn_only_char(corpus,maxlen):
     rnn_char  = np.zeros((len(corpus),maxlen,len(alp)))
     for i in range(len(corpus)):
@@ -300,10 +301,10 @@ def featurize_rnn_only_char(corpus,maxlen):
         s = corpus[i]
         for j in range(len(s)):
             if j < maxlen and hgtk.checker.is_hangul(s[-j-1])==True:
-                rnn_char[i][-j-1,:] = char2onehot(s[-j-1])
+                rnn_char[i][-j-1,:] = char2onehot(s[-j-1])   # The characters are padded from back end, as in audio
     return rnn_char
     
-total_rec_char = featurize_rnn_only_char(total_data,30)
+total_rec_char = featurize_rnn_only_char(total_data,30)      # Maximum character length = 30 (sufficient)
 ```
 
 **Next, we should take into account that the number of inputs gets bigger again; this time to four - that we should define another class for evaluating the F1 score. It would have been best for us to put together these kinds of materials in a single *.py* file and import it. Well, the specification will be modified as this tutorial gets more organized.**
@@ -378,7 +379,7 @@ def validate_speech_self_text_self(rnn_speech,rnn_text,train_y,hidden_lstm_speec
     text_output  = layers.multiply([text_att_vec,text_layer])
     text_output  = Lambda(lambda x: K.sum(x, axis=1))(text_output)
     text_output  = Dense(hidden_dim, activation='relu')(text_output)
-    ##### Total output
+    ##### Total output after concatenation and MLPs
     output    = layers.concatenate([speech_output, text_output])
     output    = Dense(hidden_dim, activation='relu')(output)
     output    = Dropout(0.3)(output)
@@ -425,15 +426,15 @@ def validate_speech_self_text_self_mha_a(rnn_speech,rnn_text,train_y,hidden_lstm
     speech_att_vec = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_vec)
     speech_att_vec = layers.Reshape((len(rnn_speech[0]),1))(speech_att_vec)
     speech_output= layers.multiply([speech_att_vec,speech_layer])
-    speech_output= Lambda(lambda x: K.sum(x, axis=1))(speech_output)
+    speech_output= Lambda(lambda x: K.sum(x, axis=1))(speech_output)    # Concatenated audio feature is already assigned weight
     speech_output= Dense(hidden_dim, activation='relu')(speech_output)
     ##### Text BiLSTM-SA with Speech HL output as an attention source
     text_input = Input(shape=(len(rnn_text[0]),len(rnn_text[0][0])),dtype='float32')
     text_layer = Bidirectional(LSTM(hidden_lstm_text,return_sequences=True))(text_input)
     text_att = Dense(hidden_con, activation='tanh')(text_layer)
-    text_att_source = np.zeros((len(rnn_text),hidden_con))        # Dummy code
-    text_att_input  = Input(shape=(hidden_con,), dtype='float32') # Dummy code
-    text_att_vec    = Dense(hidden_con,activation='relu')(speech_final)	
+    text_att_source = np.zeros((len(rnn_text),hidden_con))              # Dummy code
+    text_att_input  = Input(shape=(hidden_con,), dtype='float32')       # Dummy code
+    text_att_vec    = Dense(hidden_con,activation='relu')(speech_final)	# Hopping happens here!
     text_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([text_att_vec,text_att])
     text_att_vec = Dense(len(rnn_text[0]),activation='softmax')(text_att_vec)
     text_att_vec = layers.Reshape((len(rnn_text[0]),1))(text_att_vec)
@@ -476,9 +477,9 @@ def validate_speech_self_text_self_mha_a_t(rnn_speech,rnn_text,train_y,hidden_ls
     text_input = Input(shape=(len(rnn_text[0]),len(rnn_text[0][0])),dtype='float32')
     text_layer = Bidirectional(LSTM(hidden_lstm_text,return_sequences=True))(text_input)
     text_att = Dense(hidden_con, activation='tanh')(text_layer)
-    text_att_source = np.zeros((len(rnn_text),hidden_con))        # Dummy code
-    text_att_input  = Input(shape=(hidden_con,), dtype='float32') # Dummy code
-    text_att_vec    = Dense(hidden_con,activation='relu')(speech_final)	
+    text_att_source = np.zeros((len(rnn_text),hidden_con))              # Dummy code
+    text_att_input  = Input(shape=(hidden_con,), dtype='float32')       # Dummy code
+    text_att_vec    = Dense(hidden_con,activation='relu')(speech_final)	# First hopping Audio >> Text
     text_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([text_att_vec,text_att])
     text_att_vec = Dense(len(rnn_text[0]),activation='softmax')(text_att_vec)
     text_att_vec = layers.Reshape((len(rnn_text[0]),1))(text_att_vec)
@@ -487,9 +488,9 @@ def validate_speech_self_text_self_mha_a_t(rnn_speech,rnn_text,train_y,hidden_ls
     text_output  = Dense(hidden_dim, activation='relu')(text_output)
     ##### Speech BiLSTM-SA with Speech-Text HL output as an attention source
     speech_att   = Dense(hidden_con, activation='tanh')(speech_layer)
-    speech_att_source = np.zeros((len(rnn_speech),hidden_con))    # Dummy code
-    speech_att_input = Input(shape=(hidden_con,),dtype='float32') # Dummy code
-    speech_att_vec = Dense(hidden_con, activation='relu')(text_output)
+    speech_att_source = np.zeros((len(rnn_speech),hidden_con))          # Dummy code
+    speech_att_input = Input(shape=(hidden_con,),dtype='float32')       # Dummy code
+    speech_att_vec = Dense(hidden_con, activation='relu')(text_output)  # Second hopping (Audio >>) Text >> Audio
     speech_att_vec = Lambda(lambda x: K.batch_dot(*x, axes=(1,2)))([speech_att_vec,speech_att])
     speech_att_vec = Dense(len(rnn_speech[0]),activation='softmax')(speech_att_vec)
     speech_att_vec = layers.Reshape((len(rnn_speech[0]),1))(speech_att_vec)
