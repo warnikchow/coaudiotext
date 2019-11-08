@@ -76,7 +76,7 @@ def make_data(fname,fnum,shuffle_name,mlen):
         ss, phase = librosa.magphase(librosa.stft(y))
         rmse = librosa.feature.rmse(S=ss)
         rmse = rmse/np.max(rmse)
-        rmse = np.transpose(rmse)     # ormalized RMSE sequence augmented to reflect syllable-timedness
+        rmse = np.transpose(rmse)     # Normalized RMSE sequence augmented to reflect syllable-timedness
         S = librosa.feature.melspectrogram(S=D)
         S = np.transpose(S)           # Conventional mel spectrogram
         if len(S)>=mlen:              # Max frame length about 200 (~7s)
