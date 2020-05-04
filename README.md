@@ -12,7 +12,7 @@
 [7. Result and analysis?](https://github.com/warnikchow/coaudiotext#7-result-and-analysis)
 
 ## 0. Problem definition & loading dataset
-#### The introduction partly comes from [our submitted paper](https://arxiv.org/abs/1910.09275)!
+#### The introduction partly comes from [our CogSci paper](https://arxiv.org/abs/1910.09275)!
 
 Understanding the intention of an utterance is challenging for some prosody-sensitive cases, especially when it is in the written form, as in a text chatting or speech recognition output. **The main concern is detecting the directivity or rhetoricalness of an utterance and distinguishing the type of question.** Since it is inevitable to face both the issues regarding prosody and semantics, the identification is expected to be benefited from the observations on the human language processing mechanism. 
 
@@ -621,10 +621,10 @@ If there is any issue, feel free to contact by wicho@hi.snu.ac.kr.
 The great thanks go to [Jeonghwa Cho](https://sites.google.com/site/jeonghwacho01), who's discussed the topic (syntactic ambiguity) together from ever since this project started, given helpful ideas on psycholinguistics, and co-organized [the very first ICPhS paper](http://www.assta.org/proceedings/ICPhS2019/papers/ICPhS_3951.pdf). The author also thanks Jeemin Kang and Woo Hyun Kang, who respectively checked [the original dataset](https://github.com/warnikchow/prosem) and proofread [this paper](https://arxiv.org/abs/1910.09275). The reference and further correspondence goes to Nam Soo Kim, my advisor, and this project was largely supported by Technology Innovation Program (10076583, Development of free-running speech recognition technologies for embedded robot system) funded by the Ministry of Trade, Industry & Energy (MOTIE, Korea).
 
 ### CITATION
-If you want to utilize the analysis result or code of this project, the following is just a placeholder for the preprint:
+If you want to utilize the analysis result or code of this project, the following is a placeholder for the preprint:
 ```
-@article{cho2019disambiguating,
-    title={Disambiguating Speech Intention via Audio-Text Co-attention Framework: A Case of Prosody-semantics Interface},
+@article{cho2019text,
+    title={Text Matters but Speech Influences: A Computational Analysis of Syntactic Ambiguity Resolution},
     author={Cho, Won Ik and Cho, Jeonghwa and Kang, Woo Hyun and Kim, Nam Soo},
     journal={arXiv preprint arXiv:1910.09275},
     year={2019}
